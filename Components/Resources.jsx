@@ -1,8 +1,8 @@
 import TitleHead from '@/constants/TitleHead'
 import React from 'react'
-import resourceImg1 from "../public/images/resource-Img1.png"
-import resourceImg2 from "../public/images/resource-img2.png"
-import resourceImg3 from "../public/images/resourceImg3.png"
+import resourceImg1 from "@/public/images/resource-Img1.png"
+import resourceImg2 from "@/public/images/resource-img2.png"
+import resourceImg3 from "@/public/images/resourceImg3.png"
 import Image from 'next/image'
 
 const cards = [
