@@ -10,8 +10,9 @@ import phones from "../public/icons/Phones.png";
 import image1 from "../public/images/device5muni_1.png";
 import image2 from "../public/images/device5muni_2.png";
 import muniPremium from "../public/muni_premium.png";
+import TownOfParadise from "./TownOfParadise";
 
-import TownOfParadise from "../public/serving-logos/townOfParadise.jsx";
+
 
 const LandingPage = () => {
   return (
