@@ -7,15 +7,15 @@ import { productSuiteData } from '@/constants/productSuiteData';
 
 const SuiteCard = ({ icon, title, description, index }) => {
     return (
-        <div className={`'border-l border-white ' ${index === 0 ? " " : ""
+        <div className={`border-l-4  ${index === 0 ? "border-l-[#C4E76A] " : "border-[#ffffff3a]"
             }`}>
             <div
-                className={`flex flex-col gap-[14px] p-4 lg:p-6 text-white items-start text-start`}
+                className={`flex flex-col gap-[14px] p-4 md:p-6 px-6 md:px-11 text-white items-start text-start`}
             >   <div className='flex gap-2 items-center'>
                     {icon}
                     <h3 className="font-semibold text-lg text-balance">{title}</h3>
                 </div>
-                <p className="text-sm font-medium text-white text-pretty">{description}</p>
+                <p className="text-sm font-medium text-[#ffffffa4] text-pretty">{description}</p>
             </div>
         </div>
 
@@ -24,7 +24,7 @@ const SuiteCard = ({ icon, title, description, index }) => {
 
 const ProductSuite = () => {
     return (
-        <div className='flex flex-col w-full h-full 2xl:h-screen items-center relative overflow-hidden bg-[#14241F]'>
+        <div className='flex flex-col w-full h-full  items-center relative overflow-hidden bg-[#14241F] pb-24'>
             <Image
                 src={productSuiteImg}
                 alt="Muni Premium Background"
@@ -46,13 +46,13 @@ const ProductSuite = () => {
                         </div>
                     </div>
 
-                    <div className=' w-full lg:w-1/2 flex items-center justify-center'>
-                        <Image src={dashboardImg} className='w-full z-[2] ml-[120px] lg:min-w-[472px] lg:mt-[100px] lg:ml-[100px]' />
-                        {/* <Image
+                    <div className=' w-full lg:w-1/2 flex items-center px-[15px]'>
+                        <div className='w-full z-[2] ml-[130px] md:ml-[170px] lg:ml-[100px] lg:min-w-[472px]' />
+                        <Image
                             src={dashboardImg}
                             alt="Dashboard"
-                            className='w-full max-w-2xl h-auto z-[1] lg:animate-slideLeft200 animate-slideLeft100'
-                        /> */}
+                            className='w-full max-w-2xl h-auto z-[1] lg:mt-[120px] lg:animate-slideLeft200  animate-slideLeft100'
+                        />
                     </div>
                 </div>
             </div>
@@ -61,3 +61,4 @@ const ProductSuite = () => {
 }
 
 export default ProductSuite;
+

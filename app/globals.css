@@ -35,6 +35,19 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+.hero-bg {
+  background-image: radial-gradient(
+      206.73% 80.75% at 50% 0%,
+      rgba(27, 49, 42, 0.4) 0%,
+      #1B312A 30%,
+      #14241F 100%
+    ),
+    url('../public/images/8b448f2d0debde0471dd9c74cf3ebe80d30cd5e7.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

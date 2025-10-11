@@ -16,6 +16,7 @@ import MunicipalitiesInfographic from "@/constants/Infographic";
 import React from "react";
 import Solution from "@/Components/Solution";
 import ProductSuite from "@/Components/ProductSuite";
+import Resources from "@/Components/Resources";
 
 export const metadata = {
   title: "Muni: The Ultimate Municipal Customer Service Experience",
@@ -50,12 +51,13 @@ const page = () => {
       <Consequences />
       <Solution />
       <ProductSuite />
+      <Resources />
       {/*<Introduction />*/}
       {/* <Features />
       <OnBoarding />
-      <Questions />
+      <Questions /> */}
       <Footer />
-      <Footerbar /> */}
+      {/* <Footerbar /> */}
     </div>
 
   )

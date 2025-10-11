@@ -14,9 +14,6 @@ const Problem = () => {
                     <LineGradient />
                 </div>
             </div>
-
-
-
         </div>
     )
 }

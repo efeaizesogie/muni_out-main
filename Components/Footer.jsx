@@ -1,33 +1,75 @@
 import Image from "next/image"
 import calender from "../public/icons/Calender.svg"
-import calender2 from "../public/icons/Calender2.svg"
-import phones from "../public/icons/Phones2.png"
+import rightArrow from "../public/icons/arrow-narrow-right.png"
+import footerIcon from "../public/icons/footer-icon.svg"
+import phone from "../public/icons/phone.svg"
+import email from "../public/icons/email.svg"
+import footerbg from "../public/images/footerbg.png"
+import Link from "next/link"
+import TitleHead from "@/constants/TitleHead"
 
 const Footer = () => {
     return (
-        <div className="flex flex-col w-full h-full items-center bg-[#EBEFE4]">
-            <div className="flex lg:flex-row flex-col px-[15px] md:px-0 md:w-[80%] items-end pt-[50px]">
-                <div className="flex flex-col w-full h-full gap-4 md:pb-[100px]">
-                    <p className="md:w-[450px] md:text-[34px] text-[24px] text-[#1B312A] font-semibold leading-tight">It's Time to Upgrade <br />Your City’s Service Experience</p>
-                    <p className="font-medium md:w-[400px] text-[16px]">See how our AI-powered municipal CRM and service tools improve resident experience, reduce workload, and boost overal satisfaction.</p>
-                    <a href="https://calendar.app.google/8KeUpeZEfLJQoKFT6" target="_blank">
-                        <button className='group bg-[#1B312A] rounded-full my-[20px] lg:w-auto w-full cursor-pointer'>
-                            <div className='flex justify-between items-center gap-4 p-[5px] text-white font-semibold'>
-                                <div className='flex justify-center items-center w-[44px] h-[44px] bg-[#C4E76A] border-[#C4E76A] border-[1px] rounded-full transition duration-500 group-hover:bg-opacity-0'>
-                                    <Image src={calender} className='group-hover:hidden' />
-                                    <Image src={calender2} className='hidden group-hover:block' />
-                                </div>
-                                <p className='pr-[20px] text-[16px]'>Schedule a demo</p>
-                                <div></div>
+        <div className='flex flex-col w-full items-center relative overflow-hidden hero-bg'>
+            <Image
+                src={footerbg}
+                alt="Muni Premium Background"
+                className="absolute inset-0 w-full h-full object-cover z-0"
+                priority
+            />
+
+            <div className="w-full max-w-7xl pt-20 md:pt-32 lg:pt-48 pb-10 px-4 md:px-6 lg:px-8 relative z-10 ">
+
+                <div className="w-full flex flex-col items-center text-center justify-center mb-12">
+                    <Image src={footerIcon} alt={"call volume"} className=" shadow-[0_10.22px_17.51px_rgb(0_0_0_0_/_4)] rounded-lg" />
+                    <TitleHead title="It’s Time to Upgrade Your" titleBreak="Customer Experience" textWhite />
+                    <p className="max-w-lg w-full text-sm md:text-base text-white font-medium py-6 md:py-8 ">Schedule a call today for a full product demonstration and for further information.</p>
+
+                    <button className="px-6 py-3 bg-[#47816F] border border-[#FFFFFF1F] rounded-lg text-white group font-semibold hover:bg-[#233f36] transition-colors shadow-[0_-2px_0px_rgb(0_0_0_0_/_4)]">
+                        Request a Demo <Image src={rightArrow} className="inline-block ml-2 w-5 h-5 transition-transform group-hover:translate-x-1" />
+                    </button>
+
+
+                    <div className="flex justify-center items-center gap-5 pt-8 md:pt-12 relative w-full">
+                        <div className="relative flex gap-4 items-center">
+                            <div className="flex items-center justify-center rounded-full bg-[#006A4A] w-[34px] h-[34px] ">
+                                <Image src={email} alt={"call volume"} className="w-4 h-4 shadow-[0_10.22px_17.51px_rgb(0_0_0_0_/_4)] rounded-lg" />
                             </div>
-                        </button>
-                    </a>
+                            <Link href="/" className="text-[12px] text-[#ffffff] font-semibold underline cursor-pointer hover:text-[#87938F] transition-colors">
+                                info@muni.com
+                            </Link>
+                        </div>
+                        <div className="relative flex gap-4 items-center">
+                            <div className="flex items-center justify-center rounded-full bg-[#006A4A] w-[34px] h-[34px] ">
+                                <Image src={phone} alt={"call volume"} className="w-4 h-4 shadow-[0_10.22px_17.51px_rgb(0_0_0_0_/_4)] rounded-lg" />
+                            </div>
+                            <Link href="/" className="text-[12px] text-[#ffffff] font-semibold underline cursor-pointer hover:text-[#87938F] transition-colors">
+                                416-321-5000
+                            </Link>
+                        </div>
+
+                    </div>
                 </div>
-                <div className="w-full flex items-center justify-center md:px-[50px] md:pt-0 pt-[50px] overflow-hidden">
-                    <Image src={phones} className="min-w-[350px] md:min-w-[600px] w-full max-w-[600px]" />
+
+
+                <div className="w-full flex flex-col md:flex-row gap-4 flex-wrap justify-between  items-center pt-4 border-t border-[#EBEBEB1A]">
+                    <div className="flex gap-8 items-center">
+                        <p className="text-[12px] font-medium text-[#ffffff] ">
+                            Built by August:  <span className="underline cursor-pointer font-semibold hover:text-[#87938F] transition-colors">alwaysaugust.co</span>
+                        </p>
+                    </div>
+
+                    <div className="flex gap-4 items-center">
+                        <Link href="/terms" className="text-[12px] text-[#ffffff] font-semibold underline cursor-pointer hover:text-[#87938F] transition-colors">
+                            Terms of Use
+                        </Link>
+                        <Link href="/privacy" className="text-[12px] text-[#ffffff] underline font-semibold cursor-pointer hover:text-[#87938F] transition-colors">
+                            Privacy Policy
+                        </Link>
+                    </div>
                 </div>
             </div>
-        </div>
+        </div >
 
     )
 }
