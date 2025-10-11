@@ -1,4 +1,9 @@
+/** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'standalone', // ✅ use this instead of 'export'
+  reactStrictMode: true,
+  swcMinify: true,
+  // ✅ Ensure this is NOT present if you’re using the App Router:
+  // output: 'export',
 };
-module.exports = nextConfig;
+
+export default nextConfig;
