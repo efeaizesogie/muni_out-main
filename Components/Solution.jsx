@@ -13,28 +13,7 @@ const Solution = () => {
     return (
         <>
             <div className="flex justify-center items-center mx-auto mt-16 md:mt-32 lg:mt-52 px-4 relative">
-                {/* <div className="relative max-w-md mx-auto">
-                    <Image src={headphone2} alt={"headphone"} className="w-full max-w-[409px] h-auto shadow-[0_10.22px_17.51px_rgb(0_0_0_0_/_4)] rounded-b-[50%]" />
 
-                    <div className='absolute top-0 left-full transform -translate-x-4 md:-translate-x-1/2 -translate-y-2 md:-translate-y-4 z-10'>
-                        <div className="bg-[#1B312A] text-white px-2 md:px-3 py-1 md:py-1.5 text-center rounded-full text-[10px] md:text-[11px] font-medium mb-2 md:mb-3 shadow-[0_10.22px_17.51px_rgb(0_0_0_0_/_4)] whitespace-nowrap">
-                            Report pothole
-                        </div>
-
-                        <div className="bg-white shadow-[0_10.22px_17.51px_rgb(0_0_0_0_/_4)] rounded-xl md:rounded-2xl p-3 md:p-4 w-48 md:w-[254px] border border-[#E9EAEB]">
-                            <p className="text-[#131416] text-[11px] md:text-[12px] leading-relaxed">
-                                Pothole successfully reported! You can keep track of report by using
-                                the ticket{" "}
-                                <a
-                                    href="#"
-                                    className="text-[#1B312A] font-semibold underline hover:text-[#004d35]"
-                                >
-                                    #425456
-                                </a>
-                            </p>
-                        </div>
-                    </div>
-                </div> */}
                 <div className="flex justify-center">
                     <Image src={handPhoneText} alt={"headphone"} className="w-full max-w-[324px] h-auto  rounded-b-[50%]" />
                 </div>

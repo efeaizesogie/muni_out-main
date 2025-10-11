@@ -21,7 +21,7 @@ const Footer = () => {
             <div className="w-full max-w-7xl pt-20 md:pt-32 lg:pt-48 pb-10 px-4 md:px-6 lg:px-8 relative z-10 ">
 
                 <div className="w-full flex flex-col items-center text-center justify-center mb-12">
-                    <Image src={footerIcon} alt={"call volume"} className=" shadow-[0_10.22px_17.51px_rgb(0_0_0_0_/_4)] rounded-lg" />
+                    <Image src={footerIcon} alt={"notification issue"} className=" shadow-[0_10.22px_17.51px_rgb(0_0_0_0_/_4)] rounded-lg" />
                     <TitleHead title="It’s Time to Upgrade Your" titleBreak="Customer Experience" textWhite />
                     <p className="max-w-lg w-full text-sm md:text-base text-white font-medium py-6 md:py-8 ">Schedule a call today for a full product demonstration and for further information.</p>
 

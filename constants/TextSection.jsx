@@ -1,19 +1,21 @@
 import LineGradient from '@/utils/LineGradient'
 import React from 'react'
+import bgFill from "@/public/images/green-bg-fill.png"
 
 const TextSection = ({ headText, boxTitle, boxDesc, buttonText1, buttonText2, gradient }) => {
     return (
         <div id="problem" className=''>
-            <p className="max-w-3xl w-full px-4 text-sm md:text-base font-medium py-12 md:py-20 text-center mx-auto leading-relaxed">
+            {headText && <p className="max-w-4xl w-full px-4 text-sm md:text-base font-medium py-12 md:py-20 text-center mx-auto leading-relaxed">
                 {headText}
-            </p>
+            </p>}
+
 
             <div className="relative max-w-7xl mx-auto px-4">
                 <div
-                    className="relative rounded-2xl md:rounded-3xl p-6 md:p-12 mb-16 shadow-xl"
+                    className="relative rounded-2xl md:rounded-3xl p-6 md:p-12 mb-16 shadow-xl "
                     style={{
                         background:
-                            'radial-gradient(ellipse at center, #006A4A 0%, #004d35 50%, #002d1f 100%)',
+                            `radial-gradient(ellipse at center, #006A4A 0%, #004d35 50%, #002d1f 100%), url(${bgFill.src})`,
                     }}
                 >
                     <h2 className="text-white text-xl md:text-2xl lg:text-[34px] lg:leading-[44px] font-semibold text-center mb-4 md:mb-6">

@@ -17,6 +17,9 @@ import React from "react";
 import Solution from "@/Components/Solution";
 import ProductSuite from "@/Components/ProductSuite";
 import Resources from "@/Components/Resources";
+import MuniBentoGrid from "@/constants/MuniBentoGrid";
+import FAQSection from "@/Components/Questions";
+import TestimonialSection from "@/Components/TestimonialSection";
 
 export const metadata = {
   title: "Muni: The Ultimate Municipal Customer Service Experience",
@@ -51,13 +54,12 @@ const page = () => {
       <Consequences />
       <Solution />
       <ProductSuite />
+      <Features />
+      <TestimonialSection />
+      <MuniBentoGrid />
+      <FAQSection />
       <Resources />
-      {/*<Introduction />*/}
-      {/* <Features />
-      <OnBoarding />
-      <Questions /> */}
       <Footer />
-      {/* <Footerbar /> */}
     </div>
 
   )
