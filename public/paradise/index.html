@@ -1,0 +1,685 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Town of Paradise Muni Resource Guide</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-default_background {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-transparentGray { background-color: rgba(227, 226, 224, 0); }
+.select-value-color-translucentGray { background-color: rgba(0, 0, 0, 0.06); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="151180c1-89e0-8046-a4ce-cc898295d9f6" class="page sans"><header><img class="page-cover-image" src="Town%20of%20Paradise%20Muni%20Resource%20Guide%20151180c189e08046a4cecc898295d9f6/Paradise_Cover.png" style="object-position:center 50%"/><div class="page-header-icon page-header-icon-with-cover"><img class="icon" src="Town%20of%20Paradise%20Muni%20Resource%20Guide%20151180c189e08046a4cecc898295d9f6/images.png"/></div><h1 class="page-title">Town of Paradise Muni Resource Guide</h1><p class="page-description"></p><table class="properties"><tbody></tbody></table></header><div class="page-body"><p id="151180c1-89e0-8077-88cc-c1addb57c5e1" class="">
+</p><p id="151180c1-89e0-8052-a72d-de01d2e25db5" class="">This comprehensive guide will walk you through the essential processes of creating events, publishing news posts, and managing account settings. Whether you&#x27;re organizing community gatherings, sharing important updates, or maintaining team access controls, these step-by-step instructions will help you navigate the platform efficiently. </p><p id="151180c1-89e0-807e-bd3a-c465f473ef32" class="">Each section provides detailed information to ensure you can make the most of the app&#x27;s features while keeping your content organized and your team structure well-maintained.</p><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">How to Create an Event</summary><div class="indented"><figure id="15e180c1-89e0-805f-9d7c-f88cc2968aba"><div class="source"><a href="Town%20of%20Paradise%20Muni%20Resource%20Guide%20151180c189e08046a4cecc898295d9f6/Event_Creation_Tutorial.mp4">https://prod-files-secure.s3.us-west-2.amazonaws.com/2c079b86-77d5-411c-9c9d-a42027e4467c/de2d262f-72d6-4643-9572-bd3449137aae/Event_Creation_Tutorial.mp4</a></div></figure><ol type="1" id="151180c1-89e0-80fa-b3b5-f0d6191540a9" class="numbered-list" start="1"><li>From the main dashboard, click &quot;Events&quot; under the &quot;Communications&quot; section in the left sidebar menu</li></ol><ol type="1" id="151180c1-89e0-800e-b2fa-dbf1cb5cfb23" class="numbered-list" start="2"><li>Click the blue &quot;<strong>+ Add Event</strong>&quot; button in the top-right corner of the screen</li></ol><ol type="1" id="151180c1-89e0-80f4-83f9-d833e614b82f" class="numbered-list" start="3"><li>In the &quot;Create Event&quot; form that appears, fill out the following information:<ul id="151180c1-89e0-8096-b821-fafbe0036d96" class="bulleted-list"><li style="list-style-type:disc">Click &quot;Upload Event Post Image&quot; to add a featured image for your event</li></ul><ul id="151180c1-89e0-8014-a975-f145d490be28" class="bulleted-list"><li style="list-style-type:disc">Select an event category from the dropdown menu</li></ul><ul id="151180c1-89e0-80fa-81ab-eb975be05275" class="bulleted-list"><li style="list-style-type:disc">Enter the event name in the &quot;Event Name&quot; field</li></ul><ul id="151180c1-89e0-80a3-95ee-ec29e06645ed" class="bulleted-list"><li style="list-style-type:disc">Provide the venue name in the &quot;Venue&quot; field</li></ul><ul id="151180c1-89e0-80a3-8f61-d5b78e8e6666" class="bulleted-list"><li style="list-style-type:disc">Write an event description using the text editor (you have options for bold, italic, underline, and different list formats)</li></ul><ul id="151180c1-89e0-80ec-8948-f0fcfcecfa42" class="bulleted-list"><li style="list-style-type:disc">If applicable, enter a Register URL (optional) - this will create a Register button linking to the provided URL</li></ul><ul id="151180c1-89e0-8035-93cf-de5aa6589cde" class="bulleted-list"><li style="list-style-type:disc">Set the Event Date &amp; Time using the date picker and time selection dropdowns</li></ul></li></ol><ol type="1" id="151180c1-89e0-805d-b936-e2aa695c27b1" class="numbered-list" start="4"><li>Once all information is entered:<ul id="151180c1-89e0-80b7-8209-c8d9e491e910" class="bulleted-list"><li style="list-style-type:disc">Click &quot;Reset&quot; to clear all fields and start over, or</li></ul><ul id="151180c1-89e0-80e0-b510-f3ffc97ba929" class="bulleted-list"><li style="list-style-type:disc">Click &quot;Submit&quot; to publish your event</li></ul></li></ol><p id="151180c1-89e0-80fd-9100-d32836951776" class="">After submission, your event will appear in the Events section of the app, where users can view it. Events can be sorted by &quot;Most Recent&quot; and searched by name using the search bar at the top of the events list.</p><figure id="152180c1-89e0-8061-aee6-e5ba40cd721e" class="image"><a href="Town%20of%20Paradise%20Muni%20Resource%20Guide%20151180c189e08046a4cecc898295d9f6/Paradise_Image_1.png"><img style="width:912px" src="Town%20of%20Paradise%20Muni%20Resource%20Guide%20151180c189e08046a4cecc898295d9f6/Paradise_Image_1.png"/></a></figure><figure id="152180c1-89e0-8060-b116-e8216fa77c29" class="image"><a href="Town%20of%20Paradise%20Muni%20Resource%20Guide%20151180c189e08046a4cecc898295d9f6/Paradise_Image_2.png"><img style="width:912px" src="Town%20of%20Paradise%20Muni%20Resource%20Guide%20151180c189e08046a4cecc898295d9f6/Paradise_Image_2.png"/></a></figure></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">How to Create a News Post</summary><div class="indented"><figure id="15e180c1-89e0-805d-8a03-d2dac7de9ee8"><div class="source"><a href="Town%20of%20Paradise%20Muni%20Resource%20Guide%20151180c189e08046a4cecc898295d9f6/Creating_a_News_Post_Tutorial_.mp4">https://prod-files-secure.s3.us-west-2.amazonaws.com/2c079b86-77d5-411c-9c9d-a42027e4467c/ee1039c3-3366-462b-9344-99224e56bd59/Creating_a_News_Post_Tutorial_.mp4</a></div></figure><ol type="1" id="151180c1-89e0-804d-b34b-ef4867f5af6e" class="numbered-list" start="1"><li>From the main dashboard, navigate to the &quot;News&quot; section in the left sidebar menu under &quot;Communications&quot;</li></ol><ol type="1" id="151180c1-89e0-80f6-aac4-ef591be1f2de" class="numbered-list" start="2"><li>Click the blue &quot;<strong>+ Create News Pos</strong>t&quot; button in the top-right corner of the screen</li></ol><ol type="1" id="151180c1-89e0-80cd-9990-fa9f93137860" class="numbered-list" start="3"><li>In the &quot;Create News Post&quot; form that appears, follow these steps:<ul id="151180c1-89e0-80b1-83ac-d6dd89d8b8f2" class="bulleted-list"><li style="list-style-type:disc">Click the &quot;Upload News Post Image&quot; button to add a featured image</li></ul><ul id="151180c1-89e0-8035-ac59-f0f8f658b6d2" class="bulleted-list"><li style="list-style-type:disc">Enter your news title in the &quot;News Title&quot; field</li></ul><ul id="151180c1-89e0-80a6-b756-d222e2088bb4" class="bulleted-list"><li style="list-style-type:disc">Toggle the &quot;External Link&quot; option if needed</li></ul><ul id="151180c1-89e0-8022-8ee8-f09c987280d6" class="bulleted-list"><li style="list-style-type:disc">Use the text editor toolbar to format your post content (you have options for bold, italic, underline, and different list formats)</li></ul><ul id="151180c1-89e0-80e2-9c82-cc9ded9754b7" class="bulleted-list"><li style="list-style-type:disc">Type your news post content in the main text area</li></ul></li></ol><ol type="1" id="151180c1-89e0-80a9-8945-cbd3b78bd218" class="numbered-list" start="4"><li>Once you&#x27;ve completed your post:<ul id="151180c1-89e0-8000-b792-db0c1e5a193b" class="bulleted-list"><li style="list-style-type:disc">Click &quot;Reset&quot; to clear all fields and start over, or</li></ul><ul id="151180c1-89e0-8072-9868-f310da36eae4" class="bulleted-list"><li style="list-style-type:disc">Click &quot;Submit&quot; to publish your news post</li></ul></li></ol><p id="151180c1-89e0-8027-bea6-ea9f7ee67df9" class="">After submission, your news post will appear in the main news section of the app, where users can view it. Posts are sorted by date, with a &quot;Most Recent&quot; filter option available.</p><figure id="152180c1-89e0-8075-bfbf-f669b0152fed" class="image"><a href="Town%20of%20Paradise%20Muni%20Resource%20Guide%20151180c189e08046a4cecc898295d9f6/Paradise_Image_4.png"><img style="width:899.3749389648438px" src="Town%20of%20Paradise%20Muni%20Resource%20Guide%20151180c189e08046a4cecc898295d9f6/Paradise_Image_4.png"/></a></figure><figure id="152180c1-89e0-805a-9093-c0b1da16bd23" class="image"><a href="Town%20of%20Paradise%20Muni%20Resource%20Guide%20151180c189e08046a4cecc898295d9f6/Paradise_Image_5.png"><img style="width:899.3749389648438px" src="Town%20of%20Paradise%20Muni%20Resource%20Guide%20151180c189e08046a4cecc898295d9f6/Paradise_Image_5.png"/></a></figure></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Managing the Account Settings</summary><div class="indented"><figure id="15e180c1-89e0-802c-ac09-c5dc5a987c36"><div class="source"><a href="Town%20of%20Paradise%20Muni%20Resource%20Guide%20151180c189e08046a4cecc898295d9f6/Managing_Account_Settings_Tutorial.mp4">https://prod-files-secure.s3.us-west-2.amazonaws.com/2c079b86-77d5-411c-9c9d-a42027e4467c/a65d9910-1fe2-482c-af4e-be64c7d1d10b/Managing_Account_Settings_Tutorial.mp4</a></div></figure><ol type="1" id="151180c1-89e0-8057-9f9d-c6272937fd82" class="numbered-list" start="1"><li><strong>Accessing Account Settings</strong><ul id="151180c1-89e0-8032-b083-dc5277a6671f" class="bulleted-list"><li style="list-style-type:disc">Click your profile icon in the top-right corner</li></ul><ul id="151180c1-89e0-80c2-a955-c0a157059661" class="bulleted-list"><li style="list-style-type:disc">Select &quot;Account Settings&quot; from the dropdown menu</li></ul><ul id="151180c1-89e0-80da-a814-e7ebb3294d71" class="bulleted-list"><li style="list-style-type:disc">You&#x27;ll see four main tabs: Personal, Team, Notifications, and Access Control</li></ul></li></ol><ol type="1" id="151180c1-89e0-80d2-a7fe-fc32e431215c" class="numbered-list" start="2"><li><strong>Personal Information Management</strong></li></ol><ul id="151180c1-89e0-8008-9ec1-cd7aba175065" class="bulleted-list"><li style="list-style-type:disc">Under the &quot;Personal&quot; tab, you can update:<ul id="151180c1-89e0-801b-9e4c-e5f8b93a6c18" class="bulleted-list"><li style="list-style-type:circle">Your name and contact information</li></ul><ul id="151180c1-89e0-8007-b137-f104801c2fde" class="bulleted-list"><li style="list-style-type:circle">Profile picture (supports PNGs and JPEGs under 10MB)</li></ul><ul id="151180c1-89e0-80e4-8b8b-c80f7b476f9c" class="bulleted-list"><li style="list-style-type:circle">Password (requires current and new password)</li></ul></li></ul><ul id="151180c1-89e0-8016-8b8e-c36cb80f38f2" class="bulleted-list"><li style="list-style-type:disc">Click &quot;Update&quot; to save any changes</li></ul><ol type="1" id="151180c1-89e0-80fe-bc3c-c627c941e2a7" class="numbered-list" start="3"><li><strong>Team Management</strong><ul id="151180c1-89e0-801b-87f0-f8abff7daf0a" class="bulleted-list"><li style="list-style-type:disc">Navigate to the &quot;Team&quot; tab to:<ul id="151180c1-89e0-8055-9a16-cec08de5ef5c" class="bulleted-list"><li style="list-style-type:circle">View all team members and their last active status</li></ul><ul id="151180c1-89e0-8062-9d62-e9fa9e899d63" class="bulleted-list"><li style="list-style-type:circle">Create groups using the &quot;Create Group&quot; button</li></ul><ul id="151180c1-89e0-80fd-9fcb-f3126e0b21ba" class="bulleted-list"><li style="list-style-type:circle">Add new accounts using the &quot;Add Account&quot; button</li></ul><ul id="151180c1-89e0-80cb-9ffe-f83207326d2b" class="bulleted-list"><li style="list-style-type:circle">Organize team members into groups</li></ul><ul id="151180c1-89e0-8086-a23f-e8122c9c9ad4" class="bulleted-list"><li style="list-style-type:circle">Manage existing team members and their roles</li></ul></li></ul></li></ol><ol type="1" id="151180c1-89e0-80dd-bb12-d2a2af8825ca" class="numbered-list" start="4"><li><strong>Access Control</strong><ul id="151180c1-89e0-80dc-b176-e02564482342" class="bulleted-list"><li style="list-style-type:disc">Under the &quot;Access Control&quot; tab:<ul id="151180c1-89e0-80aa-ad69-d1442f5ffc50" class="bulleted-list"><li style="list-style-type:circle">View and manage different account types</li></ul><ul id="151180c1-89e0-8094-9991-f97e55627e1b" class="bulleted-list"><li style="list-style-type:circle">Set permissions for various account roles</li></ul><ul id="151180c1-89e0-8069-9fab-e2b88fca1600" class="bulleted-list"><li style="list-style-type:circle">Add new account types as needed</li></ul><ul id="151180c1-89e0-805d-a694-c72385a88900" class="bulleted-list"><li style="list-style-type:circle">Customize access levels for different groups and roles</li></ul></li></ul></li></ol><ol type="1" id="151180c1-89e0-808f-a5e2-ed5bcd193491" class="numbered-list" start="5"><li><strong>Adding New Team Members</strong><ul id="151180c1-89e0-8077-82c7-db691cd30c4d" class="bulleted-list"><li style="list-style-type:disc">Click &quot;Add Account&quot; button</li></ul><ul id="151180c1-89e0-807f-af3a-eb844d9ca9dc" class="bulleted-list"><li style="list-style-type:disc">Fill in required information:<ul id="151180c1-89e0-809d-9479-e9883ad644b6" class="bulleted-list"><li style="list-style-type:circle">Personal details (name, phone, email)</li></ul><ul id="151180c1-89e0-80d3-997d-c0cbf1c1f720" class="bulleted-list"><li style="list-style-type:circle">Select appropriate account role</li></ul><ul id="151180c1-89e0-8013-aa7a-f56148179027" class="bulleted-list"><li style="list-style-type:circle">Choose access type</li></ul><ul id="151180c1-89e0-80df-acaa-d2363079ae8a" class="bulleted-list"><li style="list-style-type:circle">Assign to specific groups if applicable</li></ul></li></ul></li></ol><ol type="1" id="151180c1-89e0-80cf-8813-c1ad55f0f6ef" class="numbered-list" start="6"><li><strong>Creating and Managing Groups</strong><ul id="151180c1-89e0-8042-9e83-e532f81a2c2d" class="bulleted-list"><li style="list-style-type:disc">Use &quot;Create Group&quot; to set up new teams</li></ul><ul id="151180c1-89e0-8038-86fe-fe10c90ea260" class="bulleted-list"><li style="list-style-type:disc">Name the group</li></ul><ul id="151180c1-89e0-8030-9ad9-fb842e55d0dc" class="bulleted-list"><li style="list-style-type:disc">Select members to add</li></ul><ul id="151180c1-89e0-80b4-a39c-e03fffb7d0b7" class="bulleted-list"><li style="list-style-type:disc">Manage group permissions and access level</li></ul><p id="153180c1-89e0-8081-8837-d7062c54e7eb" class=""><strong>Key Tips:</strong></p><ul id="153180c1-89e0-8031-a820-ceb1b10fbc04" class="bulleted-list"><li style="list-style-type:disc">Always review access permissions when adding new team members</li></ul><ul id="153180c1-89e0-805d-b21e-f043ee38d421" class="bulleted-list"><li style="list-style-type:disc">Regularly audit team member roles and permissions</li></ul><ul id="153180c1-89e0-8056-a552-dcd09aca2c45" class="bulleted-list"><li style="list-style-type:disc">Keep group structures organized for easier management</li></ul><ul id="153180c1-89e0-80e7-8ebb-c0203de49bb9" class="bulleted-list"><li style="list-style-type:disc">Update team member information as needed</li></ul></li></ol><figure id="153180c1-89e0-80ef-98d6-e049bc24969a" class="image"><a href="Town%20of%20Paradise%20Muni%20Resource%20Guide%20151180c189e08046a4cecc898295d9f6/Paradise_Image_6.png"><img style="width:680px" src="Town%20of%20Paradise%20Muni%20Resource%20Guide%20151180c189e08046a4cecc898295d9f6/Paradise_Image_6.png"/></a></figure><figure id="153180c1-89e0-8050-b382-f3f22ae919d8" class="image"><a href="Town%20of%20Paradise%20Muni%20Resource%20Guide%20151180c189e08046a4cecc898295d9f6/Paradise_Image_7.png"><img style="width:680px" src="Town%20of%20Paradise%20Muni%20Resource%20Guide%20151180c189e08046a4cecc898295d9f6/Paradise_Image_7.png"/></a></figure><figure id="153180c1-89e0-80a7-a6b9-ec3f895770ae" class="image"><a href="Town%20of%20Paradise%20Muni%20Resource%20Guide%20151180c189e08046a4cecc898295d9f6/Paradise_Image_9.png"><img style="width:680px" src="Town%20of%20Paradise%20Muni%20Resource%20Guide%20151180c189e08046a4cecc898295d9f6/Paradise_Image_9.png"/></a></figure><figure id="153180c1-89e0-804e-9fad-cdc0cc41618b" class="image"><a href="Town%20of%20Paradise%20Muni%20Resource%20Guide%20151180c189e08046a4cecc898295d9f6/Paradise_Image_8.png"><img style="width:680px" src="Town%20of%20Paradise%20Muni%20Resource%20Guide%20151180c189e08046a4cecc898295d9f6/Paradise_Image_8.png"/></a></figure><figure id="153180c1-89e0-8088-addb-c34469ee200f" class="image"><a href="Town%20of%20Paradise%20Muni%20Resource%20Guide%20151180c189e08046a4cecc898295d9f6/Paradise_Image_14.png"><img style="width:680px" src="Town%20of%20Paradise%20Muni%20Resource%20Guide%20151180c189e08046a4cecc898295d9f6/Paradise_Image_14.png"/></a></figure></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Marketing Materials</summary><div class="indented"><p id="15e180c1-89e0-80c5-9468-f6f0a332baf5" class=""><strong>This following drop downs contain marketing materials specifically formatted for each respective media platform:</strong></p><ul id="15e180c1-89e0-8002-a991-e60809a1fdd2" class="toggle"><li><details open=""><summary><strong>LinkedIn Post (1080x1080)</strong></summary><figure id="15e180c1-89e0-80dc-9507-e2caad755239" class="image"><a href="Town%20of%20Paradise%20Muni%20Resource%20Guide%20151180c189e08046a4cecc898295d9f6/LinkedIn_Post_1080x1080.png"><img style="width:1080px" src="Town%20of%20Paradise%20Muni%20Resource%20Guide%20151180c189e08046a4cecc898295d9f6/LinkedIn_Post_1080x1080.png"/></a></figure></details></li></ul><ul id="15e180c1-89e0-80c0-a73d-e0b0837d2163" class="toggle"><li><details open=""><summary><strong>Instagram Post (1080x1350)</strong></summary><figure id="15e180c1-89e0-809f-a99d-cc48b669b54c" class="image"><a href="Town%20of%20Paradise%20Muni%20Resource%20Guide%20151180c189e08046a4cecc898295d9f6/Instagram_Post_1080x1350.png"><img style="width:652.013916015625px" src="Town%20of%20Paradise%20Muni%20Resource%20Guide%20151180c189e08046a4cecc898295d9f6/Instagram_Post_1080x1350.png"/></a></figure></details></li></ul><ul id="15e180c1-89e0-80fd-8169-f463767fd654" class="toggle"><li><details open=""><summary><strong>Poster (8.5x11)</strong></summary><figure id="15e180c1-89e0-8015-83c0-e364ae86ebf7" class="image"><a href="Town%20of%20Paradise%20Muni%20Resource%20Guide%20151180c189e08046a4cecc898295d9f6/Poster_8.5x11.png"><img style="width:611.9878540039062px" src="Town%20of%20Paradise%20Muni%20Resource%20Guide%20151180c189e08046a4cecc898295d9f6/Poster_8.5x11.png"/></a></figure></details></li></ul><ul id="15e180c1-89e0-8096-bc51-c88a4062ed88" class="toggle"><li><details open=""><summary><strong>Facebook Post (1200x630)</strong></summary><figure id="15e180c1-89e0-8044-a2e4-e2a6ea603617" class="image"><a href="Town%20of%20Paradise%20Muni%20Resource%20Guide%20151180c189e08046a4cecc898295d9f6/Facebook_Post_1200x630.png"><img style="width:652.013916015625px" src="Town%20of%20Paradise%20Muni%20Resource%20Guide%20151180c189e08046a4cecc898295d9f6/Facebook_Post_1200x630.png"/></a></figure></details></li></ul><ul id="15e180c1-89e0-8009-84d1-d0511be31f0c" class="toggle"><li><details open=""><summary><strong>Facebook Post (1080x1080)</strong></summary><figure id="15e180c1-89e0-8092-9198-efd43c70f29f" class="image"><a href="Town%20of%20Paradise%20Muni%20Resource%20Guide%20151180c189e08046a4cecc898295d9f6/Facebook_Post_1080x1080.png"><img style="width:652.0225830078125px" src="Town%20of%20Paradise%20Muni%20Resource%20Guide%20151180c189e08046a4cecc898295d9f6/Facebook_Post_1080x1080.png"/></a></figure></details></li></ul><ul id="15e180c1-89e0-8018-8590-f306e62ef41e" class="toggle"><li><details open=""><summary><strong>Newsletter Insert ((600x300)</strong></summary><figure id="15e180c1-89e0-804a-a09a-eb05b87e2608" class="image"><a href="Town%20of%20Paradise%20Muni%20Resource%20Guide%20151180c189e08046a4cecc898295d9f6/Newletter_Insert_600x300.png"><img style="width:600px" src="Town%20of%20Paradise%20Muni%20Resource%20Guide%20151180c189e08046a4cecc898295d9f6/Newletter_Insert_600x300.png"/></a></figure></details></li></ul><ul id="15e180c1-89e0-806f-8534-def1a454dff5" class="toggle"><li><details open=""><summary><strong>X Post (1080x1350)</strong></summary><figure id="15e180c1-89e0-806e-b9e6-da0508fc1cb2" class="image"><a href="Town%20of%20Paradise%20Muni%20Resource%20Guide%20151180c189e08046a4cecc898295d9f6/X_Post_1080x1350.png"><img style="width:652.013916015625px" src="Town%20of%20Paradise%20Muni%20Resource%20Guide%20151180c189e08046a4cecc898295d9f6/X_Post_1080x1350.png"/></a></figure></details></li></ul><ul id="15e180c1-89e0-80a7-817d-e0d50730e8d7" class="toggle"><li><details open=""><summary><strong>Instagram Story (1080x1980)</strong></summary><figure id="15e180c1-89e0-80c2-a747-ca5680900a8a" class="image"><a href="Town%20of%20Paradise%20Muni%20Resource%20Guide%20151180c189e08046a4cecc898295d9f6/Instagram_Story_1080x1980.png"><img style="width:652.013916015625px" src="Town%20of%20Paradise%20Muni%20Resource%20Guide%20151180c189e08046a4cecc898295d9f6/Instagram_Story_1080x1980.png"/></a></figure></details></li></ul></div></details><details open=""><summary style="font-weight:600;font-size:1.25em;line-height:1.3;margin:0">Service Level Agreement</summary><div class="indented"><p id="151180c1-89e0-8061-b6de-fb3282c0a7f5" class=""><strong>Business Hours</strong></p><table id="151180c1-89e0-8019-a6c6-fdbdb20d3462" class="simple-table"><tbody><tr id="151180c1-89e0-80d5-ba72-df2070d52aef"><td id="nQLI" class=""><strong>Severity</strong></td><td id="&gt;{}i" class=""><strong>Description</strong></td><td id="girE" class=""><strong>Via</strong></td><td id="S&lt;nS" class=""><strong>Target Response*</strong></td></tr><tr id="151180c1-89e0-80eb-bafa-f078a46d0ddb"><td id="nQLI" class=""><strong>Outage</strong></td><td id="&gt;{}i" class="">Website is down and/or unresponsive and end users can’t visit the website</td><td id="girE" class="">Phone Call &amp; Email</td><td id="S&lt;nS" class="">Immediate</td></tr><tr id="151180c1-89e0-8020-be29-f61b8eca341d"><td id="nQLI" class=""><strong>Critical</strong></td><td id="&gt;{}i" class="">High risk of server downtime</td><td id="girE" class="">SMS &amp; Email</td><td id="S&lt;nS" class="">Less than 30-minutes</td></tr><tr id="151180c1-89e0-8072-9956-f20e738ed31c"><td id="nQLI" class=""><strong>Urgent</strong></td><td id="&gt;{}i" class="">End user impacted in some capacity prevents a core feature from functioning</td><td id="girE" class="">SMS &amp; Email</td><td id="S&lt;nS" class="">Less than 1-hour</td></tr><tr id="151180c1-89e0-800b-bd45-d6c4f6dc3ad4"><td id="nQLI" class=""><strong>Important</strong></td><td id="&gt;{}i" class="">Potential performance impact if left unaddressed</td><td id="girE" class="">Email</td><td id="S&lt;nS" class="">Less than 24-hours</td></tr><tr id="151180c1-89e0-8089-a274-da433c79e1df"><td id="nQLI" class=""><strong>Informational</strong></td><td id="&gt;{}i" class="">Inquiry for information</td><td id="girE" class="">Email</td><td id="S&lt;nS" class="">Less than 48-hours</td></tr></tbody></table><p id="151180c1-89e0-80f8-85c5-f9f752655a20" class=""><strong>Off-Hours</strong></p><table id="151180c1-89e0-8094-b1c7-f423647930eb" class="simple-table"><tbody><tr id="151180c1-89e0-8079-b71f-ed46628a7f42"><td id="[`C~" class=""><strong>Severity</strong></td><td id="&lt;:y=" class=""><strong>Description</strong></td><td id="et^C" class=""><strong>Via</strong></td><td id="eoKO" class=""><strong>Target Response*</strong></td></tr><tr id="151180c1-89e0-8076-8cc3-d0bab60b76c0"><td id="[`C~" class=""><strong>Outage</strong></td><td id="&lt;:y=" class="">Website is down and/or unresponsive and end users can’t visit the website</td><td id="et^C" class="">Phone Call &amp; Email</td><td id="eoKO" class="">Less than 90-minutes</td></tr><tr id="151180c1-89e0-803f-93d3-c74350d4d2ba"><td id="[`C~" class=""><strong>Critical</strong></td><td id="&lt;:y=" class="">High risk of server downtime</td><td id="et^C" class="">SMS &amp; Email</td><td id="eoKO" class="">Less than 4-hours</td></tr><tr id="151180c1-89e0-8033-b3cf-fb6547688b0c"><td id="[`C~" class=""><strong>Urgent</strong></td><td id="&lt;:y=" class="">End user impacted in some capacity prevents a core feature from functioning</td><td id="et^C" class="">SMS &amp; Email</td><td id="eoKO" class="">Less than 8-hours</td></tr><tr id="151180c1-89e0-801d-b149-fb1ba2882af9"><td id="[`C~" class=""><strong>Important</strong></td><td id="&lt;:y=" class="">Potential performance impact if left unaddressed</td><td id="et^C" class="">Email</td><td id="eoKO" class="">Less than 24-hours</td></tr><tr id="151180c1-89e0-800a-b3be-c163958e28e6"><td id="[`C~" class=""><strong>Informational</strong></td><td id="&lt;:y=" class="">Inquiry for information</td><td id="et^C" class="">Email</td><td id="eoKO" class="">Less than 48-hours</td></tr></tbody></table></div></details><h3 id="151180c1-89e0-80e3-9338-ee959142f827" class=""><strong>Need Help?</strong></h3><p id="151180c1-89e0-8094-90cc-fd12b394beda" class="">If you experience any technical difficulties, system outages, or have questions about using the platform, please contact our support team at <a href="mailto:paradise@getmuni.co">paradise@getmuni.co</a>.</p><p id="151180c1-89e0-800e-b4e7-d349a6c87b84" class="">Our team is available to assist you and will work to resolve any issues as quickly as possible. When reporting an issue, please include relevant details such as the feature you&#x27;re trying to access and any error messages you encounter to help us better assist you.</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
