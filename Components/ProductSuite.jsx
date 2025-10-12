@@ -24,7 +24,7 @@ const SuiteCard = ({ icon, title, description, index }) => {
 
 const ProductSuite = () => {
     return (
-        <div className='flex flex-col w-full h-full  items-center relative overflow-hidden bg-[#14241F] pb-24'>
+        <div id='product' className='flex flex-col w-full h-full  items-center relative overflow-hidden bg-[#14241F] pb-24'>
             <Image
                 src={productSuiteImg}
                 alt="Muni Premium Background"

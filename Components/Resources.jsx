@@ -77,7 +77,7 @@ const Resources = () => {
                 </div>
 
                 <div className="mt-12 flex justify-center">
-                    <button className="px-6 py-3 bg-white border border-[#D5D7DA] rounded-lg text-[#414651] font-semibold hover:bg-gray-50 transition-colors shadow-[0_-2px_0px_rgb(0_0_0_0_/_4)]">
+                    <button className="px-6 py-3 bg-white border border-[#D5D7DA] rounded-lg text-[#414651] font-semibold hover:text-white hover:bg-[#2F443D] transition duration-300 shadow-[0_-2px_0px_rgb(0_0_0_0_/_4)]">
                         View More Articles
                     </button>
                 </div>

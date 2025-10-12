@@ -1,3 +1,8 @@
+
+import sidebarNavigationImg from '@/public/images/sidebar-navigation.png';
+import yourLogoImg from '@/public/images/your-logo.png';
+import Image from 'next/image';
+
 export default function MuniBentoGrid() {
     const CheckIcon = () => (
         <div className="relative w-[18px] h-[18px] flex-shrink-0">
@@ -32,12 +37,11 @@ export default function MuniBentoGrid() {
     );
 
     return (
-        <div className="min-h-screen bg-gray-50 pt-12 px-4 pb-24">
+        <div id="about" className="min-h-screen bg-gray-50 pt-12 px-4 pb-24">
             <div className="max-w-7xl mx-auto">
                 {/* Bento Grid Container */}
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 min-h-[639px]">
 
-                    {/* Card 1: Use One Or All Best Features Integrated */}
                     <div
                         className="relative overflow-hidden rounded-[20px] border border-gray-200 p-11"
                         style={{
@@ -53,39 +57,25 @@ export default function MuniBentoGrid() {
                                 Choose a la carte features with ease—just toggle on what you need to unlock powerful municipal solutions.
                             </p>
 
-                            <button className="inline-flex items-center justify-center px-4 py-2.5 bg-white border border-gray-300 rounded-lg shadow-sm text-base font-semibold text-gray-700 hover:bg-gray-50 transition-colors">
+                            <button className="inline-flex items-center justify-center px-4 py-2.5 bg-white border border-gray-300 rounded-lg shadow-sm text-base font-semibold text-gray-700 hover:text-white hover:bg-[#2F443D] transition duration-300 hover:border-[#2F443D]">
                                 Learn More
                             </button>
                         </div>
 
-                        {/* Sidebar Navigation Image */}
-                        <div
-                            className="absolute -left-64 bottom-0 w-[268px] h-[719px] bg-white border border-gray-200 rounded-[11px] shadow-lg"
-                            style={{
-                                transform: 'matrix(0.83, 0.55, -0.83, 0.56, 0, 0)',
-                                backgroundImage: 'linear-gradient(to bottom, #f9fafb, #ffffff)',
-                            }}
-                        >
-                            <div className="p-6 space-y-4">
-                                <div className="text-xs text-gray-400">Search</div>
-                                <div className="space-y-2 text-sm text-gray-600">
-                                    <div className="py-2">Dashboard</div>
-                                    <div className="py-2">Bookmarks</div>
-                                    <div className="py-2">My Workplace</div>
-                                    <div className="py-2">Services</div>
-                                    <div className="py-2">Residents</div>
-                                    <div className="py-2">AI Chat/Logs</div>
-                                    <div className="py-2">Workflows</div>
-                                    <div className="py-2">Communications</div>
-                                    <div className="py-2">Ticketing Base</div>
-                                </div>
-                            </div>
+                        {/* Image wrapper - ensures image height contributes to parent */}
+                        <div className="mt-10 relative w-full -mb-[45px] -ml-[45px]">
+                            <Image
+                                src={sidebarNavigationImg}
+                                alt="Sidebar Navigation"
+                                className="w-full h-auto object-cover "
+                                priority
+                            />
                         </div>
                     </div>
 
                     {/* Card 2: Seamless, Quick, and Easy Onboarding */}
                     <div
-                        className="relative overflow-hidden rounded-[20px] border border-gray-200 p-11"
+                        className="relative overflow-hidden rounded-[20px] border border-gray-200 p-11 "
                         style={{
                             background: 'radial-gradient(49.92% 47.5% at 59.95% 65.02%, #007F59 0%, #00593E 100%)'
                         }}
@@ -99,25 +89,25 @@ export default function MuniBentoGrid() {
                                 Our team will work hand-in-hand with yours through our quick and easy Onboarding Phase, which includes the following.
                             </p>
 
-                            <button className="inline-flex items-center justify-center px-4 py-2.5 bg-white border border-gray-300 rounded-lg shadow-sm text-base font-semibold text-gray-700 hover:bg-gray-50 transition-colors mb-10">
+                            <button className="inline-flex items-center justify-center px-4 py-2.5 bg-white border border-gray-300 rounded-lg shadow-sm text-base font-semibold text-gray-700 hover:text-white hover:bg-[#2F443D] transition duration-300 hover:border-[#2F443D] mb-10">
                                 Request a Demo
                             </button>
 
                             {/* Checklist */}
-                            <div className="space-y-5 mb-12">
-                                <div className="flex items-start gap-3.5">
+                            <div className="space-y-[14px] mb-12">
+                                <div className="flex items-center gap-3.5">
                                     <CheckIcon />
                                     <span className="text-sm font-semibold leading-[26px] text-white">
                                         All required third party systems integrations.
                                     </span>
                                 </div>
-                                <div className="flex items-start gap-3.5">
+                                <div className="flex items-center gap-3.5">
                                     <CheckIcon />
                                     <span className="text-sm font-semibold leading-[26px] text-white">
                                         Model training on all relevant municipal data.
                                     </span>
                                 </div>
-                                <div className="flex items-start gap-3.5">
+                                <div className="flex items-center gap-3.5">
                                     <CheckIcon />
                                     <span className="text-sm font-semibold leading-[26px] text-white">
                                         Staff training and handoff.
@@ -126,32 +116,27 @@ export default function MuniBentoGrid() {
                             </div>
                         </div>
 
-                        {/* Logo Card with Grid Background */}
-                        <div className="absolute bottom-0 right-12">
-                            <div
-                                className="relative w-[194px] h-[194px]"
-                                style={{
-                                    transform: 'matrix(0.83, 0.55, -0.83, 0.56, 0, 0)'
-                                }}
-                            >
-                                {/* Grid Background */}
-                                <div
-                                    className="absolute inset-0 opacity-20"
-                                    style={{
-                                        backgroundImage: `
-                      linear-gradient(white 1px, transparent 1px),
-                      linear-gradient(90deg, white 1px, transparent 1px)
-                    `,
-                                        backgroundSize: '20px 20px'
-                                    }}
-                                />
+                         {/* <div className="mt-10 relative  w-full h-[196px] flex items-end justify-end -mr-11 -mb-11">
+                            <Image
+                                src={yourLogoImg}
+                                alt="Sidebar Navigation"
+                                className="w-full h-auto object-cover overflow-visible"
+                                priority
+                            />
+                        </div> */}
 
-                                {/* White Card */}
-                                <div className="absolute inset-0 bg-white rounded-[40px] shadow-2xl flex items-center justify-center">
-                                    <div className="text-[31px] font-semibold text-[#1B312A] tracking-tight">
-                                        YOUR LOGO
-                                    </div>
-                                </div>
+                        {/* Logo Card with Grid Background */}
+                        <div className="absolute bottom-0 right-12 overflow-visible">
+                            <div
+                                className="relative max-w-[280px] max-h-[280px]"
+                            >
+                                 <Image
+                                src={yourLogoImg}
+                                alt="Your Logo"
+                                className="w-full h-full object-cover overflow-visible"
+                                priority
+                            />
+
                             </div>
                         </div>
                     </div>
@@ -173,44 +158,47 @@ export default function MuniBentoGrid() {
                                     Muni takes privacy and security seriously, ensuring that every resident conversation—and all municipal data—remain fully protected. Our platform uses robust data encryption, strict access controls, and regular security audits to safeguard information against unauthorized access and cyber threats.
                                 </p>
 
-                                <button className="inline-flex items-center justify-center px-4 py-2.5 bg-white border border-gray-300 rounded-lg shadow-sm text-base font-semibold text-gray-700 hover:bg-gray-50 transition-colors">
+                                <button className="inline-flex items-center justify-center px-4 py-2.5 bg-white border border-gray-300 rounded-lg shadow-sm text-base font-semibold text-gray-700 hover:text-white hover:bg-[#2F443D] transition duration-300 hover:border-[#2F443D]">
                                     Learn More
                                 </button>
                             </div>
 
                             {/* Checklist */}
-                            <div className="space-y-5 lg:pl-12">
-                                <div className="flex items-start gap-3.5">
+                            <div className='flex items-center justify-center'>
+                                 <div className="space-y-[14px] lg:pl-12 text-center">
+                                <div className="flex items-center gap-3.5">
                                     <CheckIconWhite />
                                     <span className="text-sm font-semibold leading-[26px] text-white">
                                         End-to-end encryption protects all data.
                                     </span>
                                 </div>
-                                <div className="flex items-start gap-3.5">
+                                <div className="flex items-center gap-3.5">
                                     <CheckIconWhite />
                                     <span className="text-sm font-semibold leading-[26px] text-white">
                                         Access limited to authorized users only.
                                     </span>
                                 </div>
-                                <div className="flex items-start gap-3.5">
+                                <div className="flex items-center gap-3.5">
                                     <CheckIconWhite />
                                     <span className="text-sm font-semibold leading-[26px] text-white">
                                         Routine security audits and updates.
                                     </span>
                                 </div>
-                                <div className="flex items-start gap-3.5">
+                                <div className="flex items-center gap-3.5">
                                     <CheckIconWhite />
                                     <span className="text-sm font-semibold leading-[26px] text-white">
                                         Fully compliant with privacy laws.
                                     </span>
                                 </div>
-                                <div className="flex items-start gap-3.5">
+                                <div className="flex items-center gap-3.5">
                                     <CheckIconWhite />
                                     <span className="text-sm font-semibold leading-[26px] text-white">
                                         Fully compliant with privacy laws.
                                     </span>
                                 </div>
                             </div>
+                            </div>
+                           
                         </div>
                     </div>
 
