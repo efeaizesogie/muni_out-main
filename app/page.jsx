@@ -52,12 +52,16 @@ const page = () => {
       <FeaturesCarousel />
       <Problem />
       <Consequences />
+      <div className="w-full h-[14px] bg-white" />
       <Solution />
+
       <ProductSuite />
       <Features />
       <TestimonialSection />
       <MuniBentoGrid />
+      <div className="w-full h-[14px] bg-white" />
       <FAQSection />
+      <div className="w-full h-[14px] bg-white" />
       <Resources />
       <Footer />
     </div>

@@ -12,66 +12,54 @@ export default function MuniFeatures() {
             title: "Resident Relationship Management",
             description: "Muni includes a full CRM--or as we call it, RRM--for full context into resident relationship management.",
             content: (
-                <div className="space-y-3">
-                    <Image src={relationshipImg} alt='Knowledge based chart' className='' />
-                </div>
+                <Image src={relationshipImg} alt='Knowledge based chart' className='w-full h-full object-cover' />
             )
         },
         {
             title: "Service Requests",
             description: "Allow residents to easily submit and track service requests for quick resolution.",
             content: (
-                <div className="space-y-3">
-                    <Image src={serviceRequestImage} alt='Knowledge based chart' className='' />
-                </div>
+                <Image src={serviceRequestImage} alt='Knowledge based chart' className=' object-cover' />
             )
         },
         {
             title: "Notifications",
             description: "Muni includes a full CRM--or as we call it, RRM--for full context into resident relationship management.",
             content: (
-                <div className="space-y-3">
-                    <Image src={notificationImg} alt='Knowledge based chart' className='' />
-                </div>
+                <Image src={notificationImg} alt='Knowledge based chart' className=' object-cover' />
             )
         },
         {
             title: "Curbside Collection",
             description: "Help your residents never miss a a garbage day again. All curbside collection information available all the time.",
             content: (
-                <div className="">
-                    <Image src={calenderImg} alt='Knowledge based chart' className='' />
-                </div>
+                <Image src={calenderImg} alt='Knowledge based chart' className='w-full h-full object-cover' />
             )
         },
         {
             title: "Tax Portal",
             description: "Allow residents to process payments for property taxes, utilities, program fees, parking violations and more.",
             content: (
-                <div className="">
-                    <Image src={balanceImg} alt='Knowledge based chart' className='' />
-                </div>
+                <Image src={balanceImg} alt='Knowledge based chart' className='object-cover' />
             )
         },
         {
             title: "Knowledge Base",
             description: "Train your AI with up to date municipal data to provide accurate, informative answers to resident questions.",
             content: (
-                <div className="overflow-hidden">
-                    <Image src={knowledgeBaseImage} alt='Knowledge based chart' className='' />
-                </div>
+                <Image src={knowledgeBaseImage} alt='Knowledge based chart' className='object-cover' />
             )
         }
     ];
 
     return (
-        <div className="min-h-screen py-12 px-4">
+        <div className="py-12 px-4">
             <div className="max-w-7xl mx-auto">
                 <div className="grid grid-cols-1 md:grid-cols-3 border border-[#E9EAEB] rounded-[20px] overflow-hidden bg-white">
                     {features.map((feature, index) => (
                         <div
                             key={index}
-                            className={`relative p-11 ${index < 3 ? 'border-b border-[#E9EAEB]' : ''} ${index % 3 !== 2 ? 'md:border-r border-[#E9EAEB]' : ''}`}
+                            className={`relative p-11 flex flex-col h-full ${index < 3 ? 'border-b border-[#E9EAEB]' : ''} ${index % 3 !== 2 ? 'md:border-r border-[#E9EAEB]' : ''}`}
                             style={{
                                 background: 'radial-gradient(92.49% 63.31% at 47.77% 94.26%, #EBEFE4 61.61%, #FFFFFF 75.76%)'
                             }}
@@ -85,8 +73,10 @@ export default function MuniFeatures() {
                                 </p>
                             </div>
 
-                            <div className="relative bg-white/30 backdrop-blur-md border border-[#E9EAEB] rounded-xl p-6 shadow-sm">
-                                {feature.content}
+                            <div className="relative bg-white/30 backdrop-blur-md rounded-xl p-6 border border-[#e9eaeb52] shadow-[0_14px_24px_rgb(0_0_0_0_/_0.04)] flex-1">
+                                <div className="h-32 overflow-hidden">
+                                    {feature.content}
+                                </div>
                             </div>
 
                             {/* Bottom gradient fade */}

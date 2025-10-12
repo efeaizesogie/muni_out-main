@@ -15,7 +15,7 @@ export default function FAQSection() {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50 py-16 px-4">
+    <div className="min-h-screen bg-[#f9f9f9] py-10 md:py-[120px] px-4">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
 

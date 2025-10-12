@@ -18,9 +18,9 @@ const FlowSectionCard = ({ consequences, title, titleBreak, desc, flow }) => {
                     <p className="text-sm md:text-base text-[#000000] mb-6 md:mb-8 font-medium leading-relaxed">
                         {desc}
                     </p>
-                    
-                    <div className="flex justify-center lg:justify-start">
-                        <Image src={flow} alt={"solution flow"} className="w-full max-w-[409px] h-auto shadow-[0_10.22px_17.51px_rgb(0_0_0_0_/_4)] rounded-lg" />
+
+                    <div className="flex justify-center">
+                        <Image src={flow} alt={"solution flow"} className="w-full max-w-[523px] h-auto max-h-[476px] shadow-[0_10.22px_17.51px_rgb(0_0_0_0_/_4)] rounded-lg" />
                     </div>
                 </div>
 
