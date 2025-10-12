@@ -45,7 +45,7 @@ export default function MuniBentoGrid() {
                         }}
                     >
                         <div className="relative z-10">
-                            <h2 className="text-[34px] font-semibold leading-[44px] tracking-tight text-white mb-6 capitalize">
+                            <h2 className="text-2xl md:text-[34px] font-semibold md:leading-[44px] tracking-tight text-white mb-6 capitalize">
                                 Use One Or All Best Features Integrated
                             </h2>
 
@@ -91,7 +91,7 @@ export default function MuniBentoGrid() {
                         }}
                     >
                         <div className="relative z-10">
-                            <h2 className="text-[34px] font-semibold leading-[44px] tracking-tight text-white mb-6">
+                            <h2 className="text-2xl md:text-[34px] font-semibold md:leading-[44px] tracking-tight text-white mb-6">
                                 Seamless, Quick, and Easy Onboarding
                             </h2>
 
@@ -165,7 +165,7 @@ export default function MuniBentoGrid() {
                     >
                         <div className="grid lg:grid-cols-2 gap-12">
                             <div>
-                                <h2 className="text-[34px] font-semibold leading-[44px] tracking-tight text-white mb-6 capitalize max-w-[369px]">
+                                <h2 className="text-2xl md:text-[34px] font-semibold md:leading-[44px] tracking-tight text-white mb-6 capitalize max-w-[369px]">
                                     Keeping Conversations And Data Secure
                                 </h2>
 

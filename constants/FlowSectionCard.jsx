@@ -10,7 +10,7 @@ const FlowSectionCard = ({ consequences, title, titleBreak, desc, flow }) => {
             <div className="grid lg:grid-cols-2 gap-0 items-start">
                 {/* Left Column - Challenges Flow */}
                 <div className='p-4 sm:p-6 lg:p-11'>
-                    <h2 className="text-xl md:text-2xl lg:text-[34px] lg:leading-[44px] text-[#006A4A] font-semibold mb-4">
+                    <h2 className="text-2xl lg:text-[34px]  lg:leading-[44px] text-[#006A4A] font-semibold mb-4">
                         {title}
                         <br />
                         <span className="text-[#000000]">{titleBreak}</span>

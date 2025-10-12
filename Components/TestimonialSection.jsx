@@ -12,7 +12,7 @@ export default function TestimonialSection() {
                 <div className="flex flex-col items-center gap-8">
 
                     {/* Testimonial Quote */}
-                    <blockquote className="text-[34px] font-semibold leading-[44px] tracking-tight text-[#006A4A] text-center max-w-[637px]">
+                    <blockquote className="text-2xl md:text-[34px] font-semibold md:leading-[44px] tracking-tight text-[#006A4A] text-center max-w-[637px]">
                         "When we first discovered Muni, We instantly got the feeling this was the next generation of municipal customer service experience."
                     </blockquote>
 

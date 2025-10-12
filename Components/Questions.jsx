@@ -20,8 +20,8 @@ export default function FAQSection() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
 
           {/* Left Column - Title and CTA */}
-          <div className="lg:col-span-4 space-y-6">
-            <h1 className="text-[54px] font-semibold leading-[64px] tracking-tight text-black">
+          <div className="lg:col-span-4 space-y-4 md:space-y-6 ">
+            <h1 className=" text-3xl md:text-[54px] font-semibold md:leading-[64px] tracking-tight text-black">
               Frequently Asked Questions
             </h1>
 
@@ -40,7 +40,7 @@ export default function FAQSection() {
           </div>
 
           {/* Right Column - FAQ Items */}
-          <div className="lg:col-span-7 space-y-12">
+          <div className="lg:col-span-7 space-y-6 md:space-y-12">
             {faqs.map((faq, index) => (
               <div key={index} className="space-y-4">
                 <h3 className="text-xl font-semibold leading-[30px] tracking-tight text-black">
@@ -58,7 +58,7 @@ export default function FAQSection() {
             ))}
 
             {/* Can't find section */}
-            <div className="pt-12 space-y-6 text-center lg:text-left">
+            <div className="pt-5 md:pt-12 space-y-6 text-center lg:text-left">
               <p className="text-sm font-medium leading-6 text-black">
                 Can't find what you are looking for?
               </p>
