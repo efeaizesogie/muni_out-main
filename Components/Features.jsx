@@ -8,7 +8,7 @@ import TextSection from "@/constants/TextSection"
 
 const Features = () => {
     return (
-        <>
+        <div className='pb-16'>
             <div id="features" className='flex flex-col w-full h-full items-center pb-[85px] pt-[40px]'>
 
                 <div className="text-center flex flex-col items-center relative my-16">
@@ -38,7 +38,7 @@ const Features = () => {
                 </div>
             </div>
             <TextSection boxTitle="There’s more on the way!" boxDesc="We’re constantly developing new features to enhance the experience. Explore the full list of current and upcoming capabilities below." buttonText1="View All Features" buttonText2="See How It Works" />
-        </>
+        </div>
 
     )
 }

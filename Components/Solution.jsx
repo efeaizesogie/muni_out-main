@@ -11,7 +11,7 @@ import dotbg from "@/public/images/dotbg.png";
 
 const Solution = () => {
     return (
-        <>
+        <div className='pb-16'>
             <div className="flex justify-center items-center mx-auto mt-16 md:mt-32 lg:mt-52 px-4 relative">
 
                 <div className="flex justify-center">
@@ -32,7 +32,7 @@ const Solution = () => {
             <TextSection buttonText1="Request a Demo" boxTitle="See Muni in Action"
                 boxDesc=" Ready to experience how Muni can transform your municipality’s service delivery? Request a personalized demo and discover the power of AI-driven efficiency, transparency, and citizen engagement firsthand." headText=" Muni’s AI-powered platform delivers dramatic improvements in call volume reduction, response speed, and resident satisfaction, empowering municipalities to provide faster, more efficient, and more transparent services."
             />
-        </>
+        </div>
 
     )
 }

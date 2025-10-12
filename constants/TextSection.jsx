@@ -12,7 +12,7 @@ const TextSection = ({ headText, boxTitle, boxDesc, buttonText1, buttonText2, gr
 
             <div className="relative max-w-7xl mx-auto px-4">
                 <div
-                    className="relative rounded-2xl md:rounded-3xl p-6 md:p-12 mb-16 shadow-xl "
+                    className="relative rounded-2xl md:rounded-3xl p-6 md:p-12 shadow-xl "
                     style={{
                         background:
                             `radial-gradient(ellipse 120% 80% at 30% 20%, rgba(0, 180, 130, 0.5) 0%, transparent 50%), 
