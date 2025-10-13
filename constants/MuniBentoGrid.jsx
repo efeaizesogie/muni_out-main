@@ -75,7 +75,7 @@ export default function MuniBentoGrid() {
 
                     {/* Card 2: Seamless, Quick, and Easy Onboarding */}
                     <div
-                        className="relative overflow-hidden rounded-[20px] border border-gray-200 p-11 "
+                        className="relative h-[654px] lg:h-full overflow-hidden rounded-[20px] border border-gray-200 p-11 "
                         style={{
                             background: 'radial-gradient(49.92% 47.5% at 59.95% 65.02%, #007F59 0%, #00593E 100%)'
                         }}
@@ -116,15 +116,6 @@ export default function MuniBentoGrid() {
                             </div>
                         </div>
 
-                        {/* <div className="mt-10 relative  w-full h-[196px] flex items-end justify-end -mr-11 -mb-11">
-                            <Image
-                                src={yourLogoImg}
-                                alt="Sidebar Navigation"
-                                className="w-full h-auto object-cover overflow-visible"
-                                priority
-                            />
-                        </div> */}
-
                         {/* Logo Card with Grid Background */}
                         <div className="absolute bottom-0 right-12 overflow-visible">
                             <div
@@ -136,7 +127,6 @@ export default function MuniBentoGrid() {
                                     className="w-full h-full object-cover overflow-visible"
                                     priority
                                 />
-
                             </div>
                         </div>
                     </div>
