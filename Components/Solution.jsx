@@ -2,8 +2,7 @@ import FlowSectionCard from '@/constants/FlowSectionCard';
 import { solution } from '@/constants/solutions';
 import TextSection from '@/constants/TextSection';
 import TitleHead from '@/constants/TitleHead'
-import headphone2 from "@/public/images/handphone_2.png";
-import handPhoneText from "@/public/icons/handphone-text.svg";
+import phoneGroup from "@/public/images/phone-group.png";
 import Image from 'next/image'
 import React from 'react'
 import solutionFlow from "@/public/icons/solution-flow.svg";
@@ -15,7 +14,7 @@ const Solution = () => {
             <div className="flex justify-center items-center mx-auto mt-16 md:mt-32 lg:mt-52 px-4 relative">
 
                 <div className="flex justify-center">
-                    <Image src={handPhoneText} alt={"headphone"} className="w-full max-w-[324px] h-auto  rounded-b-[50%]" />
+                    <Image src={phoneGroup} alt={"headphone"} className="w-full max-w-[324px] h-auto  rounded-b-[50%]" />
                 </div>
             </div>
 

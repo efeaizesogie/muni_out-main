@@ -10,15 +10,13 @@ const TextSection = ({ headText, boxTitle, boxDesc, buttonText1, buttonText2, gr
             </p>}
 
 
-            <div className="relative md:w-[80%] mx-4 md:mx-auto">
+            <div className="relative md:w-[80%] mx-4 md:mx-auto ">
                 <div
                     className="relative rounded-2xl md:rounded-3xl p-6 md:p-12 shadow-xl "
                     style={{
                         background:
-                            `radial-gradient(ellipse 120% 80% at 30% 20%, rgba(0, 180, 130, 0.5) 0%, transparent 50%), 
-                             radial-gradient(ellipse 80% 60% at center, #006A4A 0%, #004d35 40%, #003025 70%, #001810 100%), 
-                             url(${bgFill.src})`,
-                        backgroundBlendMode: 'normal, multiply, normal',
+                            `url(${bgFill.src}) #006A4A -0.225px -42.782px / 138.486% 228.596% no-repeat`,
+                        backgroundBlendMode: 'overlay',
                     }}
                 >
                     <h2 className="text-white text-xl md:text-2xl lg:text-[34px] lg:leading-[44px] font-semibold text-center mb-4 md:mb-6">

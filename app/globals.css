@@ -58,11 +58,17 @@ body {
   0% {
     transform: translate(0, 0);
   }
+  50% {
+    transform: translate(-200px, 150px); /* Adjust based on layout */
+  }
+  80% {
+    transform: translate(-80px, 270px); /* Adjust based on layout */
+  }
   100% {
-    transform: translate(-50px, 150px); /* Adjust based on layout */
+    transform: translate(50px, 400px); /* Adjust based on layout */
   }
 }
 
 .animate-move-to-image {
-  animation: move-to-image 2s forwards;
+  animation: move-to-image 6s forwards ease-in-out;
 }
