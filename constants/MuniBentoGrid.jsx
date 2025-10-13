@@ -38,7 +38,7 @@ export default function MuniBentoGrid() {
 
     return (
         <div id="about" className="min-h-screen bg-gray-50 pt-12 px-4 pb-24">
-            <div className="max-w-7xl mx-auto">
+            <div className="md:w-[80%] mx-auto">
                 {/* Bento Grid Container */}
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 min-h-[639px]">
 
@@ -116,7 +116,7 @@ export default function MuniBentoGrid() {
                             </div>
                         </div>
 
-                         {/* <div className="mt-10 relative  w-full h-[196px] flex items-end justify-end -mr-11 -mb-11">
+                        {/* <div className="mt-10 relative  w-full h-[196px] flex items-end justify-end -mr-11 -mb-11">
                             <Image
                                 src={yourLogoImg}
                                 alt="Sidebar Navigation"
@@ -130,12 +130,12 @@ export default function MuniBentoGrid() {
                             <div
                                 className="relative max-w-[280px] max-h-[280px]"
                             >
-                                 <Image
-                                src={yourLogoImg}
-                                alt="Your Logo"
-                                className="w-full h-full object-cover overflow-visible"
-                                priority
-                            />
+                                <Image
+                                    src={yourLogoImg}
+                                    alt="Your Logo"
+                                    className="w-full h-full object-cover overflow-visible"
+                                    priority
+                                />
 
                             </div>
                         </div>
@@ -165,40 +165,40 @@ export default function MuniBentoGrid() {
 
                             {/* Checklist */}
                             <div className='flex items-center justify-center'>
-                                 <div className="space-y-[14px] lg:pl-12 text-center">
-                                <div className="flex items-center gap-3.5">
-                                    <CheckIconWhite />
-                                    <span className="text-sm font-semibold leading-[26px] text-white">
-                                        End-to-end encryption protects all data.
-                                    </span>
-                                </div>
-                                <div className="flex items-center gap-3.5">
-                                    <CheckIconWhite />
-                                    <span className="text-sm font-semibold leading-[26px] text-white">
-                                        Access limited to authorized users only.
-                                    </span>
-                                </div>
-                                <div className="flex items-center gap-3.5">
-                                    <CheckIconWhite />
-                                    <span className="text-sm font-semibold leading-[26px] text-white">
-                                        Routine security audits and updates.
-                                    </span>
-                                </div>
-                                <div className="flex items-center gap-3.5">
-                                    <CheckIconWhite />
-                                    <span className="text-sm font-semibold leading-[26px] text-white">
-                                        Fully compliant with privacy laws.
-                                    </span>
-                                </div>
-                                <div className="flex items-center gap-3.5">
-                                    <CheckIconWhite />
-                                    <span className="text-sm font-semibold leading-[26px] text-white">
-                                        Fully compliant with privacy laws.
-                                    </span>
+                                <div className="space-y-[14px] lg:pl-12 text-center">
+                                    <div className="flex items-center gap-3.5">
+                                        <CheckIconWhite />
+                                        <span className="text-sm font-semibold leading-[26px] text-white">
+                                            End-to-end encryption protects all data.
+                                        </span>
+                                    </div>
+                                    <div className="flex items-center gap-3.5">
+                                        <CheckIconWhite />
+                                        <span className="text-sm font-semibold leading-[26px] text-white">
+                                            Access limited to authorized users only.
+                                        </span>
+                                    </div>
+                                    <div className="flex items-center gap-3.5">
+                                        <CheckIconWhite />
+                                        <span className="text-sm font-semibold leading-[26px] text-white">
+                                            Routine security audits and updates.
+                                        </span>
+                                    </div>
+                                    <div className="flex items-center gap-3.5">
+                                        <CheckIconWhite />
+                                        <span className="text-sm font-semibold leading-[26px] text-white">
+                                            Fully compliant with privacy laws.
+                                        </span>
+                                    </div>
+                                    <div className="flex items-center gap-3.5">
+                                        <CheckIconWhite />
+                                        <span className="text-sm font-semibold leading-[26px] text-white">
+                                            Fully compliant with privacy laws.
+                                        </span>
+                                    </div>
                                 </div>
                             </div>
-                            </div>
-                           
+
                         </div>
                     </div>
 

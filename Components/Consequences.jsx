@@ -11,7 +11,7 @@ import dotbg from "@/public/images/dotbg.png";
 const Consequences = () => {
     return (
         <div className='bg-[#F9F9F9] pb-16'>
-            <div  className='flex flex-col w-full items-center text-center overflow-hidden pt-10 md:pt-32 lg:pt-[140px] px-4 bg-[#F9F9F9]'>
+            <div className='flex flex-col w-full items-center text-center overflow-hidden pt-10 md:pt-32 lg:pt-[140px] px-4 bg-[#F9F9F9]'>
                 <div className="flex justify-center">
                     <Image src={headphone} alt={"headphone"} className="w-full max-w-[324px] h-auto shadow-[0_10.22px_17.51px_rgb(0_0_0_0_/_4)] rounded-b-[50%]" />
                 </div>
@@ -21,17 +21,17 @@ const Consequences = () => {
                         <TitleHead title="The High Cost of Inaction" titleBreak="From Municipalities" tag="The Consequences" />
                     </div>
                     <div className='z-1000'>
-                    <Image src={dotbg} alt={"gradient background"} className='absolute object-contain bottom-[-180px] z-1000 left-0 right-0 w-full h-[500px]' />
+                        <Image src={dotbg} alt={"gradient background"} className='absolute object-fill bottom-[-180px] z-1000 left-0 right-0 w-full h-[500px]' />
                     </div>
                 </div>
 
             </div>
             <div className='-mt-20'>
-                 <FlowSectionCard consequences={consequences} desc="Municipalities face mounting pressures on key pain points (and workflows), threatening the very foundation
+                <FlowSectionCard consequences={consequences} desc="Municipalities face mounting pressures on key pain points (and workflows), threatening the very foundation
                             of public service and community well-being." title="Three Critical " titleBreak="Challenges" flow={problemFlow} />
 
             </div>
-           
+
             <TextSection buttonText1="Get In Touch" buttonText2="FAQ" boxTitle="Have Questions?" gradient
                 boxDesc=" Curious about how Muni can fit your municipality's unique needs? Reach out
                         to our team for personalized answers or explore our comprehensive FAQ

@@ -12,49 +12,49 @@ export default function MuniFeatures() {
             title: "Resident Relationship Management",
             description: "Muni includes a full CRM--or as we call it, RRM--for full context into resident relationship management.",
             content: (
-                <Image src={relationshipImg} alt='Knowledge based chart' className='w-full h-full object-cover' />
+                <Image src={relationshipImg} alt='Knowledge based chart' className='w-full h-full object-contain' />
             )
         },
         {
             title: "Service Requests",
             description: "Allow residents to easily submit and track service requests for quick resolution.",
             content: (
-                <Image src={serviceRequestImage} alt='Knowledge based chart' className=' object-cover' />
+                <Image src={serviceRequestImage} alt='Knowledge based chart' className=' object-contain' />
             )
         },
         {
             title: "Notifications",
             description: "Muni includes a full CRM--or as we call it, RRM--for full context into resident relationship management.",
             content: (
-                <Image src={notificationImg} alt='Knowledge based chart' className=' object-cover' />
+                <Image src={notificationImg} alt='Knowledge based chart' className=' object-contain' />
             )
         },
         {
             title: "Curbside Collection",
             description: "Help your residents never miss a a garbage day again. All curbside collection information available all the time.",
             content: (
-                <Image src={calenderImg} alt='Knowledge based chart' className='w-full h-full object-cover' />
+                <Image src={calenderImg} alt='Knowledge based chart' className='w-full h-full object-contain' />
             )
         },
         {
             title: "Tax Portal",
             description: "Allow residents to process payments for property taxes, utilities, program fees, parking violations and more.",
             content: (
-                <Image src={balanceImg} alt='Knowledge based chart' className='object-cover' />
+                <Image src={balanceImg} alt='Knowledge based chart' className='object-contain' />
             )
         },
         {
             title: "Knowledge Base",
             description: "Train your AI with up to date municipal data to provide accurate, informative answers to resident questions.",
             content: (
-                <Image src={knowledgeBaseImage} alt='Knowledge based chart' className='object-cover' />
+                <Image src={knowledgeBaseImage} alt='Knowledge based chart' className='object-contain' />
             )
         }
     ];
 
     return (
         <div className="py-12 px-4">
-            <div className="max-w-7xl mx-auto">
+            <div className="md:w-[80%] mx-auto">
                 <div className="grid grid-cols-1 md:grid-cols-3 border border-[#E9EAEB] rounded-[20px] overflow-hidden bg-white">
                     {features.map((feature, index) => (
                         <div

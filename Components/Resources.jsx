@@ -32,7 +32,7 @@ const Resources = () => {
             <TitleHead title="Resources & Insights" />
             <p className="max-w-4xl w-full text-sm md:text-base font-medium py-6 md:py-8 ">Stay informed about the latest trends in municipal technology, best practices for digital transformation, and insights into building better communities through technology.</p>
 
-            <div className="w-full max-w-7xl px-4 md:px-6 lg:px-8 relative z-10 mt-10">
+            <div className="md:w-[80%] relative z-10 mt-10">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     {cards.map((card, index) => (
                         <div key={index} className="bg-white rounded-xl border border-[#EBEBEB] overflow-hidden flex flex-col">

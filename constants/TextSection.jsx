@@ -10,7 +10,7 @@ const TextSection = ({ headText, boxTitle, boxDesc, buttonText1, buttonText2, gr
             </p>}
 
 
-            <div className="relative max-w-7xl mx-auto px-4">
+            <div className="relative md:w-[80%] mx-auto px-4">
                 <div
                     className="relative rounded-2xl md:rounded-3xl p-6 md:p-12 shadow-xl "
                     style={{

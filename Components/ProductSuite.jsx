@@ -56,6 +56,7 @@ const ProductSuite = () => {
                     </div>
                 </div>
             </div>
+            <div className='absolute bottom-0 left-0 w-full h-[6px] bg-gradient-to-r from-[#C4E76A] to-[#006A4A]'></div>
         </div >
     )
 }
