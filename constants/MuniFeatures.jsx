@@ -53,8 +53,8 @@ export default function MuniFeatures() {
     ];
 
     return (
-        <div className="py-12 px-4">
-            <div className="md:w-[80%] mx-auto">
+        <div className="py-12">
+            <div className="md:w-[80%] mx-4 lg:mx-auto">
                 <div className="grid grid-cols-1 md:grid-cols-3 border border-[#E9EAEB] rounded-[20px] overflow-hidden bg-white">
                     {features.map((feature, index) => (
                         <div

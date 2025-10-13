@@ -4,6 +4,10 @@ import dashboardImg from "../public/images/psdashboard.png";
 
 import TitleHead from '@/constants/TitleHead';
 import { productSuiteData } from '@/constants/productSuiteData';
+import multiplayer from '@/public/icons/multiplayer.svg';
+import productDash from "../public/icons/product-dash.png"
+import safari from "../public/icons/safari-toobar.svg"
+
 
 const SuiteCard = ({ icon, title, description, index }) => {
     return (
@@ -24,19 +28,19 @@ const SuiteCard = ({ icon, title, description, index }) => {
 
 const ProductSuite = () => {
     return (
-        <div id='product' className='flex flex-col w-full h-full  items-center relative overflow-hidden bg-[#14241F] pb-24'>
+        <div id='product' className='flex flex-col w-full h-full  items-center relative overflow-hidden bg-[#14241F] pb-24 '>
             <Image
                 src={productSuiteImg}
                 alt="Muni Premium Background"
                 className="absolute inset-0 w-full h-full object-cover z-0"
                 priority
             />
-            <div className="w-full max-w-7xl pt-20 md:pt-32 lg:pt-48 pb-16 px-4 md:px-6 lg:px-8 relative z-10">
+            <div className="mx-4 lg:mx-auto md:w-[80%] pt-20 md:pt-32 lg:pt-48 pb-16 relative z-10">
                 <div className=" text-center flex flex-col items-center relative">
                     <TitleHead title="Unified Access to Muni’s" titleBreak="Full Suite Experience" tag="Product Suite" textWhite />
                 </div>
 
-                <div className="flex lg:flex-row flex-col w-full items-center justify-center">
+                <div className="flex lg:flex-row flex-col w-full items-center justify-center relative mt-20">
                     <div className='w-full lg:w-1/2 mb-8 lg:mb-0'>
                         <div className='flex flex-col items-center lg:items-start text-center lg:text-left'>
                             {/* Add content here if needed */}
@@ -46,13 +50,23 @@ const ProductSuite = () => {
                         </div>
                     </div>
 
-                    <div className=' w-full lg:w-1/2 flex items-center px-[15px]'>
-                        <div className='w-full z-[2] ml-[130px] md:ml-[170px] lg:ml-[100px] lg:min-w-[472px]' />
-                        <Image
-                            src={dashboardImg}
-                            alt="Dashboard"
-                            className='w-full max-w-2xl h-auto z-[1] lg:mt-[120px] lg:animate-slideLeft200  animate-slideLeft100'
-                        />
+                    <div className='absolute -top-20 -right-20'>
+                        <Image src={multiplayer} alt='multiplayer icon' />
+                    </div>
+
+                    <div className='w-full lg:w-1/2 flex justify-end relative ml-120'>
+                        <div className='relative w-full max-w-2xl lg:mt-[20px]'>
+                            <Image
+                                src={productDash}
+                                alt="Product Dashboard"
+                                className='w-full h-auto  mt-[20px] rounded-b-xl'
+                            />
+                            <Image
+                                src={safari}
+                                alt="Safari Toolbar"
+                                className='absolute top-0 left-0 w-full h-auto z-10  rounded-t-xl'
+                            />
+                        </div>
                     </div>
                 </div>
             </div>
