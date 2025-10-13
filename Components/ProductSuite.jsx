@@ -47,7 +47,7 @@ const ProductSuite = () => {
                 className="absolute inset-0 w-full h-full object-cover z-0"
                 priority
             />
-            <div className="mx-4 lg:mx-auto md:w-[80%] pt-20 md:pt-32 lg:pt-48 pb-16 relative z-10">
+            <div className="mx-4 md:mx-auto md:w-[80%] pt-20 md:pt-32 lg:pt-48 pb-16 relative z-10">
                 <div className=" text-center flex flex-col items-center relative">
                     <TitleHead title="Unified Access to Muni’s" titleBreak="Full Suite Experience" tag="Product Suite" textWhite />
                 </div>

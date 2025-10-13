@@ -38,7 +38,7 @@ export default function MuniBentoGrid() {
 
     return (
         <div id="about" className="min-h-screen bg-gray-50 pt-12  pb-24">
-            <div className="md:w-[80%] mx-4 lg:mx-auto">
+            <div className="md:w-[80%] mx-4 md:mx-auto">
                 {/* Bento Grid Container */}
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 min-h-[639px]">
 

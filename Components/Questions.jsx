@@ -15,12 +15,12 @@ export default function FAQSection() {
   ];
 
   return (
-    <div id="faq" className="min-h-screen bg-[#f9f9f9] py-10 md:py-[120px] px-4">
-      <div className="max-w-7xl mx-auto">
+    <div id="faq" className="min-h-screen bg-[#f9f9f9] py-10 md:py-[120px] ">
+      <div className="md:w-[80%] mx-4 md:mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
 
           {/* Left Column - Title and CTA */}
-          <div className="lg:col-span-3 space-y-4  md:space-y-6 ">
+          <div className="md:col-span-4 lg:col-span-3 space-y-4  md:space-y-6 ">
 
             <h1 className=" text-3xl md:text-[54px] font-semibold md:leading-[64px] tracking-tight text-black">
               Frequently Asked Questions
@@ -37,12 +37,12 @@ export default function FAQSection() {
           </div>
 
           {/* Vertical Line */}
-          <div className="hidden lg:block lg:col-span-1">
+          {/* <div className="hidden lg:block lg:col-span-1">
             <div className="h-[538px] w-px bg-[#EBEBEB] mx-auto"></div>
-          </div>
+          </div> */}
 
           {/* Right Column - FAQ Items */}
-          <div className="lg:col-span-8 space-y-6 md:space-y-12">
+          <div className="md-col-span-8 lg:col-span-9 space-y-6 md:space-y-12 lg:border-l lg:border-[#EBEBEB] lg:pl-16">
             {faqs.map((faq, index) => (
               <div
                 key={index}
@@ -67,7 +67,7 @@ export default function FAQSection() {
 
 
             {/* Can't find section */}
-            <div className="pt-5 md:pt-12 space-y-6 text-center lg:text-left">
+            <div className="pt-5 md:pt-12 space-y-6 text-center lg:text-left mx-auto">
               <p className="text-sm font-medium leading-6 text-black">
                 Can't find what you are looking for?
               </p>
