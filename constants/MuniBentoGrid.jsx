@@ -148,7 +148,7 @@ export default function MuniBentoGrid() {
                             background: '#000000'
                         }}
                     >
-                        <div className="grid lg:grid-cols-2 gap-12">
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
                             <div>
                                 <h2 className="text-2xl md:text-[34px] font-semibold md:leading-[44px] tracking-tight text-white mb-6 capitalize max-w-[369px]">
                                     Keeping Conversations And Data Secure
@@ -164,33 +164,33 @@ export default function MuniBentoGrid() {
                             </div>
 
                             {/* Checklist */}
-                            <div className='flex items-center justify-center'>
+                            <div className='flex w-full items-start md:items-center flex-wrap lg:justify-center'>
                                 <div className="space-y-[14px] lg:pl-12 text-center">
-                                    <div className="flex items-center gap-3.5">
+                                    <div className="flex items-start md:items-center gap-3.5">
                                         <CheckIconWhite />
                                         <span className="text-sm font-semibold leading-[26px] text-white">
                                             End-to-end encryption protects all data.
                                         </span>
                                     </div>
-                                    <div className="flex items-center gap-3.5">
+                                    <div className="flex items-start md:items-center gap-3.5">
                                         <CheckIconWhite />
                                         <span className="text-sm font-semibold leading-[26px] text-white">
                                             Access limited to authorized users only.
                                         </span>
                                     </div>
-                                    <div className="flex items-center gap-3.5">
+                                    <div className="flex items-start md:items-center gap-3.5">
                                         <CheckIconWhite />
                                         <span className="text-sm font-semibold leading-[26px] text-white">
                                             Routine security audits and updates.
                                         </span>
                                     </div>
-                                    <div className="flex items-center gap-3.5">
+                                    <div className="flex items-start md:items-center gap-3.5">
                                         <CheckIconWhite />
                                         <span className="text-sm font-semibold leading-[26px] text-white">
                                             Fully compliant with privacy laws.
                                         </span>
                                     </div>
-                                    <div className="flex items-center gap-3.5">
+                                    <div className="flex items-start md:items-center gap-3.5">
                                         <CheckIconWhite />
                                         <span className="text-sm font-semibold leading-[26px] text-white">
                                             Fully compliant with privacy laws.
