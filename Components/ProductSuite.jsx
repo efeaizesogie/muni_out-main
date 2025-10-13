@@ -1,12 +1,14 @@
+"use client"
+
 import Image from 'next/image';
 import productSuiteImg from "../public/images/productsuite.png";
-import dashboardImg from "../public/images/psdashboard.png";
-
 import TitleHead from '@/constants/TitleHead';
 import { productSuiteData } from '@/constants/productSuiteData';
 import multiplayer from '@/public/icons/multiplayer.svg';
-import productDash from "../public/icons/product-dash.png"
-import safari from "../public/icons/safari-toobar.svg"
+import productDash from "../public/icons/product-dash.png";
+import safari from "../public/icons/safari-toobar.svg";
+import { motion } from "framer-motion";
+import { useEffect, useState } from 'react';
 
 
 const SuiteCard = ({ icon, title, description, index }) => {
@@ -27,6 +29,16 @@ const SuiteCard = ({ icon, title, description, index }) => {
 }
 
 const ProductSuite = () => {
+    const [imageVisible, setImageVisible] = useState(false);
+
+    useEffect(() => {
+        // Simulate multiplayer icon finishing animation or "click"
+        const timer = setTimeout(() => {
+            setImageVisible(true);
+        }, 10); // adjust timing to match multiplayer icon animation
+        return () => clearTimeout(timer);
+    }, []);
+
     return (
         <div id='product' className='flex flex-col w-full h-full  items-center relative overflow-hidden bg-[#14241F] pb-24 '>
             <Image
@@ -50,24 +62,32 @@ const ProductSuite = () => {
                         </div>
                     </div>
 
-                    <div className='absolute -top-20 -right-20'>
-                        <Image src={multiplayer} alt='multiplayer icon' />
+                    <div className="absolute top-0 -right-20 z-20">
+                        <div className="animate-move-to-image">
+                            <Image src={multiplayer} alt="multiplayer icon" />
+                        </div>
                     </div>
 
-                    <div className='w-full lg:w-1/2 flex justify-end relative ml-120'>
-                        <div className='relative w-full max-w-2xl lg:mt-[20px]'>
+                    <div className="w-full lg:w-1/2 flex justify-end relative ml-120">
+                        <motion.div
+                            className="relative w-full max-w-2xl lg:mt-[20px] overflow-hidden"
+                            initial={{ x: 300, opacity: 1 }} // start off to the right and hidden
+                            animate={imageVisible ? { x: 200, opacity: 1 } : {}}
+                            transition={{ duration: 0.8, ease: "easeOut" }}
+                        >
                             <Image
                                 src={productDash}
                                 alt="Product Dashboard"
-                                className='w-full h-auto  mt-[20px] rounded-b-xl'
+                                className='w-full h-auto mt-[20px] rounded-b-xl'
                             />
                             <Image
                                 src={safari}
                                 alt="Safari Toolbar"
-                                className='absolute top-0 left-0 w-full h-auto z-10  rounded-t-xl'
+                                className='absolute top-0 left-0 w-full h-auto z-10 rounded-t-xl'
                             />
-                        </div>
+                        </motion.div>
                     </div>
+
                 </div>
             </div>
             <div className='absolute bottom-0 left-0 w-full h-[6px] bg-gradient-to-r from-[#C4E76A] to-[#006A4A]'></div>

@@ -53,3 +53,16 @@ body {
     text-wrap: balance;
   }
 }
+
+@keyframes move-to-image {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-50px, 150px); /* Adjust based on layout */
+  }
+}
+
+.animate-move-to-image {
+  animation: move-to-image 2s forwards;
+}
