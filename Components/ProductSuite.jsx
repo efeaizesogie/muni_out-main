@@ -5,7 +5,7 @@ import productSuiteImg from "../public/images/productsuite.png";
 import TitleHead from '@/constants/TitleHead';
 import { productSuiteData } from '@/constants/productSuiteData';
 import multiplayer from '@/public/icons/multiplayer.svg';
-import productDash from "../public/icons/product-dash.png";
+import productDash from "../public/images/product-dash.webp";
 import productDash1 from "../public/images/product-dash-1.webp";
 import productDash2 from "../public/images/product-dash-2.webp";
 import safari from "../public/icons/safari-toobar.svg";
