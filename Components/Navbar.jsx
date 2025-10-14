@@ -52,7 +52,7 @@ const Navbar = ({ showLinks = true }) => {
         </nav>
         {showLinks && (
           <div className={`${isOpen ? 'block' : 'hidden'}`}>
-            <ul className="flex flex-col text-[#1B312A] justify-center items-center gap-6 lg:text-[16px] text-[35px] font-semibold pt-[150px]">
+            <ul className="flex flex-col text-[#1B312A] justify-center items-center gap-6 lg:text-[16px] text-[14px] font-semibold pt-[150px]">
               <a onClick={toggleNavBar} href="#introduction"><li>How It Works</li></a>
               <a onClick={toggleNavBar} href="#features"><li>Product</li></a>
               <a onClick={toggleNavBar} href="#about"><li>About</li></a>

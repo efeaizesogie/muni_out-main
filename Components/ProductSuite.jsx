@@ -115,19 +115,26 @@ const ProductSuite = () => {
                             animate={animationStarted ? { x: isMobile ? 100 : 250, opacity: 1 } : { x: isMobile ? 150 : 300, opacity: 0 }}
                             transition={{ duration: 1.5, ease: "easeOut" }}
                         >
-                            <motion.div
-                                key={imageStage}
-                                initial={{ opacity: 0 }}
-                                animate={{ opacity: 1 }}
-                                exit={{ opacity: 0 }}
-                                transition={{ duration: 0.5 }}
-                            >
+                            <div className="relative w-full">
                                 <Image
-                                    src={getImage()}
-                                    alt="Product Dashboard"
-                                    className="w-full h-auto mt-[20px] rounded-b-xl"
+                                    src={productDash}
+                                    alt="Product Dashboard Base"
+                                    className="w-full h-auto mt-[20px] rounded-b-xl opacity-0"
                                 />
-                            </motion.div>
+                                <motion.div
+                                    key={imageStage}
+                                    initial={{ opacity: 0 }}
+                                    animate={{ opacity: 1 }}
+                                    transition={{ duration: 0.8, ease: "easeInOut" }}
+                                    className="absolute inset-0"
+                                >
+                                    <Image
+                                        src={getImage()}
+                                        alt="Product Dashboard"
+                                        className="w-full h-auto  rounded-b-xl"
+                                    />
+                                </motion.div>
+                            </div>
                             <Image
                                 src={safari}
                                 alt="Safari Toolbar"
