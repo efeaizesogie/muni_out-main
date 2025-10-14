@@ -54,21 +54,47 @@ body {
   }
 }
 
+
+
 @keyframes move-to-image {
   0% {
     transform: translate(0, 0);
   }
-  50% {
-    transform: translate(-200px, 150px); /* Adjust based on layout */
+  33% {
+    transform: translate(-200px, 150px); /* first stop (2s) */
   }
-  80% {
-    transform: translate(-80px, 270px); /* Adjust based on layout */
+  66% {
+    transform: translate(-80px, 270px); /* second stop (4s) */
   }
   100% {
-    transform: translate(50px, 400px); /* Adjust based on layout */
+    transform: translate(50px, 400px); /* final stop (6s) */
+  }
+}
+
+@keyframes move-to-image-mobile {
+  0% {
+    transform: translate(0, 400);
+  }
+  33% {
+    transform: translate(-350px, 600px); /* adjusted for mobile */
+  }
+  66% {
+    transform: translate(-100px, 700px); /* adjusted for mobile */
+  }
+  100% {
+    transform: translate(-20px, 800px); /* adjusted for mobile */
   }
 }
 
 .animate-move-to-image {
-  animation: move-to-image 6s forwards ease-in-out;
+  animation: move-to-image 6s ease-in-out forwards;
 }
+
+@media (max-width: 1024px) {
+  .animate-move-to-image {
+    animation: move-to-image-mobile 6s ease-in-out forwards;
+  }
+}
+
+
+

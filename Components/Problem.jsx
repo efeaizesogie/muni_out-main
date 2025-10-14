@@ -26,7 +26,7 @@ const Problem = () => {
 
                     setTimeout(() => {
                         setIsBarVisible(true);
-                    }, 1000);
+                    }, 100);
                 }
             },
             {
@@ -142,7 +142,7 @@ const Problem = () => {
                 {/* Call Volume Card */}
                 <div className="relative w-[324px] mx-auto ">
                     {isVisible ?
-                        <>
+                        <div>
                             {/* <Image src={callVolumeAnim} alt={"call volume"} className="w-full object-fit-contain  h-[200px] shadow-[0_10.22px_17.51px_rgb(0_0_0_0_/_4)] rounded-lg" /> */}
                             <svg width="324" height="189" viewBox="18 8 324 189" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g filter="url(#filter0_d_9343_582)">
@@ -153,19 +153,116 @@ const Problem = () => {
 
                                         {/* Animated Bars */}
                                         <g>
-                                            <rect width="16.7838" height={isBarVisible ? "100.703" : "0"} rx="8.39189" transform="matrix(-1 0 0 1 324.486 78.7852)" fill="#EC6B5E" style={{ transition: 'height 1.5s ease-out 0.1s' }} />
-                                            <rect width="16.7838" height={isBarVisible ? "81" : "0"} rx="8.39189" transform="matrix(-1 0 0 1 299.742 98.4879)" fill="#EC6B5E" style={{ transition: 'height 1.5s ease-out 0.2s' }} />
-                                            <rect width="16.7838" height={isBarVisible ? "93.4054" : "0"} rx="8.39189" transform="matrix(-1 0 0 1 274.997 86.0825)" fill="#EC6B5E" style={{ transition: 'height 1.5s ease-out 0.3s' }} />
-                                            <rect width="16.7838" height={isBarVisible ? "81" : "0"} rx="8.39189" transform="matrix(-1 0 0 1 250.253 98.4879)" fill="#EC6B5E" style={{ transition: 'height 1.5s ease-out 0.4s' }} />
-                                            <rect width="16.7838" height={isBarVisible ? "71.5135" : "0"} rx="8.39189" transform="matrix(-1 0 0 1 225.508 107.974)" fill="#F4BF4F" style={{ transition: 'height 1.5s ease-out 0.5s' }} />
-                                            <rect width="16.7838" height={isBarVisible ? "59.1081" : "0"} rx="8.39189" transform="matrix(-1 0 0 1 200.764 120.38)" fill="#F4BF4F" style={{ transition: 'height 1.5s ease-out 0.6s' }} />
-                                            <rect width="16.7838" height={isBarVisible ? "67.8649" : "0"} rx="8.39189" transform="matrix(-1 0 0 1 176.02 111.623)" fill="#F4BF4F" style={{ transition: 'height 1.5s ease-out 0.7s' }} />
-                                            <rect width="16.7838" height={isBarVisible ? "59.1081" : "0"} rx="8.39189" transform="matrix(-1 0 0 1 151.275 120.38)" fill="#F4BF4F" style={{ transition: 'height 1.5s ease-out 0.8s' }} />
-                                            <rect width="16.7838" height={isBarVisible ? "45.2432" : "0"} rx="8.39189" transform="matrix(-1 0 0 1 126.531 134.245)" fill="#F4BF4F" style={{ transition: 'height 1.5s ease-out 0.9s' }} />
-                                            <rect width="16.7838" height={isBarVisible ? "27" : "0"} rx="8.39189" transform="matrix(-1 0 0 1 101.786 152.488)" fill="#006A4A" style={{ transition: 'height 1.5s ease-out 1.0s' }} />
-                                            <rect width="16.7838" height={isBarVisible ? "38.6757" : "0"} rx="8.39189" transform="matrix(-1 0 0 1 77.0416 140.812)" fill="#006A4A" style={{ transition: 'height 1.5s ease-out 1.1s' }} />
-                                            <rect width="16.7838" height={isBarVisible ? "19.7027" : "0"} rx="8.39189" transform="matrix(-1 0 0 1 52.2971 159.785)" fill="#006A4A" style={{ transition: 'height 1.5s ease-out 1.2s' }} />
+                                            <rect
+                                                width="16.7838"
+                                                height={isBarVisible ? "100.703" : "0"}
+                                                rx="8.39189"
+                                                x="307.7"
+                                                y={isBarVisible ? "88" : "188"}
+                                                fill="#EC6B5E"
+                                                style={{ transition: "all 1.0s ease-out 1.2s" }}
+                                            />
+                                            <rect
+                                                width="16.7838"
+                                                height={isBarVisible ? "81" : "0"}
+                                                rx="8.39189"
+                                                x="283"
+                                                y={isBarVisible ? "107" : "188"}
+                                                fill="#EC6B5E"
+                                                style={{ transition: "all 0.5s ease-out 1.1s" }}
+                                            />
+                                            <rect
+                                                width="16.7838"
+                                                height={isBarVisible ? "93.4054" : "0"}
+                                                rx="8.39189"
+                                                x="258"
+                                                y={isBarVisible ? "95" : "188"}
+                                                fill="#EC6B5E"
+                                                style={{ transition: "all 0.55s ease-out 1.0s" }}
+                                            />
+                                            <rect
+                                                width="16.7838"
+                                                height={isBarVisible ? "81" : "0"}
+                                                rx="8.39189"
+                                                x="233"
+                                                y={isBarVisible ? "107" : "188"}
+                                                fill="#EC6B5E"
+                                                style={{ transition: "all 0.60s ease-out 0.9s" }}
+                                            />
+                                            <rect
+                                                width="16.7838"
+                                                height={isBarVisible ? "71.5135" : "0"}
+                                                rx="8.39189"
+                                                x="208"
+                                                y={isBarVisible ? "117" : "188"}
+                                                fill="#F4BF4F"
+                                                style={{ transition: "all 0.65s ease-out 0.8s" }}
+                                            />
+                                            <rect
+                                                width="16.7838"
+                                                height={isBarVisible ? "59.1081" : "0"}
+                                                rx="8.39189"
+                                                x="183"
+                                                y={isBarVisible ? "129" : "188"}
+                                                fill="#F4BF4F"
+                                                style={{ transition: "all 0.70s ease-out 0.7s" }}
+                                            />
+                                            <rect
+                                                width="16.7838"
+                                                height={isBarVisible ? "67.8649" : "0"}
+                                                rx="8.39189"
+                                                x="158"
+                                                y={isBarVisible ? "121" : "188"}
+                                                fill="#F4BF4F"
+                                                style={{ transition: "all 0.75s ease-out 0.6s" }}
+                                            />
+                                            <rect
+                                                width="16.7838"
+                                                height={isBarVisible ? "59.1081" : "0"}
+                                                rx="8.39189"
+                                                x="133"
+                                                y={isBarVisible ? "129" : "188"}
+                                                fill="#F4BF4F"
+                                                style={{ transition: "all 0.80s ease-out 0.5s" }}
+                                            />
+                                            <rect
+                                                width="16.7838"
+                                                height={isBarVisible ? "45.2432" : "0"}
+                                                rx="8.39189"
+                                                x="108"
+                                                y={isBarVisible ? "143" : "188"}
+                                                fill="#F4BF4F"
+                                                style={{ transition: "all 0.85s ease-out 0.4s" }}
+                                            />
+                                            <rect
+                                                width="16.7838"
+                                                height={isBarVisible ? "27" : "0"}
+                                                rx="8.39189"
+                                                x="83"
+                                                y={isBarVisible ? "161" : "188"}
+                                                fill="#006A4A"
+                                                style={{ transition: "all 0.9s ease-out 0.3s" }}
+                                            />
+                                            <rect
+                                                width="16.7838"
+                                                height={isBarVisible ? "38.6757" : "0"}
+                                                rx="8.39189"
+                                                x="58"
+                                                y={isBarVisible ? "150" : "188"}
+                                                fill="#006A4A"
+                                                style={{ transition: "all 0.95s ease-out 0.2s" }}
+                                            />
+                                            <rect
+                                                width="16.7838"
+                                                height={isBarVisible ? "19.7027" : "0"}
+                                                rx="8.39189"
+                                                x="33"
+                                                y={isBarVisible ? "169" : "188"}
+                                                fill="#006A4A"
+                                                style={{ transition: "all 1s ease-out 0.1s" }}
+                                            />
                                         </g>
+
 
                                         <path d="M44.3488 30.7457C44.963 30.8656 45.5275 31.166 45.97 31.6085C46.4125 32.051 46.7129 32.6155 46.8327 33.2297M44.3488 28.2303C45.6249 28.3721 46.8148 28.9436 47.7233 29.8509C48.6318 30.7582 49.2047 31.9475 49.3481 33.2234M41.9447 35.6904C41.1891 34.9348 40.5924 34.0804 40.1548 33.1688C40.1171 33.0904 40.0983 33.0512 40.0838 33.0016C40.0324 32.8253 40.0693 32.6088 40.1763 32.4595C40.2063 32.4175 40.2423 32.3815 40.3142 32.3097C40.534 32.0898 40.6439 31.9799 40.7158 31.8693C40.9868 31.4525 40.9868 30.9151 40.7158 30.4982C40.6439 30.3877 40.534 30.2778 40.3142 30.0579L40.1916 29.9354C39.8574 29.6012 39.6903 29.4341 39.5109 29.3433C39.154 29.1628 38.7325 29.1628 38.3756 29.3433C38.1961 29.4341 38.029 29.6012 37.6948 29.9354L37.5957 30.0345C37.2626 30.3676 37.0961 30.5341 36.9689 30.7605C36.8278 31.0117 36.7263 31.4019 36.7272 31.6901C36.728 31.9497 36.7783 32.1272 36.8791 32.4822C37.4205 34.3897 38.442 36.1897 39.9437 37.6914C41.4454 39.193 43.2454 40.2146 45.1529 40.756C45.5078 40.8567 45.6853 40.9071 45.945 40.9079C46.2331 40.9087 46.6233 40.8073 46.8746 40.6661C47.101 40.539 47.2675 40.3724 47.6005 40.0394L47.6997 39.9403C48.0339 39.6061 48.201 39.439 48.2917 39.2595C48.4723 38.9026 48.4723 38.4811 48.2917 38.1242C48.201 37.9447 48.0339 37.7776 47.6997 37.4434L47.5771 37.3209C47.3573 37.101 47.2474 36.9911 47.1368 36.9193C46.72 36.6482 46.1826 36.6482 45.7657 36.9193C45.6552 36.9911 45.5453 37.101 45.3254 37.3209C45.2535 37.3928 45.2176 37.4287 45.1756 37.4588C45.0263 37.5657 44.8098 37.6026 44.6335 37.5512C44.5839 37.5368 44.5447 37.518 44.4662 37.4803C43.5547 37.0426 42.7003 36.446 41.9447 35.6904Z" stroke="#006A4A" stroke-width="1.25769" stroke-linecap="round" stroke-linejoin="round" />
                                         <line x1="18" y1="58.7172" x2="342.73" y2="58.7172" stroke="#E9EAEB" stroke-width="0.72973" />
@@ -199,7 +296,7 @@ const Problem = () => {
                                 </defs>
                             </svg>
 
-                        </> : <Image src={callVolume} alt={"call volume"} className="w-full  h-[200px] shadow-[0_10.22px_17.51px_rgb(0_0_0_0_/_4)] rounded-lg" />
+                        </div> : <Image src={callVolume} alt={"call volume"} className="w-full  h-[200px] shadow-[0_10.22px_17.51px_rgb(0_0_0_0_/_4)] rounded-lg" />
                     }
                     <div style={{
                         marginTop: isVisible ? "-40px" : "0px"
