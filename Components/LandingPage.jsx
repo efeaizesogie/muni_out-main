@@ -55,7 +55,7 @@ const LandingPage = () => {
             <div className='relative w-full min-w-[500px] lg:min-w-[899px]'>
               <Image
                 src={heroNotif}
-                className='absolute left-[-100px] lg:left-[-80px] md:left-[-40px] bottom-8 lg:bottom-20 z-10 max-w-[200px] lg:max-w-[252px] lg:animate-fadeIn200 animate-fadeIn100'
+                className='absolute left-[-100px] lg:left-[-80px] md:left-[-40px] bottom-8 lg:bottom-20 z-10 max-w-[200px] lg:max-w-[252px] animate-fadeInDelayed'
               />
               <Image
                 src={image2}
