@@ -30,9 +30,9 @@ const Resources = () => {
     return (
         <div id="resources" className='flex flex-col w-full min-h-screen items-center text-center bg-[#F9F9F9] overflow-hidden tracking-wider py-16 md:py-32 '>
             <TitleHead title="Resources & Insights" />
-            <p className="max-w-4xl w-full text-sm md:text-base font-medium py-6 md:py-8 ">Stay informed about the latest trends in municipal technology, best practices for digital transformation, and insights into building better communities through technology.</p>
+            <p className="max-w-4xl w-full text-sm md:text-base font-medium mt-5 px-[20px] md:px-0 pb-8 md:py-8 ">Stay informed about the latest trends in municipal technology, best practices for digital transformation, and insights into building better communities through technology.</p>
 
-            <div className="md:w-[80%] mx-4 lg:mx-auto relative z-10 mt-10">
+            <div className="md:w-[80%] mx-[20px] lg:mx-auto relative z-10 md:mt-10">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     {cards.map((card, index) => (
                         <div key={index} className="bg-white rounded-xl border border-[#EBEBEB] overflow-hidden flex flex-col">

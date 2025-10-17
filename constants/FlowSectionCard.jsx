@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 const FlowSectionCard = ({ consequences, title, titleBreak, desc, flow }) => {
     return (
-        <div className="bg-[#FFFFFF] md:w-[80%] border-[1px] border-[#E9EAEB] rounded-[20px] mt-20 mx-4 md:mx-auto relative">
+        <div className="bg-[#FFFFFF] md:w-[80%] border-[1px] border-[#E9EAEB] rounded-[20px] mt-20 mx-[20px] md:mx-auto relative">
             <div className="grid lg:grid-cols-2 gap-0 items-start">
                 {/* Left Column - Challenges Flow */}
                 <div className='lg:border-r border-[#E9EAEB]'>

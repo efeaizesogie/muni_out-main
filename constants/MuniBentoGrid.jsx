@@ -37,13 +37,13 @@ export default function MuniBentoGrid() {
     );
 
     return (
-        <div id="about" className="min-h-screen bg-gray-50 pt-12  pb-24">
-            <div className="md:w-[80%] mx-4 md:mx-auto">
+        <div id="about" className="min-h-screen bg-gray-50 pt-12 pb-24">
+            <div className="md:w-[80%] mx-[20px] md:mx-auto">
                 {/* Bento Grid Container */}
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 min-h-[639px]">
 
                     <div
-                        className="relative overflow-hidden rounded-[20px] border border-gray-200 p-11"
+                        className="relative overflow-hidden rounded-[20px] border border-gray-200 p-6 md:p-11"
                         style={{
                             background: 'radial-gradient(48.86% 48.86% at 50% 50%, #2F443D 0%, #1B312A 100%)'
                         }}
@@ -75,7 +75,7 @@ export default function MuniBentoGrid() {
 
                     {/* Card 2: Seamless, Quick, and Easy Onboarding */}
                     <div
-                        className="relative h-[654px] lg:h-full overflow-hidden rounded-[20px] border border-gray-200 p-11 "
+                        className="relative h-[654px] lg:h-full overflow-hidden rounded-[20px] border border-gray-200 p-6 md:p-11 "
                         style={{
                             background: 'radial-gradient(49.92% 47.5% at 59.95% 65.02%, #007F59 0%, #00593E 100%)'
                         }}
@@ -133,7 +133,7 @@ export default function MuniBentoGrid() {
 
                     {/* Card 3: Keeping Conversations And Data Secure - Full Width */}
                     <div
-                        className="relative overflow-hidden rounded-[20px] border border-gray-200 p-11 lg:col-span-2"
+                        className="relative overflow-hidden rounded-[20px] border border-gray-200 p-6 md:p-11 lg:col-span-2"
                         style={{
                             background: '#000000'
                         }}
@@ -156,31 +156,31 @@ export default function MuniBentoGrid() {
                             {/* Checklist */}
                             <div className='flex w-full items-start md:items-center flex-wrap lg:justify-center'>
                                 <div className="space-y-[14px] lg:pl-12 text-center">
-                                    <div className="flex items-start md:items-center gap-3.5">
+                                    <div className="flex items-center gap-3.5">
                                         <CheckIconWhite />
                                         <span className="text-sm font-semibold leading-[26px] text-white">
                                             End-to-end encryption protects all data.
                                         </span>
                                     </div>
-                                    <div className="flex items-start md:items-center gap-3.5">
+                                    <div className="flex items-center gap-3.5">
                                         <CheckIconWhite />
                                         <span className="text-sm font-semibold leading-[26px] text-white">
                                             Access limited to authorized users only.
                                         </span>
                                     </div>
-                                    <div className="flex items-start md:items-center gap-3.5">
+                                    <div className="flex items-center gap-3.5">
                                         <CheckIconWhite />
                                         <span className="text-sm font-semibold leading-[26px] text-white">
                                             Routine security audits and updates.
                                         </span>
                                     </div>
-                                    <div className="flex items-start md:items-center gap-3.5">
+                                    <div className="flex items-center gap-3.5">
                                         <CheckIconWhite />
                                         <span className="text-sm font-semibold leading-[26px] text-white">
                                             Fully compliant with privacy laws.
                                         </span>
                                     </div>
-                                    <div className="flex items-start md:items-center gap-3.5">
+                                    <div className="flex items-center gap-3.5">
                                         <CheckIconWhite />
                                         <span className="text-sm font-semibold leading-[26px] text-white">
                                             Fully compliant with privacy laws.

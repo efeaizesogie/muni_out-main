@@ -19,14 +19,14 @@ export default function MuniFeatures() {
             title: "Service Requests",
             description: "Allow residents to easily submit and track service requests for quick resolution.",
             content: (
-                <Image src={serviceRequestImage} alt='Knowledge based chart' className=' object-contain' />
+                <Image src={serviceRequestImage} alt='Knowledge based chart' className='w-full h-full object-contain' />
             )
         },
         {
             title: "Notifications",
             description: "Muni includes a full CRM--or as we call it, RRM--for full context into resident relationship management.",
             content: (
-                <Image src={notificationImg} alt='Knowledge based chart' className=' object-contain' />
+                <Image src={notificationImg} alt='Knowledge based chart' className='w-full h-full object-contain' />
             )
         },
         {
@@ -40,22 +40,22 @@ export default function MuniFeatures() {
             title: "Tax Portal",
             description: "Allow residents to process payments for property taxes, utilities, program fees, parking violations and more.",
             content: (
-                <Image src={balanceImg} alt='Knowledge based chart' className='object-contain' />
+                <Image src={balanceImg} alt='Knowledge based chart' className='w-full h-full object-contain' />
             )
         },
         {
             title: "Knowledge Base",
             description: "Train your AI with up to date municipal data to provide accurate, informative answers to resident questions.",
             content: (
-                <Image src={knowledgeBaseImage} alt='Knowledge based chart' className='object-contain' />
+                <Image src={knowledgeBaseImage} alt='Knowledge based chart' className='w-full h-full object-contain' />
             )
         }
     ];
 
     return (
-        <div className="py-12">
-            <div className="md:w-[80%] mx-4 md:mx-auto">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 border border-[#E9EAEB] rounded-[20px] overflow-hidden bg-white">
+        <div className="md:py-12">
+            <div className="md:w-[80%] md:mx-auto">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 border border-[#E9EAEB] md:rounded-[20px] overflow-hidden bg-white">
                     {features.map((feature, index) => (
                         <div
                             key={index}

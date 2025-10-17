@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function TestimonialSection() {
     return (
-        <div className="relative min-h-screen flex flex-col items-center justify-center bg-white py-24 px-4 overflow-hidden">
+        <div className="relative md:min-h-screen flex flex-col items-center justify-center bg-white py-16 md:py-24 px-[20px] overflow-hidden">
 
             {/* Main Content */}
             <div className="relative max-w-4xl mx-auto">

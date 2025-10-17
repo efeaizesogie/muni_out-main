@@ -6,15 +6,17 @@ import phoneGroup from "@/public/images/phone-group.png";
 import Image from 'next/image'
 import React from 'react'
 import solutionFlow from "@/public/icons/solution-flow.svg";
+import mobilePhoneGroup from "../public/icons/mobile-handphone.png";
 import dotbg from "@/public/images/dotbg.png";
 
 const Solution = () => {
     return (
-        <div className='pb-16'>
+        <div className='md:pb-16'>
             <div className="flex justify-center items-center mx-auto mt-16 md:mt-32 lg:mt-52 px-4 relative">
 
                 <div className="flex justify-center">
-                    <Image src={phoneGroup} alt={"headphone"} className="w-full max-w-[324px] h-auto  rounded-b-[50%]" />
+                    <Image src={phoneGroup} alt={"headphone"} className="w-full hidden md:flex max-w-[324px] h-auto  rounded-b-[50%]" />
+                    <Image src={mobilePhoneGroup} alt={"headphone"} className="w-full md:hidden h-auto rounded-b-[35%] md:rounded-b-[50%]" />
                 </div>
             </div>
 

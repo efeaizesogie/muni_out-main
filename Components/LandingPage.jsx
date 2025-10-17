@@ -1,7 +1,5 @@
 import Image from 'next/image';
 
-import calender from "../public/icons/Calender.svg";
-import calender2 from "../public/icons/Calender2.svg";
 import check from "../public/icons/Checkmark.png";
 import arrow from "../public/icons/arrow-narrow-right.png";
 import star from "../public/icons/star-06.png";
@@ -21,34 +19,27 @@ const LandingPage = () => {
         className="absolute inset-0 w-full h-full object-cover z-0"
         priority
       />
-      <div className="w-full max-w-none md:w-[80%] md:mx-auto px-4 md:px-0 md:pt-[200px] pt-[125px] gap-2 relative z-10">
+      <div className="w-full max-w-none md:w-[80%] md:mx-auto px-[20px] md:px-0 md:pt-[200px] pt-[125px] gap-2 relative z-10">
         <div className="flex lg:flex-row flex-col w-full">
           <div className='lg:min-w-[600px]'>
             <div className='flex flex-col items-start'>
-              <p className='flex items-center gap-2 font-medium text-white text-[14px] bg-[#000000] bg-opacity-40 rounded-full py-[5px] px-[15px] mb-[34px]'>
+              <p className='flex items-center gap-2 font-semibold text-white text-[14px] bg-[#000000] bg-opacity-40 rounded-full py-[5px] px-[15px] mb-[34px]'>
                 <Image src={star} /> AI-Powered Solutions for Municipalities
               </p>
-              <h1 className='font-semibold text-white md:text-[70px] text-[35px] leading-tight'>Get Muni, <br />Your Residential<br /> AI Agent</h1>
-              <p className='font-normal text-white py-[20px] text-[16px]'>The intelligent AI agent built to streamline municipal services, reduce<br></br> administrative workloads, and deliver accurate information 24/7.</p>
-              <div className='w-full flex gap-4 items-center justify-start'>
-                <a className="" href="https://calendar.app.google/8KeUpeZEfLJQoKFT6" target="_blank">
-                  <button className='group bg-[#47816F] rounded-md my-[20px] lg:w-auto w-full cursor-pointer'>
-                    <div className='flex justify-between items-center gap-2 py-[10px] px-[15px] text-white font-semibold'>
-                      <p className='text-[12px] md:text-[16px] pr-[5px]'>Request a Demo</p>
-                      <Image src={arrow} />
-                    </div>
-                  </button>
+              <h1 className='font-semibold text-white md:text-[70px] text-[45px] leading-tight'>Get Muni, <br />Your Residential<br /> AI Agent</h1>
+              <p className='font-medium text-white py-[24px] text-lg'>The intelligent AI agent built to streamline municipal services, reduce administrative workloads, and deliver accurate information 24/7.</p>
+              <div className='w-full flex flex-col md:flex-row gap-4 items-center justify-start'>
+                <a href="https://calendar.app.google/8KeUpeZEfLJQoKFT6" target="_blank" className='group bg-[#47816F] flex items-center justify-center rounded-md lg:w-auto w-full cursor-pointer'>
+                  <p className='text-[12px] md:text-[16px] pr-[5px] flex gap-2 items-center py-[10px] px-[15px] text-white font-semibold'>Request a Demo <Image src={arrow} /></p>
                 </a>
-                <a className="" href="https://calendar.app.google/8KeUpeZEfLJQoKFT6" target="_blank">
-                  <button className='text-[12px] md:text-[16px] group bg-white py-[10px] px-[15px] rounded-md my-[20px] text-[#414651] font-semibold lg:w-auto w-full cursor-pointer'>
-                    How It Works
-                  </button>
+                <a href="https://calendar.app.google/8KeUpeZEfLJQoKFT6" target="_blank" className=' flex items-center justify-center text-[12px] md:text-[16px] group bg-white py-[10px] px-[15px] rounded-md text-[#414651] font-semibold lg:w-auto w-full cursor-pointer'>
+                  How It Works
                 </a>
               </div>
             </div>
           </div>
-          <div className='w-full flex items-center justify-center px-[15px]'>
-            <Image src={image1} className='w-full z-[6] ml-[120px] md:ml-[300px] lg:min-w-[472px] lg:mt-[100px] lg:ml-[100px]' />
+          <div className='w-full flex items-center justify-center px-[15px] pt-8 md:pt-0'>
+            <Image src={image1} className='w-full z-[6] ml-[280px] md:ml-[300px] lg:min-w-[472px] lg:mt-[100px] lg:ml-[100px]' />
             <div className='relative w-full min-w-[500px] lg:min-w-[899px]'>
               <div className='absolute left-[-150px] lg:left-[-180px] md:left-[-160px] bottom-[60px] lg:bottom-[120px] w-[80px] lg:w-[100px] h-[2px] border-t-2 border-dashed border-[#D5D7DA] z-[5] animate-fadeInDelayed'></div>
               <Image
@@ -57,13 +48,13 @@ const LandingPage = () => {
               />
               <Image
                 src={image2}
-                className='w-full z-[1] lg:min-w-[899px] ml-[-170px] md:ml-[-100px] lg:ml-[-100px] lg:mt-[-50px] lg:animate-slideLeft200 animate-slideLeft100'
+                className='w-full z-[1] lg:min-w-[899px] ml-[-80px] md:ml-[-100px] lg:ml-[-100px] lg:mt-[-50px] lg:animate-slideLeft200 animate-slideLeft100'
               />
             </div>
 
           </div>
         </div>
-        <section className='border-t-[1px] border-white border-opacity-[10%] mt-[50px] py-[40px] flex flex-col md:flex-row justify-between items-center w-full px-4 md:px-0 gap-[27px]'>
+        <section className='border-t-[1px] border-white border-opacity-[10%] mt-[4px] pt-[44px] pb-[54px] flex flex-col md:flex-row justify-between items-center w-full px-[20px] md:px-0 gap-[27px]'>
           <div className='flex items-end gap-2 flex-shrink-0'>
             <p className='font-medium text-white text-[12px] md:text-[12px] text-center md:text-left whitespace-nowrap'>
               Proudly showcasted at:

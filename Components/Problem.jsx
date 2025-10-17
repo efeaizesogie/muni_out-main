@@ -59,11 +59,11 @@ const Problem = () => {
         <div
             ref={sectionRef}
             id="introduction"
-            className="relative flex flex-col w-full ,d:min-h-screen items-center text-center overflow-visible py-20 lg:py-32 px-4"
+            className="relative flex flex-col w-full md:min-h-screen items-center text-center overflow-visible py-[140px] lg:py-32 px-[20px]"
 
         >
             {/* Circular Dashed Line with Badges */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 md:w-[80%] h-[590px] hidden mt-20 lg:block pointer-events-none z-10 overflow-visible ">
+            <div className="absolute top-[240px] md:top-1/2 left-1/2 -translate-x-1/2 md:-translate-y-1/2  w-full md:w-[80%] h-[360px] md:h-[590px] mt-20 block pointer-events-none z-10 overflow-visible">
                 {/* SVG Circle */}
                 <svg
                     className="absolute inset-0 w-full h-[90%] overflow-visible"
@@ -100,7 +100,7 @@ const Problem = () => {
                 {badges.map((badge, index) => (
                     <div
                         key={index}
-                        className={`absolute ${badge.position} pointer-events-auto`}
+                        className={`absolute hidden md:block ${badge.position} pointer-events-auto`}
                         style={{
                             opacity: isVisible ? 1 : 0,
                             transform: isVisible ? 'translateY(0px)' : 'translateY(20px)',
@@ -118,7 +118,7 @@ const Problem = () => {
             <div className="relative z-10 md:w-[80%] mx-auto overflow-visible ">
                 {/* Tag */}
                 <div
-                    className="text-base font-semibold text-[#006A4A] mb-6 tracking-tight lg:mt-24"
+                    className="text-lg font-semibold text-[#006A4A] mb-6 tracking-tight lg:mt-24"
 
                 >
                     The Problem

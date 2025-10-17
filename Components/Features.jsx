@@ -8,8 +8,8 @@ import TextSection from "@/constants/TextSection"
 
 const Features = () => {
     return (
-        <div className='pb-16'>
-            <div id="features" className='flex flex-col w-full h-full items-center pb-[85px] pt-[40px]'>
+        <div className='md:pb-16'>
+            <div id="features" className='flex flex-col w-full h-full items-center md:pb-[85px] pt-[40px]'>
 
                 <div className="text-center flex flex-col items-center relative my-16">
                     <TitleHead title="All-in-One Features " titleBreak="Tailored for Municipalities" tag="Features" />

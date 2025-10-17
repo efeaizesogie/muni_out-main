@@ -8,18 +8,31 @@ import multiplayer from '@/public/icons/multiplayer.svg';
 import productDash from "../public/images/product-dash.webp";
 import productDash1 from "../public/images/product-dash-1.webp";
 import productDash2 from "../public/images/product-dash-2.webp";
+import mobileSafari from "../public/icons/mobile-safari.png";
 import safari from "../public/icons/safari-toobar.svg";
 import { motion } from "framer-motion";
 import { useEffect, useState, useRef } from 'react';
 
-const SuiteCard = ({ icon, title, description, index }) => (
-    <div className={`border-l-4 ${index === 0 ? "border-l-[#C4E76A]" : "border-[#ffffff3a]"}`}>
-        <div className="flex flex-col gap-[14px] p-4 md:p-6 px-6 md:px-11 text-white items-start text-start">
-            <div className="flex gap-2 items-center">
+const SuiteCard = ({ icon, title, description, index, isExpanded, onClick }) => (
+    <div className={`md:border-l-4 border md:border-0 md:rounded-none ${index === 0 ? "border-l-[#C4E76A] border-[#C4E76A]" : "border-[#66706D]"} cursor-pointer md:cursor-default`} onClick={onClick}>
+        <div className="flex flex-col gap-[14px] p-6 px-6 md:px-11 text-white items-start text-start">
+            <div className="flex gap-[10px] items-center">
                 {icon}
                 <h3 className="font-semibold text-lg text-balance">{title}</h3>
             </div>
-            <p className="text-sm font-medium text-[#ffffffa4] text-pretty">{description}</p>
+            <p className={`text-sm font-medium text-[#ffffffa4] text-pretty md:block ${isExpanded ? 'block' : 'hidden'}`}>{description}</p>
+        </div>
+    </div>
+);
+
+const MobileSuiteCard = ({ icon, title, description, index, isExpanded, onClick }) => (
+    <div className={`border border-[#66706D] ${index === 0 ? "rounded-t-[12px]" : index === productSuiteData.length - 1 ? "rounded-b-[12px]" : ""} cursor-pointer md:cursor-default`} onClick={onClick}>
+        <div className="flex flex-col gap-[14px] p-6 px-6 md:px-11 text-white items-start text-start">
+            <div className="flex gap-[10px] items-center">
+                {icon}
+                <h3 className="font-semibold text-lg text-balance">{title}</h3>
+            </div>
+            <p className={`text-sm font-medium text-[#ffffffa4] text-pretty md:block ${isExpanded ? 'block' : 'hidden'}`}>{description}</p>
         </div>
     </div>
 );
@@ -28,6 +41,7 @@ const ProductSuite = () => {
     const [animationStarted, setAnimationStarted] = useState(false);
     const [imageStage, setImageStage] = useState(0); // 0 → first, 1 → second, 2 → third
     const [isMobile, setIsMobile] = useState(false);
+    const [expandedCard, setExpandedCard] = useState(0);
     const sectionRef = useRef(null);
 
     useEffect(() => {
@@ -84,17 +98,49 @@ const ProductSuite = () => {
                 priority
             />
 
-            <div className="mx-4 md:mx-auto md:w-[80%] pt-20 md:pt-32 lg:pt-48 pb-16 relative z-10">
+            <div className="mx-[20px] md:mx-auto md:w-[80%] pt-20 md:pt-32 lg:pt-48 relative z-10">
                 <div className="text-center flex flex-col items-center relative">
                     <TitleHead title="Unified Access to Muni’s" titleBreak="Full Suite Experience" tag="Product Suite" textWhite />
                 </div>
 
-                <div className="flex lg:flex-row flex-col w-full items-center justify-center relative mt-20">
+                {/* Mobile Layout */}
+                <div className="md:hidden flex flex-col w-full items-center mt-6">
+                    <div className="w-full mb-8">
+                        <div className="relative w-full overflow-hidden border border-white rounded-xl">
+                            <Image
+                                src={mobileSafari}
+                                alt="Product Dashboard"
+                                className="w-full h-auto  rounded-b-xl"
+                            />
+                            {/* <Image
+                                src={safari}
+                                alt="Safari Toolbar"
+                                className="absolute top-0 left-0 w-full h-auto z-10 rounded-t-xl"
+                            /> */}
+                        </div>
+                    </div>
+                    <div className="w-full">
+                        <div className="flex flex-col ">
+                            {productSuiteData.map((item, index) => (
+                                <MobileSuiteCard
+                                    key={index}
+                                    {...item}
+                                    index={index}
+                                    isExpanded={expandedCard === index}
+                                    onClick={() => setExpandedCard(expandedCard === index ? -1 : index)}
+                                />
+                            ))}
+                        </div>
+                    </div>
+                </div>
+
+                {/* Desktop Layout */}
+                <div className="hidden md:flex lg:flex-row flex-col w-full items-center justify-center relative mt-20">
                     {/* Left side */}
                     <div className="w-full lg:w-1/2 mb-8 lg:mb-0">
                         <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
                             {productSuiteData.map((item, index) => (
-                                <SuiteCard key={index} {...item} index={index} />
+                                <SuiteCard key={index} {...item} index={index} isExpanded={true} />
                             ))}
                         </div>
                     </div>
