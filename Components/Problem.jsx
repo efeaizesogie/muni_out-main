@@ -63,10 +63,10 @@ const Problem = () => {
 
         >
             {/* Circular Dashed Line with Badges */}
-            <div className="absolute top-[240px] md:top-1/2 left-1/2 -translate-x-1/2 md:-translate-y-1/2  w-full md:w-[80%] h-[360px] md:h-[590px] mt-20 block pointer-events-none z-10 overflow-visible">
+            <div className="absolute top-[100px] md:top-1/2 left-1/2 -translate-x-1/2 md:-translate-y-1/2  w-full md:w-[80%] h-[360px] md:h-[590px] mt-20 block pointer-events-none z-10 overflow-visible">
                 {/* SVG Circle */}
                 <svg
-                    className="absolute inset-0 w-full h-[90%] overflow-visible"
+                    className="absolute inset-0 w-full h-[90%] overflow-visible invisible md:visible "
                     style={{
                         opacity: isVisible ? 1 : 0,
                         transition: 'opacity 1s ease-out'
@@ -95,6 +95,40 @@ const Problem = () => {
                         </linearGradient>
                     </defs>
                 </svg>
+
+
+
+                <svg
+                    className="absolute inset-0 w-full h-[90%] overflow-visible md:invisible visible "
+                    style={{
+                        opacity: isVisible ? 1 : 0,
+                        transition: 'opacity 1s ease-out'
+                    }}
+                >
+                    <circle
+                        cx="50%"
+                        cy="50%"
+                        r="280"
+                        fill="none"
+                        stroke="url(#circleGradient1)"
+                        strokeWidth="20"
+                        strokeDasharray="1 24"
+                    />
+
+                    <defs>
+                        <filter id="filter0_f_791_477" x="0.878788" y="0.878788" width="740.242" height="740.242" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                            <feGaussianBlur stdDeviation="30.0606" result="effect1_foregroundBlur_791_477" />
+                        </filter>
+                        <linearGradient id="circleGradient1" x1="371" y1="61" x2="371" y2="681" gradientUnits="userSpaceOnUse">
+                            <stop offset="0.24811" stop-color="#006A4A" />
+                            <stop offset="0.600936" stop-color="#C4E76A" />
+                            <stop offset="1" stop-color="#F9F9F9" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+
 
                 {/* Badges */}
                 {badges.map((badge, index) => (

@@ -26,10 +26,10 @@ const TextSection = ({ headText, boxTitle, boxDesc, buttonText1, buttonText2, gr
                         {boxDesc}
                     </p>
                     <div className="flex gap-3 md:gap-4 justify-center items-center">
-                        <button className="bg-white text-[#414651] py-2.5 md:py-3 px-4 md:px-6 rounded-lg font-semibold hover:text-white hover:bg-[#2F443D] transition duration-300 hover:border-[#2F443D] border border-[#D5D7DA] shadow-sm w-auto">
+                        <button className="bg-white text-sm md:text-base text-[#414651] py-2.5 md:py-3 px-4 md:px-6 rounded-lg font-semibold hover:text-white hover:bg-[#2F443D] transition duration-300 hover:border-[#2F443D] border border-[#D5D7DA] shadow-sm w-auto">
                             {buttonText1}
                         </button>
-                        {buttonText2 && <button className="bg-white text-[#414651] py-2.5 md:py-3 px-4 md:px-6 rounded-lg font-semibold hover:text-white hover:bg-[#2F443D] transition duration-300 hover:border-[#2F443D] border border-[#D5D7DA] shadow-sm w-auto">
+                        {buttonText2 && <button className="bg-white text-sm md:text-base text-[#414651] py-2.5 md:py-3 px-4 md:px-6 rounded-lg font-semibold hover:text-white hover:bg-[#2F443D] transition duration-300 hover:border-[#2F443D] border border-[#D5D7DA] shadow-sm w-auto">
                             {buttonText2}
                         </button>}
                     </div>

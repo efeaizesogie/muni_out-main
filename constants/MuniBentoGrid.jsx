@@ -158,31 +158,31 @@ export default function MuniBentoGrid() {
                                 <div className="space-y-[14px] lg:pl-12 text-center">
                                     <div className="flex items-center gap-3.5">
                                         <CheckIconWhite />
-                                        <span className="text-sm font-semibold leading-[26px] text-white">
+                                        <span className="text-sm text-start flex font-semibold leading-[26px] text-white">
                                             End-to-end encryption protects all data.
                                         </span>
                                     </div>
                                     <div className="flex items-center gap-3.5">
                                         <CheckIconWhite />
-                                        <span className="text-sm font-semibold leading-[26px] text-white">
+                                        <span className="text-sm text-start flex font-semibold leading-[26px] text-white">
                                             Access limited to authorized users only.
                                         </span>
                                     </div>
                                     <div className="flex items-center gap-3.5">
                                         <CheckIconWhite />
-                                        <span className="text-sm font-semibold leading-[26px] text-white">
+                                        <span className="text-sm text-start flex font-semibold leading-[26px] text-white">
                                             Routine security audits and updates.
                                         </span>
                                     </div>
                                     <div className="flex items-center gap-3.5">
                                         <CheckIconWhite />
-                                        <span className="text-sm font-semibold leading-[26px] text-white">
+                                        <span className="text-sm  text-start flex  font-semibold leading-[26px] text-white">
                                             Fully compliant with privacy laws.
                                         </span>
                                     </div>
                                     <div className="flex items-center gap-3.5">
                                         <CheckIconWhite />
-                                        <span className="text-sm font-semibold leading-[26px] text-white">
+                                        <span className="text-sm text-start flex font-semibold leading-[26px] text-white">
                                             Fully compliant with privacy laws.
                                         </span>
                                     </div>

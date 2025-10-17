@@ -26,7 +26,7 @@ export default function FAQSection() {
               Frequently Asked Questions
             </h1>
 
-            <p className="text-sm font-medium leading-6 text-black md:max-w-[261px] px-[30px]">
+            <p className="text-sm font-medium leading-6 text-black lg:max-w-[261px] px-[30px]">
               Get in touch with our team—we're here to help you make the most of Muni
             </p>
 

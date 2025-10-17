@@ -26,7 +26,7 @@ const LandingPage = () => {
               <p className='flex items-center gap-2 font-semibold text-white text-[14px] bg-[#000000] bg-opacity-40 rounded-full py-[5px] px-[15px] mb-[34px]'>
                 <Image src={star} /> AI-Powered Solutions for Municipalities
               </p>
-              <h1 className='font-semibold text-white md:text-[70px] text-[45px] leading-tight'>Get Muni, <br />Your Residential<br /> AI Agent</h1>
+              <h1 className='font-semibold text-white md:text-[70px] text-[42px] leading-tight'>Get Muni, <br />Your Residential<br /> AI Agent</h1>
               <p className='font-medium text-white py-[24px] text-lg'>The intelligent AI agent built to streamline municipal services, reduce administrative workloads, and deliver accurate information 24/7.</p>
               <div className='w-full flex flex-col md:flex-row gap-4 items-center justify-start'>
                 <a href="https://calendar.app.google/8KeUpeZEfLJQoKFT6" target="_blank" className='group bg-[#47816F] flex items-center justify-center rounded-md lg:w-auto w-full cursor-pointer'>
