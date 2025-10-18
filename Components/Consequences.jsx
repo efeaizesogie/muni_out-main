@@ -12,8 +12,8 @@ const Consequences = () => {
     return (
         <div className='bg-[#F9F9F9] pb-16'>
             <div className='flex flex-col w-full items-center text-center overflow-hidden pt-10 md:pt-32 lg:pt-[140px] px-4 bg-[#F9F9F9]'>
-                <div className="flex justify-center">
-                    <Image src={headphone} alt={"headphone"} className="w-full md:max-w-[324px] h-auto shadow-[0_10.22px_17.51px_rgb(0_0_0_0_/_4)] md:rounded-b-[50%]" />
+                <div className="flex justify-center w-full">
+                    <Image src={headphone} alt={"headphone"} className="w-full  md:max-w-[324px] h-auto shadow-[0_10.22px_17.51px_rgb(0_0_0_0_/_4)] md:rounded-b-[50%]" />
                 </div>
 
                 <div className='relative w-full mb-20'>
