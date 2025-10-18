@@ -41,10 +41,10 @@ const LandingPage = () => {
           <div className='w-full flex items-center justify-center px-[15px] pt-8 md:pt-0'>
             <Image src={image1} className='w-full z-[6] ml-[280px] md:ml-[300px] lg:min-w-[472px] lg:mt-[100px] lg:ml-[100px]' />
             <div className='relative w-full min-w-[500px] lg:min-w-[899px]'>
-              <div className='absolute left-[-150px] lg:left-[-180px] md:left-[-160px] bottom-[60px] lg:bottom-[120px] w-[80px] lg:w-[100px] h-[2px] border-t-2 border-dashed border-[#D5D7DA] z-[5] animate-fadeInDelayed'></div>
+              <div className='absolute hidden md:block left-[-150px] lg:left-[-180px] md:left-[-160px] bottom-[60px] lg:bottom-[120px] w-[80px] lg:w-[100px] h-[2px] border-t-2 border-dashed border-[#D5D7DA] z-[5] animate-fadeInDelayed'></div>
               <Image
                 src={heroNotif}
-                className='absolute left-[-100px] lg:left-[-80px] md:left-[-82px] bottom-8 lg:bottom-20 z-10 max-w-[200px] lg:max-w-[252px] animate-fadeInDelayed'
+                className='absolute hidden md:block left-[-100px] lg:left-[-80px] md:left-[-82px] bottom-8 lg:bottom-20 z-10 max-w-[200px] lg:max-w-[252px] animate-fadeInDelayed'
               />
               <Image
                 src={image2}

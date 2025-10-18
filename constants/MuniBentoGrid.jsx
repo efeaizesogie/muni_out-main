@@ -133,7 +133,7 @@ export default function MuniBentoGrid() {
 
                     {/* Card 3: Keeping Conversations And Data Secure - Full Width */}
                     <div
-                        className="relative overflow-hidden rounded-[20px] border border-gray-200 p-6 md:p-11 lg:col-span-2"
+                        className="relative overflow-hidden rounded-[20px] border border-gray-200 px-[20px] py-6 md:p-11 lg:col-span-2"
                         style={{
                             background: '#000000'
                         }}
@@ -158,31 +158,31 @@ export default function MuniBentoGrid() {
                                 <div className="space-y-[14px] lg:pl-12 text-center">
                                     <div className="flex items-center gap-3.5">
                                         <CheckIconWhite />
-                                        <span className="text-sm text-start flex font-semibold leading-[26px] text-white">
+                                        <span className="text-[13.5px] text-start flex font-semibold leading-[26px] text-white">
                                             End-to-end encryption protects all data.
                                         </span>
                                     </div>
                                     <div className="flex items-center gap-3.5">
                                         <CheckIconWhite />
-                                        <span className="text-sm text-start flex font-semibold leading-[26px] text-white">
+                                        <span className="text-[13.5px] text-start flex font-semibold leading-[26px] text-white">
                                             Access limited to authorized users only.
                                         </span>
                                     </div>
                                     <div className="flex items-center gap-3.5">
                                         <CheckIconWhite />
-                                        <span className="text-sm text-start flex font-semibold leading-[26px] text-white">
+                                        <span className="text-[13.5px] text-start flex font-semibold leading-[26px] text-white">
                                             Routine security audits and updates.
                                         </span>
                                     </div>
                                     <div className="flex items-center gap-3.5">
                                         <CheckIconWhite />
-                                        <span className="text-sm  text-start flex  font-semibold leading-[26px] text-white">
+                                        <span className="text-[13.5px]  text-start flex  font-semibold leading-[26px] text-white">
                                             Fully compliant with privacy laws.
                                         </span>
                                     </div>
                                     <div className="flex items-center gap-3.5">
                                         <CheckIconWhite />
-                                        <span className="text-sm text-start flex font-semibold leading-[26px] text-white">
+                                        <span className="text-[13.5px] text-start flex font-semibold leading-[26px] text-white">
                                             Fully compliant with privacy laws.
                                         </span>
                                     </div>

@@ -20,13 +20,13 @@ export default function FAQSection() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
 
           {/* Left Column - Title and CTA */}
-          <div className=" px-9 mx-auto text-center md:col-span-4 lg:col-span-3 space-y-4  md:space-y-6 ">
+          <div className=" px-9 md:px-0 mx-auto text-center md:text-start md:col-span-4 lg:col-span-3 space-y-4  md:space-y-6 ">
 
             <h1 className=" text-[34px] md:text-[54px] font-semibold md:leading-[64px] tracking-tight text-black">
               Frequently Asked Questions
             </h1>
 
-            <p className="text-sm font-medium leading-6 text-black lg:max-w-[261px] px-[30px]">
+            <p className="text-sm font-medium leading-6 text-black lg:max-w-[261px] px-[30px] md:px-0">
               Get in touch with our team—we're here to help you make the most of Muni
             </p>
 
@@ -41,8 +41,8 @@ export default function FAQSection() {
           </div> */}
 
           {/* Right Column - FAQ Items */}
-          <div className="md-col-span-8 lg:col-span-9 space-y-6 md:space-y-12 border-t border-b lg:border-l border-[#EBEBEB] lg:pl-16">
-            <div className=" border-t border-b space-y-6 md:space-y-12 border-[#EBEBEB] py-11 md:py-0">
+          <div className="md-col-span-8 lg:col-span-9 space-y-6 md:space-y-12 border-t md:border-t-0 md:border-b-0 lg:border-l border-[#EBEBEB] lg:pl-16">
+            <div className=" border-t border-b md:border-t-0 md:border-b-0 space-y-6 md:space-y-12 border-[#EBEBEB] py-11 md:py-0">
               {faqs.map((faq, index) => (
                 <div
                   key={index}

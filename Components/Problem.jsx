@@ -63,7 +63,7 @@ const Problem = () => {
 
         >
             {/* Circular Dashed Line with Badges */}
-            <div className="absolute top-[100px] md:top-1/2 left-1/2 -translate-x-1/2 md:-translate-y-1/2  w-full md:w-[80%] h-[360px] md:h-[590px] mt-20 block pointer-events-none z-10 overflow-visible">
+            <div className="absolute top-[100px] md:top-1/2 left-1/2 -translate-x-1/2 md:-translate-y-1/2  w-full md:w-[80%] h-[340px] md:h-[590px] mt-20 block pointer-events-none z-10 overflow-visible">
                 {/* SVG Circle */}
                 <svg
                     className="absolute inset-0 w-full h-[90%] overflow-visible invisible md:visible "
@@ -91,7 +91,7 @@ const Problem = () => {
                         <linearGradient id="circleGradient1" x1="371" y1="61" x2="371" y2="681" gradientUnits="userSpaceOnUse">
                             <stop offset="0.24811" stop-color="#006A4A" />
                             <stop offset="0.600936" stop-color="#C4E76A" />
-                            <stop offset="1" stop-color="#F9F9F9" />
+                            <stop offset="1" stop-color="#F9F9F911" />
                         </linearGradient>
                     </defs>
                 </svg>
