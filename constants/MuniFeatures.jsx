@@ -1,9 +1,9 @@
-import serviceRequestImage from '../public/images/service-request.png';
-import knowledgeBaseImage from '../public/images/knowledgeBase.png';
-import calenderImg from '../public/images/calender.png';
-import balanceImg from '../public/images/balance.png';
-import relationshipImg from '../public/images/relationshipImg.png';
-import notificationImg from '../public/images/notificationImg.png';
+import serviceRequestImage from '../public/images/service-request.svg';
+import knowledgeBaseImage from '../public/images/knowledgeBase.svg';
+import calenderImg from '../public/images/calender.svg';
+import balanceImg from '../public/images/balance.svg';
+import relationshipImg from '../public/images/relationshipImg.svg';
+import notificationImg from '../public/images/notificationImg.svg';
 import Image from 'next/image';
 
 export default function MuniFeatures() {

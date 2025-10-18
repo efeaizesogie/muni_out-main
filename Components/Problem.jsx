@@ -78,7 +78,7 @@ const Problem = () => {
                         r="420"
                         fill="none"
                         stroke="url(#circleGradient1)"
-                        strokeWidth="20"
+                        strokeWidth="19"
                         strokeDasharray="1 24"
                     />
 
@@ -91,7 +91,7 @@ const Problem = () => {
                         <linearGradient id="circleGradient1" x1="371" y1="61" x2="371" y2="681" gradientUnits="userSpaceOnUse">
                             <stop offset="0.24811" stop-color="#006A4A" />
                             <stop offset="0.600936" stop-color="#C4E76A" />
-                            <stop offset="1" stop-color="#F9F9F911" />
+                            <stop offset="1" stop-color="#F9F9F9" />
                         </linearGradient>
                     </defs>
                 </svg>
@@ -110,7 +110,7 @@ const Problem = () => {
                         cy="50%"
                         r="280"
                         fill="none"
-                        stroke="url(#circleGradient1)"
+                        stroke="url(#mobileCircleGradient)"
                         strokeWidth="20"
                         strokeDasharray="1 24"
                     />
@@ -121,10 +121,11 @@ const Problem = () => {
                             <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
                             <feGaussianBlur stdDeviation="30.0606" result="effect1_foregroundBlur_791_477" />
                         </filter>
-                        <linearGradient id="circleGradient1" x1="371" y1="61" x2="371" y2="681" gradientUnits="userSpaceOnUse">
-                            <stop offset="0.24811" stop-color="#006A4A" />
-                            <stop offset="0.600936" stop-color="#C4E76A" />
-                            <stop offset="1" stop-color="#F9F9F9" />
+                        <linearGradient id="mobileCircleGradient" x1="371" y1="61" x2="371" y2="681" gradientUnits="userSpaceOnUse">
+                            <stop offset="0.24811" stop-color="#006A4A" stop-opacity="1" />
+                            <stop offset="0.600936" stop-color="#C4E76A" stop-opacity="0.3" />
+                            <stop offset="0.75" stop-color="#F9F9F9" stop-opacity="0.3" />
+                            <stop offset="0.8" stop-color="#F9F9F9" stop-opacity="0.1" />
                         </linearGradient>
                     </defs>
                 </svg>
