@@ -1,25 +1,20 @@
-import Problem from "@/Components/Problem";
+import Problem from "@/src/components/home/Problem";
 
 {/*
-import Banner from "@/Components/Banner"*/}
-import Features from "@/Components/Features"
-import FeaturesCarousel from "@/Components/FeaturesCarousel"
-import Footer from "@/Components/Footer"
-import Footerbar from "@/Components/Footerbar"
-import Introduction from "@/Components/Introduction"
-import LandingPage from "@/Components/LandingPage"
-import Navbar from "@/Components/Navbar"
-import OnBoarding from "@/Components/OnBoarding"
-import Questions from "@/Components/Questions"
-import Consequences from "@/Components/Consequences";
-import MunicipalitiesInfographic from "@/constants/Infographic";
+import Banner from "@/src/components/shared/Banner"*/}
+import Features from "@/src/components/home/Features"
+import FeaturesCarousel from "@/src/components/home/FeaturesCarousel"
+import Footer from "@/src/components/shared/Footer"
+import LandingPage from "@/src/components/home/LandingPage"
+import Navbar from "@/src/components/shared/Navbar"
+import Consequences from "@/src/components/home/Consequences";
 import React from "react";
-import Solution from "@/Components/Solution";
-import ProductSuite from "@/Components/ProductSuite";
-import Resources from "@/Components/Resources";
-import MuniBentoGrid from "@/constants/MuniBentoGrid";
-import FAQSection from "@/Components/Questions";
-import TestimonialSection from "@/Components/TestimonialSection";
+import Solution from "@/src/components/home/Solution";
+import ProductSuite from "@/src/components/home/ProductSuite";
+import Resources from "@/src/components/home/Resources";
+import MuniBentoGrid from "@/src/constants/MuniBentoGrid";
+import FAQSection from "@/src/components/home/Questions";
+import TestimonialSection from "@/src/components/home/TestimonialSection";
 
 export const metadata = {
   title: "Muni: The Ultimate Municipal Customer Service Experience",
@@ -70,3 +65,5 @@ const page = () => {
 }
 
 export default page
+
+
