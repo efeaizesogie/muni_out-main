@@ -26,7 +26,7 @@ export default function AdminDashboard() {
   return (
     <div className="min-h-screen bg-gray-50 overflow-hidden">
       <Navbar />
-      <Header heading="Admin Dashboard" para={<>Streamline workflows, monitor progress, and make data-driven <br /> decisions—all from one intuitive Muni dashboard.</>} />
+      <Header heading="Admin Dashboard" para={<>Streamline workflows, monitor progress, and make data-driven <br className='hidden md:flex' /> decisions—all from one intuitive Muni dashboard.</>} />
       <AdminDashboardBenefit />
 
       <ResidentSection
