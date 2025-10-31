@@ -23,64 +23,61 @@ const CheckIcon = () => (
 
 // Service Ticket Section Component
 const ServiceTicketSection = ({ tagline, heading, description, imagePosition, img, backgroundColor, imgCut, hasFeatures, features, imgCutRight, hasStar, imgCutLeft, imgWidth, imgHeight }) => {
-    const contentOrder = imagePosition === "right" ? "lg:flex-row-reverse" : "lg:flex-row";
-
     return (
         <section
-            className="py-[40px] md:py-[100px]"
+            className="py-[30px] md:py-[60px] lg:py-[100px]"
             style={{ backgroundColor }}
         >
-            <div className="w-full  md:w-[80%] px-[20px] md:px-0 md:mx-auto">
-                <div className={`flex flex-col ${contentOrder} items-center justify-between gap-[40px] md:gap-[80px] lg:gap-[120px] xl:gap-[140px]`}>
+            <div className="w-full md:w-[80%] px-5 md:mx-auto md:px-0">
+                <div className="flex flex-col md:flex-row items-start md:items-center justify-start gap-[30px] md:gap-[60px] lg:gap-[240px]">
                     {/* Tickets Preview Card */}
-                    <div className="w-full lg:w-[450px] xl:w-[500px] lg:flex-shrink-0">
+                    <div className={`w-full max-w-[400px] sm:max-w-[450px] lg:max-w-[450px] xl:max-w-[500px] lg:flex-shrink-0 ${imagePosition === "right" ? "md:order-2" : "md:order-1"}`}>
                         <div
-                            className="w-full h-auto md:h-[380px] lg:h-[432px] rounded-[20px] p-[30px] md:p-[40px] border border-[#e9eaeb2a] lg:p-[50px] overflow-hidden relative"
+                            className="w-full min-h-[280px] sm:min-h-[320px] md:min-h-[380px] lg:min-h-[432px] rounded-[16px] md:rounded-[20px] p-[20px] sm:p-[30px] md:p-[40px] lg:p-[50px] border border-[#e9eaeb2a] overflow-hidden relative"
                             style={{
                                 background: 'radial-gradient(96.62% 66.13% at 49.95% 91.44%, #EBEFE4 25%, #Ffffff 100%)'
                             }}
                         >
-                            <div className={`${imgCut ? `absolute bottom-0 left-0 ` : imgCutRight ? `absolute -right-10 -mr-4 ` : imgCutLeft ? `absolute right-0 bottom-0` : `absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ${imgWidth} ${imgHeight}`} flex items-center justify-center`}>
-                                <Image src={img} alt="Service Ticket 1" width={600} height={500} className="w-full h-full object-contain rounded-[10px]" />
+                            <div className={`${imgCut ? 'absolute bottom-0 left-0 w-[280px] sm:w-[320px] md:w-[350px] h-[220px] sm:h-[250px] md:h-[280px]' : imgCutRight ? 'absolute -right-6 sm:-right-8 md:-right-10 -mr-2 sm:-mr-3 md:-mr-4 w-[280px] sm:w-[320px] md:w-[350px] h-[220px] sm:h-[250px] md:h-[280px]' : imgCutLeft ? 'absolute right-0 bottom-0 w-[280px] sm:w-[320px] md:w-[350px] h-[220px] sm:h-[250px] md:h-[280px]' : `absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[260px] sm:w-[300px] md:w-[320px] lg:${imgWidth || 'w-[350px]'} h-[200px] sm:h-[230px] md:h-[250px] lg:${imgHeight || 'h-[280px]'}`} flex items-center justify-center`}>
+                                <Image src={img} alt="Service Ticket 1" width={600} height={500} className="w-full h-full object-contain rounded-[8px] md:rounded-[10px]" />
                             </div>
                         </div>
                     </div>
 
                     {/* Text Content */}
-                    <div className="flex flex-col gap-[20px] md:gap-[24px] w-full lg:w-[450px] xl:w-[484px]">
+                    <div className={`flex flex-col gap-[16px] md:gap-[20px] lg:gap-[24px] w-full md:max-w-[500px] lg:max-w-[450px] xl:max-w-[484px] ${imagePosition === "right" ? "md:order-1" : "md:order-2"}`}>
 
-                        {hasStar && <p className='flex items-center w-fit gap-2 font-semibold text-[#1B312A] text-[14px] bg-[#f9f9f9] border border-[#E9EAEB] bg-opacity-40 rounded-full py-[5px] px-[15px]'>
-                            <Image src={star} /> AI-Powered
+                        {hasStar && <p className='flex items-center w-fit gap-2 font-semibold text-[#1B312A] text-[12px] sm:text-[14px] bg-[#f9f9f9] border border-[#E9EAEB] bg-opacity-40 rounded-full py-[4px] sm:py-[5px] px-[12px] sm:px-[15px]'>
+                            <Image src={star} width={16} height={16} alt="Star" /> AI-Powered
                         </p>}
 
                         {/* Tagline */}
                         {tagline && <div
-                            className="font-semibold text-[14px] md:text-[16px] leading-[26px]"
+                            className="font-semibold text-[12px] sm:text-[14px] md:text-[16px] leading-[22px] md:leading-[26px]"
                             style={{ color: "#006A4A" }}
                         >
                             {tagline}
                         </div>}
 
-
                         {/* Heading */}
-                        <h2 className="font-semibold text-[28px] sm:text-[32px] md:text-[34px] leading-[1.3] tracking-[-0.01em] text-black w-[80%]">
+                        <h2 className="font-semibold text-[24px] sm:text-[28px] md:text-[32px] lg:text-[34px] leading-[1.2] sm:leading-[1.3] tracking-[-0.01em] text-black">
                             {heading}
                         </h2>
 
                         {/* Description */}
-                        <p className="text-[13px] md:text-[14px] leading-[22px] md:leading-[24px] font-medium text-black opacity-70">
+                        <p className="text-[12px] sm:text-[13px] md:text-[14px] leading-[20px] sm:leading-[22px] md:leading-[24px] font-medium text-black opacity-70">
                             {description}
                         </p>
 
                         {hasFeatures && features && (
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-[8px] md:gap-[10px] self-stretch">
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-[6px] sm:gap-[8px] md:gap-[10px] self-stretch">
                                 {features.map((feature, index) => (
                                     <div
                                         key={index}
-                                        className="flex flex-row items-center gap-[12px] md:gap-[16px] shrink-0"
+                                        className="flex flex-row items-start gap-[10px] sm:gap-[12px] md:gap-[16px]"
                                     >
-                                        <CheckIcon className="shrink-0" />
-                                        <span className="font-medium text-[13px] md:text-[14px] leading-[22px] md:leading-[26px] text-black">
+                                        <CheckIcon className="shrink-0 mt-1" />
+                                        <span className="font-medium text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] leading-[18px] sm:leading-[20px] md:leading-[22px] lg:leading-[26px] text-black">
                                             {feature}
                                         </span>
                                     </div>
