@@ -1,7 +1,7 @@
 "use client";
 
-import Navbar from "@/Components/Navbar";
-import Footerbar from "@/Components/Footerbar";
+import Footerbar from "@/src/components/shared/Footerbar";
+import Navbar from "@/src/components/shared/Navbar";
 
 export default function PrivacyPolicy() {
   return (

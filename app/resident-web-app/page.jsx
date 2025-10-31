@@ -30,7 +30,7 @@ export default function ResidentWebApp() {
       <ResidentSection
         category="Simple for Everyone"
         title="Find What You Need
-Hassle-Free"
+                Hassle-Free"
         description="Navigating the web app is intuitive and accessible, making it easy for everyone—including seniors—to get the help they need in just a few steps."
         features={[
           "Straightforward menus guide you directly to common tasks",
@@ -57,7 +57,7 @@ Hassle-Free"
         heading={<>Powerful Features <br />
           Simple Experience</>}
         description="Residents Enjoy instant access to a range of tools designed to make 
-city interactions seamless and stress-free."
+          city interactions seamless and stress-free."
         backgroundColor="#FFFFFF"
         accentColor="#006A4A"
       />
@@ -65,10 +65,11 @@ city interactions seamless and stress-free."
       <ServiceTicketSection
         tagline="Service Tickets"
         heading="Quickly Report Any 
-Issue Online"
+          Issue Online"
         description="Whether it's a maintenance concern or a service request, residents can submit and track their needs directly through the web app. The streamlined workflow keeps everyone updated at every step, provides helpful notifications, and enables faster, more transparent resolutions—so nothing ever gets lost or overlooked."
         imagePosition="left"
         img={reportQuick}
+        imgCutLeft
         backgroundColor={"#FFFFFF"} />
 
       <AdminCarousel />
@@ -76,7 +77,7 @@ Issue Online"
       <ServiceTicketSection
         tagline="Payment"
         heading="Make City Payments 
-Online—Anytime, Anywhere"
+        Online—Anytime, Anywhere"
         description="Take care of bills, fees, permits, parking, and property taxes quickly and safely through the web app. Choose your preferred payment method, set up reminders or auto-pay, and access your receipts or transaction history whenever you need—all with security and peace of mind built in."
         imagePosition="right"
         imgCutRight
