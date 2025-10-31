@@ -22,7 +22,7 @@ const CheckIcon = () => (
 );
 
 // Service Ticket Section Component
-const ServiceTicketSection = ({ tagline, heading, description, imagePosition, img, backgroundColor, imgCut, hasFeatures, features, imgCutRight, hasStar }) => {
+const ServiceTicketSection = ({ tagline, heading, description, imagePosition, img, backgroundColor, imgCut, hasFeatures, features, imgCutRight, hasStar, imgCutLeft }) => {
     const contentOrder = imagePosition === "right" ? "lg:flex-row-reverse" : "lg:flex-row";
 
     return (
@@ -40,7 +40,7 @@ const ServiceTicketSection = ({ tagline, heading, description, imagePosition, im
                                 background: 'radial-gradient(96.62% 66.13% at 49.95% 91.44%, #EBEFE4 25%, #Ffffff 100%)'
                             }}
                         >
-                            <div className={`flex gap-[6px]  h-auto mx-auto items-center justify-center ${imgCut && 'absolute bottom-0 left-0'} ${imgCutRight && 'absolute -right-10 -mr-4'}`}>
+                            <div className={`flex gap-[6px]  h-auto mx-auto items-center justify-center ${imgCut && 'absolute bottom-0 left-0'} ${imgCutRight && 'absolute -right-10 -mr-4'} ${imgCutLeft && 'absolute right-0 bottom-0'}`}>
                                 <Image src={img} alt="Service Ticket 1" width={400} height={300} className={`w-full object-cover rounded-[10px] `} />
                             </div>
                         </div>
