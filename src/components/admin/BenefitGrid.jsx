@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 const BenefitGrid = ({ benefits, benefitsFor }) => {
@@ -17,7 +18,7 @@ const BenefitGrid = ({ benefits, benefitsFor }) => {
                             className="flex flex-col gap-[12px] lg:gap-[14px] p-[20px] lg:p-[24px] bg-white border-r border-b border-[#E9EAEB] last:border-r-0 lg:[&:nth-child(3)]:border-r-0 [&:nth-last-child(-n+2)]:border-b-0 lg:[&:nth-last-child(-n+3)]:border-b-0"
                         >
                             <div className="w-[22px] h-[22px] lg:w-[24px] lg:h-[24px]">
-                                <img src={benefit.icon} alt={benefit.title} className="w-full h-full" />
+                                <Image src={benefit.icon} width={24} height={24} alt={benefit.title} className="w-full h-full" />
                             </div>
                             <h4 className="font-semibold text-[14px] lg:text-[16px] leading-[20px] lg:leading-[22px] tracking-[-0.01em] text-black">
                                 {benefit.title}
@@ -37,7 +38,7 @@ const BenefitGrid = ({ benefits, benefitsFor }) => {
                             className="flex flex-col gap-[12px] p-[20px] bg-white border-b border-[#E9EAEB] last:border-b-0"
                         >
                             <div className="w-[22px] h-[22px]">
-                                {benefit.icon}
+                                <Image src={benefit.icon} width={24} height={24} alt={benefit.title} className="w-full h-full" />
                             </div>
                             <h4 className="font-semibold text-[14px] leading-[20px] tracking-[-0.01em] text-black">
                                 {benefit.title}
