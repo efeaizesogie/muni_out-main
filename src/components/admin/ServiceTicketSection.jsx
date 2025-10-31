@@ -22,7 +22,7 @@ const CheckIcon = () => (
 );
 
 // Service Ticket Section Component
-const ServiceTicketSection = ({ tagline, heading, description, imagePosition, img, backgroundColor, imgCut, hasFeatures, features, imgCutRight, hasStar, imgCutLeft }) => {
+const ServiceTicketSection = ({ tagline, heading, description, imagePosition, img, backgroundColor, imgCut, hasFeatures, features, imgCutRight, hasStar, imgCutLeft, imgWidth, imgHeight }) => {
     const contentOrder = imagePosition === "right" ? "lg:flex-row-reverse" : "lg:flex-row";
 
     return (
@@ -30,7 +30,7 @@ const ServiceTicketSection = ({ tagline, heading, description, imagePosition, im
             className="py-[40px] md:py-[100px]"
             style={{ backgroundColor }}
         >
-            <div className="w-full w-full md:w-[80%] px-[20px] md:px-0 md:mx-auto">
+            <div className="w-full  md:w-[80%] px-[20px] md:px-0 md:mx-auto">
                 <div className={`flex flex-col ${contentOrder} items-center justify-between gap-[40px] md:gap-[80px] lg:gap-[120px] xl:gap-[140px]`}>
                     {/* Tickets Preview Card */}
                     <div className="w-full lg:w-[450px] xl:w-[500px] lg:flex-shrink-0">
@@ -40,8 +40,8 @@ const ServiceTicketSection = ({ tagline, heading, description, imagePosition, im
                                 background: 'radial-gradient(96.62% 66.13% at 49.95% 91.44%, #EBEFE4 25%, #Ffffff 100%)'
                             }}
                         >
-                            <div className={`flex gap-[6px] h-auto mx-auto items-center justify-center ${imgCut ? 'absolute bottom-0 left-0' : imgCutRight ? 'absolute -right-10 -mr-4' : imgCutLeft ? 'absolute right-0 bottom-0' : ''}`}>
-                                <Image src={img} alt="Service Ticket 1" width={400} height={300} className="w-full object-cover rounded-[10px]" />
+                            <div className={`${imgCut ? `absolute bottom-0 left-0 ` : imgCutRight ? `absolute -right-10 -mr-4 ` : imgCutLeft ? `absolute right-0 bottom-0` : `absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 ${imgWidth} ${imgHeight}`} flex items-center justify-center`}>
+                                <Image src={img} alt="Service Ticket 1" width={600} height={500} className="w-full h-full object-contain rounded-[10px]" />
                             </div>
                         </div>
                     </div>
