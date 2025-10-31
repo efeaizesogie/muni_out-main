@@ -4,7 +4,7 @@ import FaqCategoryScroll from "@/Components/FaqCategoryScroll";
 import Footerbar from "@/Components/Footerbar";
 import GenericFaq from "@/Components/GenericFaq";
 import Navbar from "@/Components/Navbar";
-import { functionalityFaqItems, pricingFaqItems, processFaqItems, securityFaqItems, technologyFaqItems } from "@/constants/faq";
+import { functionalityFaqItems, pricingFaqItems, processFaqItems, securityFaqItems, technologyFaqItems } from "@/src/constants/faq";
 import { useMediaQuery } from "@/hooks/useMediaQuery";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useInView } from "react-intersection-observer";
@@ -101,3 +101,4 @@ export default function Page() {
     </div>
   )
 }
+
