@@ -12,9 +12,9 @@ const Header = ({ heading, para }) => {
             }}>
 
 
-            <div className='flex flex-col items-center z-10 py-10 md:pb-20 md:pt-[150px] w-full lg:w-[80%] mx-[20px] lg:mx-auto h-full'>
-                <h1 className='font-semibold text-white md:text-[70px] text-[42px] leading-tight'>{heading}</h1>
-                <p className='font-medium text-white py-[24px] text-lg text-center'>{para}</p>
+            <div className='flex flex-col items-center z-10 py-10 md:pb-20 pt-[100px] md:pt-[150px] w-full lg:w-[80%] mx-[20px] lg:mx-auto h-full'>
+                <h1 className='font-semibold text-white md:text-[70px] text-[42px] leading-tight '>{heading}</h1>
+                <p className='font-medium text-white py-[12px] md:py-[24px] text-lg text-center mx-5'>{para}</p>
                 <div className='mb-[85px]'>
                     <Button />
                 </div>

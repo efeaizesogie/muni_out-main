@@ -22,7 +22,7 @@ export default function ResidentMobileApp() {
   return (
     <div className="min-h-screen bg-gray-50 overflow-hidden">
       <Navbar />
-      <Header heading="Mobile App for Residents" para={<>Residents can stay connected to their city—report issues, track updates, and access local <br /> services anytime, anywhere, right from their phone.</>} />
+      <Header heading="Mobile App for Residents" para={<>Residents can stay connected to their city—report issues, track updates, and access local <br className='hidden md:flex' /> services anytime, anywhere, right from their phone.</>} />
       <MobileAppBenefits />
 
       <ResidentSection

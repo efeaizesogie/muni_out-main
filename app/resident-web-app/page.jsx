@@ -23,7 +23,7 @@ export default function ResidentWebApp() {
   return (
     <div className="min-h-screen bg-gray-50 overflow-hidden">
       <Navbar />
-      <Header heading="Web App for Residents" para={<>Residents can connect effortlessly—access services, get updates, <br />
+      <Header heading="Web App for Residents" para={<>Residents can connect effortlessly—access services, get updates, <br className='hidden md:flex' />
         and engage with their community all in one place.</>} />
       <WebAppBenefits />
 
