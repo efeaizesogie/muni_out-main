@@ -1,13 +1,13 @@
 "use client"
 
-import FaqCategoryScroll from "@/Components/FaqCategoryScroll";
-import Footerbar from "@/Components/Footerbar";
-import GenericFaq from "@/Components/GenericFaq";
-import Navbar from "@/Components/Navbar";
 import { functionalityFaqItems, pricingFaqItems, processFaqItems, securityFaqItems, technologyFaqItems } from "@/src/constants/faq";
-import { useMediaQuery } from "@/hooks/useMediaQuery";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useInView } from "react-intersection-observer";
+import FaqCategoryScroll from "@/src/components/shared/FaqCategoryScroll";
+import GenericFaq from "@/src/components/shared/GenericFaq";
+import Navbar from "@/src/components/shared/Navbar";
+import Footerbar from "@/src/components/shared/Footerbar";
+import { useMediaQuery } from "@/src/hooks/useMediaQuery";
 
 export default function Page() {
   const [activeCategory, setActiveCategory] = useState("Functionality");

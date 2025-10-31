@@ -24,16 +24,16 @@ const ResidentSection = ({ category, title, description, features, imageSrc, ima
     return (
         <section className="flex flex-col bg-white w-full py-6 md:py-[60px] lg:py-[100px]">
             <div className="flex flex-col lg:flex-row items-center gap-6 md:gap-[60px] lg:gap-[100px] w-full md:w-[80%] mx-[20px] md:mx-auto">
-                <div className="w-full lg:w-[50%] h-[250px] sm:h-[300px] md:h-[400px] lg:h-[512px] relative">
+                <div className="w-full lg:w-[50%] relative">
                     {/* Browser Frame */}
-                    <div className="w-full h-full ml-[-30%] rounded-[8px] md:rounded-[10px] shadow-[0px_20px_30px_rgba(0,0,0,0.04)] md:shadow-[0px_44.6383px_52.9047px_rgba(0,0,0,0.04)] overflow-hidden">
+                    <div className="w-full max-w-[500px] md:max-w-[600px] lg:max-w-[720px] ml-0 lg:ml-[-30%] rounded-[8px] md:rounded-[10px]">
                         {/* Dashboard Content */}
                         <Image
                             src={imageSrc}
                             alt={imageAlt}
                             width={720}
-                            height={512}
-                            className=" object-contain"
+                            height={400}
+                            className="w-full h-auto object-contain"
                         />
                     </div>
                 </div>
