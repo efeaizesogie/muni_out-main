@@ -109,6 +109,7 @@ Real-Time Schedule Alerts"
         backgroundColor={"#FFF"}
         features={securityFeatures}
         hasStar
+        imgWidth={"w-[300px]"} imgHeight={"h-[270px]"}
         hasFeatures />
 
       <div className='mb-10 md:mb-24 '>

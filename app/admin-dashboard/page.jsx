@@ -69,7 +69,9 @@ export default function AdminDashboard() {
         description="With Muni's service ticket system, your team spends less time chasing down issues and more time delivering results. Quickly prioritize and assign tickets, monitor real-time progress, and ensure nothing slips through the cracks. The result? Faster response times that boost resident satisfaction and trust in local government. Transparent, organized workflows mean your staff can collaborate efficiently, solve problems swiftly, and demonstrate accountability at every step."
         imagePosition="left"
         img={resolveRes}
-        backgroundColor={"#FFFFFF"} />
+        backgroundColor={"#FFFFFF"}
+        imgWidth={"md:w-[500px]"} imgHeight={"md:h-[350px]"} />
+
 
       <AdminCarousel />
 
@@ -80,7 +82,8 @@ export default function AdminDashboard() {
         description="Muni’s workflow automation transforms how service tickets move through your municipality—from submission to resolution. Automated routing ensures each ticket lands with the right team based on issue type, priority, or location, eliminating delays caused by manual assignment. Built-in triggers send reminders and escalate unresolved tickets to keep workflows on track and prevent backlog. Notifications keep staff and residents informed every step of the way, boosting transparency and satisfaction."
         imagePosition="right"
         img={streamline}
-        backgroundColor={"#F9F9F9"} />
+        backgroundColor={"#F9F9F9"}
+        imgWidth={"md:w-[500px]"} imgHeight={"md:h-[350px]"} />
 
       <ServiceTicketSection
         tagline="Curbside Collection Management"
