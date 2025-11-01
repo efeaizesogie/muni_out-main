@@ -127,11 +127,11 @@ const ServiceTicketSection = ({ tagline, heading, description, imagePosition, im
             style={{ backgroundColor }}
         >
             <div className="w-full md:w-[80%] px-5 md:mx-auto md:px-0">
-                <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-[30px] md:gap-[60px] lg:gap-[140px] max-w-[1124px]">
+                <div className="flex flex-col md:flex-row items-start md:items-center  gap-[30px] md:gap-[60px] lg:gap-[140px] max-w-[1124px]">
                     {/* Tickets Preview Card */}
-                    <div className={`w-full max-w-[400px] sm:max-w-[450px] lg:max-w-[450px] xl:max-w-[500px] lg:flex-shrink-0 ${imagePosition === "right" ? "md:order-2" : "md:order-1"}`}>
+                    <div className={`w-full mx-auto md:mx-0 max-w-[400px] sm:max-w-[450px] lg:max-w-[450px] xl:max-w-[500px] lg:flex-shrink-0 ${imagePosition === "right" ? "md:order-2" : "md:order-1"}`}>
                         <div
-                            className="w-full md:w-[500] sm:h-[320px] md:h-[380px] lg:h-[432px] rounded-[16px] md:rounded-[20px] p-[20px] sm:p-[30px] md:p-[40px] lg:p-[50px] border border-[#e9eaeb2a] overflow-hidden relative"
+                            className="w-full min-h-[300px] md:w-[500] sm:h-[320px] md:h-[380px] lg:h-[432px] rounded-[16px] md:rounded-[20px] p-[20px] sm:p-[30px] md:p-[40px] lg:p-[50px] border border-[#e9eaeb2a] overflow-hidden relative"
                             style={{
                                 background: 'radial-gradient(96.62% 66.13% at 49.95% 91.44%, #EBEFE4 25%, #Ffffff 100%)'
                             }}
@@ -176,7 +176,7 @@ const ServiceTicketSection = ({ tagline, heading, description, imagePosition, im
                                 {features.map((feature, index) => (
                                     <div
                                         key={index}
-                                        className="flex flex-row items-start gap-[10px] sm:gap-[12px] md:gap-[16px] shrink-0"
+                                        className="flex flex-row items-center gap-[10px] sm:gap-[12px] md:gap-[16px] shrink-0"
                                     >
                                         <CheckIcon className="shrink-0   mt-1" />
                                         <span className="font-medium text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] leading-[18px] sm:leading-[20px] md:leading-[22px] lg:leading-[26px] text-black">
