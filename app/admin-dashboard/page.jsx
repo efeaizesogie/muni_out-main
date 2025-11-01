@@ -112,6 +112,7 @@ export default function AdminDashboard() {
         imagePosition="left"
         img={moreFeatures}
         backgroundColor={"#FFF"}
+        imgBottom
         features={admninFeatures}
         hasFeatures />
 

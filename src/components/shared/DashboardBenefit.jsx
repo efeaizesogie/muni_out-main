@@ -55,7 +55,7 @@ const DashboardBenefit = ({
                                         {testimonialCompany}
                                     </div>
                                     <div className="font-medium text-[11px] md:text-[12px] leading-[16px] text-black">
-                                        {testimonialAuthor} - {testimonialRole}
+                                        {testimonialAuthor && (<>{testimonialAuthor} - </>)}  {testimonialRole}
                                     </div>
                                 </div>
                             </div>
