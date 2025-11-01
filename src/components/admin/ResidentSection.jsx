@@ -2,10 +2,10 @@ import Image from 'next/image';
 import React from 'react';
 
 const CheckIcon = () => (
-    <div className="relative w-[18px] h-[18px]">
-        <div className="absolute inset-0 bg-[#47816F] rounded-full" />
+    <div className="relative w-[18px] h-[18px] bg-[#47816F] rounded-full flex items-center justify-center shrink-0">
+
         <svg
-            className="absolute inset-0 w-full h-full"
+            className="w-[16px] h-[16px]"
             viewBox="0 0 18 18"
             fill="none"
         >
@@ -24,9 +24,9 @@ const ResidentSection = ({ category, title, description, features, imageSrc, ima
     return (
         <section className="flex flex-col bg-white w-full py-4 sm:py-6 md:py-[60px] lg:py-[100px]">
             <div className="flex flex-col lg:flex-row items-center gap-6 md:gap-[60px] lg:gap-[100px] md:w-[80%] px-[20px] md:px-0 md:mx-auto">
-                <div className="w-full md:w-full lg:w-[50%] relative">
+                <div className="w-full md:w-full lg:w-[50%] relative ml-0 lg:ml-[-15%]">
                     {/* Browser Frame */}
-                    <div className="w-full h-[250px] sm:h-[300px] md:h-[400px] lg:h-full ml-0 lg:ml-[-30%] rounded-[8px] md:rounded-[10px] overflow-hidden">
+                    <div className="w-full h-[250px] sm:h-[300px] md:h-[400px] lg:h-full  rounded-[8px] md:rounded-[10px] overflow-hidden">
                         {/* Dashboard Content */}
                         <Image
                             src={imageSrc}
@@ -39,7 +39,7 @@ const ResidentSection = ({ category, title, description, features, imageSrc, ima
                 </div>
 
                 {/* Content Section */}
-                <div className="flex flex-col items-start gap-[12px] sm:gap-[16px] md:gap-[24px] w-full  md:w-full lg:w-[50%] flex-grow order-1">
+                <div className="flex flex-col items-start gap-[12px] sm:gap-[16px] md:gap-[24px] w-full  md:w-full lg:w-[50%] flex-grow max-w-[603px]">
                     <span className="font-semibold text-[12px] sm:text-[14px] md:text-[16px] leading-[20px] sm:leading-[24px] md:leading-[26px] text-[#006A4A] self-stretch">
                         {category}
                     </span>

@@ -91,12 +91,13 @@ Real-Time Schedule Alerts"
 
       <ServiceTicketSection
         tagline="Knowledge Base Management"
-        heading={<>Centralized Hub <br />
-          for AI-Driven
-          Municipal Insights</>}
-        description="Muni’s integrated knowledge base management system acts as the intelligent foundation for the residential AI agent’s decision-making and response generation, by centralizing all essential municipal information into one dynamic, continuously updated repository."
+        heading={<>Stay Informed and <br className='hidden md:flex' />
+          Connected to Your
+          Community</>}
+        description="Keep up with the latest happenings in your city right from your phone. Muni’s mobile app delivers timely news updates, event announcements, and important alerts, ensuring residents never miss out on what’s happening locally."
         imagePosition="right"
         img={stayInform}
+        imgWidth={"w-[502px]"}
         imgCutRight
         backgroundColor={"#F9F9F9"} />
 
