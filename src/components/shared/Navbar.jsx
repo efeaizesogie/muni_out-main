@@ -34,8 +34,8 @@ const Navbar = ({ showLinks = true }) => {
   return (
     <div className={`z-50 fixed w-full bg-black ${isOpen ? 'bg-opacity-50' : 'bg-opacity-0'} ${isOpen ? 'h-full' : 'h-0'}`}>
       <div className={`w-full bg-white ${isOpen ? 'bg-opacity-100' : 'bg-opacity-0'}`}>
-        <nav className="fixed flex justify-center items-center w-full md:py-[20px] ">
-          <div className='flex justify-between items-center md:w-[80%] w-full h-[60px] bg-white md:rounded-[12px] pr-[10px] pl-[20px] border-b border-[E9EAEB] backdrop-blur-md'>
+        <nav className="fixed max-w-[1440px] flex justify-center items-center w-full md:py-[20px] ">
+          <div className='flex justify-between items-center md:mx-auto md:w-[80%] w-full h-[60px] bg-white md:rounded-[12px] pr-[10px] pl-[20px] border-b border-[E9EAEB] backdrop-blur-md'>
             <div className="flex items-center gap-4">
               {showLinks && (
                 <button onClick={toggleNavBar}
@@ -64,7 +64,7 @@ const Navbar = ({ showLinks = true }) => {
               <ul className="md:flex hidden md:items-center gap-6 text-[#131416] text-[14px] font-medium px-[20px]">
                 <a href="#introduction" className="hover:text-[#C4E76A] transition duration-400"><li>How It Works</li></a>
                 <li className="relative" ref={dropdownRef}>
-                  <button 
+                  <button
                     onClick={toggleProductDropdown}
                     className="hover:text-[#006A4A] transition duration-300 flex items-center gap-1 font-medium"
                   >

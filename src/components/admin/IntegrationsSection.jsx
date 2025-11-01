@@ -8,7 +8,7 @@ const IntegrationsSection = ({ tagline, backgroundColor = "#EBEFE4", heading, de
             style={{ backgroundColor }}
         >
             <div className="w-full md:w-[80%] px-[20px] md:px-0 md:mx-auto">
-                <div className="flex flex-col lg:flex-row items-start justify-between gap-[50px] md:gap-[80px] lg:gap-[120px] xl:gap-[140px]">
+                <div className="flex flex-col lg:flex-row items-start gap-[50px] md:gap-[80px] lg:gap-[120px] xl:gap-[140px]">
                     {/* Left Content */}
                     <div className="flex flex-col gap-[20px] md:gap-[24px] w-full lg:w-[450px] xl:w-[493px] lg:flex-shrink-0">
                         {/* Tag */}

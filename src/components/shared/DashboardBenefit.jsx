@@ -16,32 +16,32 @@ const DashboardBenefit = ({
     benefitsFor
 }) => {
     return (
-        <section className="py-[60px] md:py-[80px] lg:py-[100px] bg-[#F9F9F9] overflow-hidden">
-            <div className="w-full md:w-[80%] px-[20px] md:px-0 md:mx-auto">
+        <section className="py-[40px] sm:py-[60px] md:py-[80px] lg:py-[100px] bg-[#F9F9F9]">
+            <div className="w-full md:w-[80%] px-[20px] md:mx-auto md:px-0">
                 {/* Main Content Section */}
-                <div className="flex flex-col lg:flex-row items-start lg:items-center gap-[60px] lg:gap-[100px] xl:gap-[136px] mb-[80px] lg:mb-[120px]">
+                <div className="flex flex-col md:flex-row items-start md:items-stretch gap-[40px] sm:gap-[50px] md:gap-[60px] lg:gap-[100px] mb-[60px] sm:mb-[70px] md:mb-[80px] lg:mb-[120px]">
                     {/* Left Content */}
-                    <div className="flex flex-col gap-[20px] md:gap-[24px] w-full lg:w-[484px] lg:flex-shrink-0">
+                    <div className="flex flex-col justify-between gap-[16px] sm:gap-[18px] md:gap-[20px] lg:gap-[24px] w-full md:w-[50%] lg:max-w-[484px] md:flex-shrink-0 md:self-stretch">
                         {/* Tag */}
                         <div className="text-[#006A4A] font-semibold text-[14px] md:text-[16px] leading-[26px]">
                             {tag}
                         </div>
 
                         {/* Heading */}
-                        <h2 className="font-semibold text-[32px] sm:text-[40px] md:text-[48px] lg:text-[54px] leading-[1.2] tracking-[-0.01em] text-black">
+                        <h2 className="font-semibold text-[28px] sm:text-[32px] md:text-[40px] lg:text-[48px] xl:text-[54px] leading-[1.1] sm:leading-[1.15] md:leading-[1.2] tracking-[-0.01em] text-black break-words">
                             {heading}
                         </h2>
 
                         {/* Description */}
-                        <div className="flex flex-col gap-[10px]">
-                            <p className="text-[13px] md:text-[14px] leading-[22px] md:leading-[24px] font-medium text-black opacity-70">
+                        <div className="flex flex-col gap-[8px] md:gap-[10px]">
+                            <p className="text-[12px] sm:text-[13px] md:text-[14px] leading-[20px] sm:leading-[21px] md:leading-[22px] lg:leading-[24px] font-medium text-black opacity-70 break-words">
                                 {description}
                             </p>
                         </div>
 
                         {/* Testimonial */}
-                        <div className="flex flex-col gap-[20px] md:gap-[24px] pt-[20px] md:pt-[24px] border-t border-[#E9EAEB]">
-                            <p className="text-[13px] md:text-[14px] leading-[22px] md:leading-[24px] font-semibold tracking-[-0.01em] text-[#006A4A]">
+                        <div className="flex flex-col gap-[16px] sm:gap-[18px] md:gap-[20px] lg:gap-[24px] pt-[16px] sm:pt-[18px] md:pt-[20px] lg:pt-[24px] border-t border-[#E9EAEB]">
+                            <p className="text-[12px] sm:text-[13px] md:text-[14px] leading-[20px] sm:leading-[21px] md:leading-[22px] lg:leading-[24px] font-semibold tracking-[-0.01em] text-[#006A4A] break-words">
                                 "{testimonialText}"
                             </p>
 
@@ -63,12 +63,17 @@ const DashboardBenefit = ({
                     </div>
 
                     {/* Right - Dashboard Preview */}
-                    <div className="relative w-full md:w-[450px] lg:w-[600px] xl:w-[720px] aspect-[4/3] min-h-[300px]">
-                        {/* Main Dashboard Frame */}
-                        <div className="relative md:absolute w-full md:w-full lg:w-[720px] h-full md:right-[-40%] lg:right-[-60%] md:top-0">
-                            <Image src={dashboardImage} alt="Dashboard Preview" fill className="object-contain" />
-                        </div>
+                    <div className="relative w-full md:min-w-[800px] lg:w-[65%] h-[250px] sm:h-[300px] md:h-[520px] md:flex-shrink-0 md:right-[-1%] lg:right-[-5%] xl:right-[-8%] overflow-visible">
+                        <Image
+                            src={dashboardImage}
+                            alt="Dashboard Preview"
+                            width={800}
+                            height={400}
+                            className="h-full w-full object-fill object-left-top max-w-none"
+                            priority
+                        />
                     </div>
+
                 </div>
 
                 {/* Benefits Section */}
