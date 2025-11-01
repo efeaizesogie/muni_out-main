@@ -39,7 +39,7 @@ const IntegrationsSection = ({ tagline, backgroundColor = "#EBEFE4", heading, de
 
                     {/* Right - Integration List */}
                     <div className="flex flex-col w-full lg:w-[550px] xl:w-[607px]">
-                        <div className="border-t border-[rgba(135,147,143,0.4)] lg:border-t-0">
+                        <div className="border-t border-[rgba(135,147,143,0.4)] ">
                             {integrations.map((integration, index) => (
                                 <IntegrationItem
                                     key={index}

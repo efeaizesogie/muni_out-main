@@ -24,7 +24,7 @@ const ResidentSection = ({ category, title, description, features, imageSrc, ima
     return (
         <section className="flex flex-col bg-white w-full py-4 sm:py-6 md:py-[60px] lg:py-[100px]">
             <div className="flex flex-col lg:flex-row items-center justify-between gap-6 md:gap-[60px] lg:gap-[100px] md:w-[80%] px-[20px] md:px-0 md:mx-auto max-w-[1440px]">
-                <div className="w-full md:min-w-[637px] lg:w-[50%] ml-0 lg:ml-[-18%] relative ">
+                <div className="w-full md:min-w-[670px] lg:w-[50%] ml-0 lg:ml-[-18%] relative ">
                     {/* Dashboard Content */}
                     <Image
                         src={imageSrc}
