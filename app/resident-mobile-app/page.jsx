@@ -20,7 +20,7 @@ import { securityFeatures } from '@/src/constants/features';
 
 export default function ResidentMobileApp() {
   return (
-    <div className="min-h-screen bg-gray-50 overflow-hidden">
+    <div className="min-h-screen bg-white overflow-hidden">
       <Navbar />
       <Header heading="Mobile App for Residents" para={<>Residents can stay connected to their city—report issues, track updates, and access local <br className='hidden md:flex' /> services anytime, anywhere, right from their phone.</>} />
       <MobileAppBenefits />
@@ -114,7 +114,7 @@ Real-Time Schedule Alerts"
         hasFeatures />
 
       <div className='mb-10 md:mb-24 '>
-        <TextSection buttonText1="Get In Touch" buttonText2="FAQ" boxTitle="Have Questions?"
+        <TextSection buttonText1="Get In Touch" buttonText2="FAQ" boxTitle="Have Questions?" bg
           boxDesc="Curious about how Muni can fit your municipality’s unique needs? Reach out to our team for personalized answers or explore our comprehensive FAQ section to find quick solutions. "
         />
       </div>

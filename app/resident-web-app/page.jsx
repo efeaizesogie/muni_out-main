@@ -21,7 +21,7 @@ import { securityFeatures } from '@/src/constants/features';
 
 export default function ResidentWebApp() {
   return (
-    <div className="min-h-screen bg-gray-50 overflow-hidden">
+    <div className="min-h-screen bg-white overflow-hidden">
       <Navbar />
       <Header heading="Web App for Residents" para={<>Residents can connect effortlessly—access services, get updates, <br className='hidden md:flex' />
         and engage with their community all in one place.</>} />
@@ -118,7 +118,7 @@ Your Browser"
         hasFeatures />
 
       <div className='mb-10 md:mb-24 '>
-        <TextSection buttonText1="Get In Touch" buttonText2="FAQ" boxTitle="Have Questions?"
+        <TextSection buttonText1="Get In Touch" buttonText2="FAQ" boxTitle="Have Questions?" bg
           boxDesc="Curious about how Muni can fit your municipality’s unique needs? Reach out to our team for personalized answers or explore our comprehensive FAQ section to find quick solutions. "
         />
       </div>

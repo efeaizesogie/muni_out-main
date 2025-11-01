@@ -2,15 +2,15 @@ import LineGradient from '../utils/LineGradient'
 import React from 'react'
 import bgFill from "@/public/images/green-bg-fill.png"
 
-const TextSection = ({ headText, boxTitle, boxDesc, buttonText1, buttonText2, gradient }) => {
+const TextSection = ({ headText, boxTitle, boxDesc, buttonText1, buttonText2, gradient, bg }) => {
     return (
-        <div id="problem" className=''>
+        <div id="problem" className={` ${bg && "bg-white"}`}>
             {headText && <p className="max-w-4xl w-full px-[20px] text-sm md:text-base font-medium py-12 md:py-20 text-center mx-auto leading-relaxed">
                 {headText}
             </p>}
 
 
-            <div className="relative w-full md:w-[80%] md:mx-auto">
+            <div className={`relative w-full md:w-[80%] md:mx-auto `}>
                 <div
                     className="relative md:rounded-3xl p-8 md:p-12 shadow-xl "
                     style={{

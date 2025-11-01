@@ -24,7 +24,7 @@ import { admninFeatures } from '@/src/constants/features';
 
 export default function AdminDashboard() {
   return (
-    <div className="min-h-screen bg-gray-50 overflow-hidden">
+    <div className="min-h-screen bg-white overflow-hidden">
       <Navbar />
       <Header heading="Admin Dashboard" para={<>Streamline workflows, monitor progress, and make data-driven <br className='hidden md:flex' /> decisions—all from one intuitive Muni dashboard.</>} />
       <AdminDashboardBenefit />
@@ -116,7 +116,7 @@ export default function AdminDashboard() {
         hasFeatures />
 
       <div className='mb-10 md:mb-24 '>
-        <TextSection buttonText1="Get In Touch" buttonText2="FAQ" boxTitle="Have Questions?"
+        <TextSection buttonText1="Get In Touch" buttonText2="FAQ" boxTitle="Have Questions?" bg
           boxDesc="Curious about how Muni can fit your municipality’s unique needs? Reach out to our team for personalized answers or explore our comprehensive FAQ section to find quick solutions. "
         />
       </div>
