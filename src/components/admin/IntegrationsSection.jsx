@@ -8,9 +8,9 @@ const IntegrationsSection = ({ tagline, backgroundColor = "#EBEFE4", heading, de
             style={{ backgroundColor }}
         >
             <div className="w-full md:w-[80%] px-[20px] md:px-0 md:mx-auto">
-                <div className="flex flex-col lg:flex-row items-start gap-[50px] md:gap-[80px] lg:gap-[120px] xl:gap-[140px]">
+                <div className="flex flex-col md:flex-row items-start gap-[50px] md:gap-[80px] lg:gap-[120px] xl:gap-[140px]">
                     {/* Left Content */}
-                    <div className="flex flex-col gap-[20px] md:gap-[24px] w-full lg:w-[450px] xl:w-[493px] lg:flex-shrink-0">
+                    <div className="flex flex-col gap-[20px] md:gap-[24px] w-full lg:w-[450px]  flex-1">
                         {/* Tag */}
                         <div className="text-[#006A4A] font-semibold text-[14px] md:text-[16px] leading-[26px]">
                             {tagline}
@@ -38,7 +38,7 @@ const IntegrationsSection = ({ tagline, backgroundColor = "#EBEFE4", heading, de
                     </div>
 
                     {/* Right - Integration List */}
-                    <div className="flex flex-col w-full lg:w-[550px] xl:w-[607px]">
+                    <div className="flex flex-col w-full lg:w-[550px] xl:w-[607px] flex-1">
                         <div className="border-t border-[rgba(135,147,143,0.4)] ">
                             {integrations.map((integration, index) => (
                                 <IntegrationItem
