@@ -63,7 +63,7 @@ const DashboardBenefit = ({
                     </div>
 
                     {/* Right - Dashboard Preview */}
-                    <div className="relative w-full md:min-w-[800px] lg:w-[65%] h-[250px] sm:h-[300px] md:h-[520px] md:flex-shrink-0 md:right-[-1%] lg:right-[-5%] xl:right-[-8%] 2xl:right-[-18%] overflow-visible">
+                    <div className="relative w-full md:min-w-[800px] lg:w-[65%] h-[250px] sm:h-[300px] md:h-[520px] md:flex-shrink-0 md:right-[-1%] lg:right-[-5%] xl:right-[-8%] overflow-visible">
                         <Image
                             src={dashboardImage}
                             alt="Dashboard Preview"
