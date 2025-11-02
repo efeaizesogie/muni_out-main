@@ -23,30 +23,30 @@ const CheckIcon = () => (
 const ResidentSection = ({ category, title, description, features, imageSrc, imageAlt }) => {
     return (
         <section className="flex flex-col bg-white w-full py-4 sm:py-6 md:py-[60px] lg:py-[100px]">
-            <div className="flex flex-col md:flex-row items-center  gap-6 md:gap-[60px] lg:gap-[140px] md:w-[80%] px-[20px] md:px-0 md:mx-auto max-w-[1440px]">
-                <div className="w-[60%] min-w-[320px] max-w-[670px]  ml-0 md:ml-[-5%] lg:ml-[-15%] ">
+            <div className="flex flex-col md:flex-row items-start gap-[50px] md:gap-[80px] lg:gap-[115px] ">
+                <div className="w-[50%] min-w-[320px] max-w-[670px] flex-1 ">
 
                     <Image
                         src={imageSrc}
                         alt={imageAlt}
                         width={720}
                         height={400}
-                        className="w-full h-full object-fill"
+                        className="w-full h-full object-fill  ml-0 md:ml-[-5%] lg:ml-[-15%] "
                     />
 
                 </div>
 
                 {/* Content Section */}
-                <div className="flex flex-col items-start gap-[12px] sm:gap-[16px] md:gap-[24px] w-full lg:w-[50%] md:max-w-[520px]">
+                <div className="flex flex-col items-start gap-[12px] sm:gap-[16px] md:gap-[24px] w-full lg:w-[50%] md:max-w-[518px] flex-1 mx-5 md:mx-0">
                     <span className="font-semibold text-[12px] sm:text-[14px] md:text-[16px] leading-[20px] sm:leading-[24px] md:leading-[26px] text-[#006A4A] self-stretch">
                         {category}
                     </span>
 
-                    <h2 className="font-semibold text-[24px] sm:text-[28px] md:text-[36px] lg:text-[42px] xl:text-[54px] leading-[1.1] sm:leading-[1.2] tracking-[-0.01em] text-black max-w-[474px]">
+                    <h2 className="font-semibold text-[24px] sm:text-[28px] md:text-[36px] lg:text-[42px] xl:text-[54px] leading-[1.1] sm:leading-[1.2] tracking-[-0.01em] text-black max-w-[485px]">
                         {title}
                     </h2>
 
-                    <p className="font-semibold text-[12px] sm:text-[13px] md:text-[14px] lg:text-[16px] leading-[18px] sm:leading-[20px] md:leading-[24px] lg:leading-[26px] text-black max-w-[474px]">
+                    <p className="font-semibold text-[12px] sm:text-[13px] md:text-[14px] lg:text-[16px] leading-[18px] sm:leading-[20px] md:leading-[24px] lg:leading-[26px] text-black max-w-[485px]">
                         {description}
                     </p>
 
