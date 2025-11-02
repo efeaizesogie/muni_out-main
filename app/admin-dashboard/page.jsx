@@ -31,7 +31,7 @@ export default function AdminDashboard() {
 
       <ResidentSection
         category="Resident Relationship"
-        title="Build Trust Deliver Exceptional Service"
+        title={<>Build Trust, <br className='hidden md:flex' /> Deliver Exceptional Service</>}
         description="Strengthen your city's connection with residents through Muni's modern resident relationship management system."
         features={[
           "Complete view of individual histories and needs",
