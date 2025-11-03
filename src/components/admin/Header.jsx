@@ -13,7 +13,7 @@ const Header = ({ heading, para }) => {
                 priority
                 fill
             />
-            <div className="absolute inset-0 bg-[#006A4A] bg-opacity-20 z-1"></div>
+            <div className="absolute inset-0 bg-[#14241F] bg-opacity-20 z-1"></div>
 
 
             <div className='flex flex-col items-center text-center z-10  pt-[100px] md:pt-[150px] w-full lg:w-[80%] mx-[20px] lg:mx-auto h-full relative'>
