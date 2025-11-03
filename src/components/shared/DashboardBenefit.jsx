@@ -17,11 +17,11 @@ const DashboardBenefit = ({
 }) => {
     return (
         <section className="py-[40px] sm:py-[60px] md:py-[80px] lg:py-[100px] bg-[#F9F9F9]">
-            <div className="w-full md:w-[80%] px-[20px] md:mx-auto md:px-0">
+            <div className="px-[20px] max-w-[1440px] md:mx-[100px] 2xl:mx-auto md:px-0">
                 {/* Main Content Section */}
-                <div className="flex flex-col md:flex-row items-start md:items-stretch gap-[40px] sm:gap-[50px] md:gap-[60px] lg:gap-[100px] mb-[60px] sm:mb-[70px] md:mb-[80px] lg:mb-[120px]">
+                <div className="flex flex-col md:flex-row items-center justify-between gap-[40px] sm:gap-[50px] md:gap-[60px] lg:gap-[100px] mb-[60px] sm:mb-[70px] md:mb-[80px] lg:mb-[120px]">
                     {/* Left Content */}
-                    <div className="flex flex-col justify-between gap-[16px] sm:gap-[18px] md:gap-[20px] lg:gap-[24px] w-full md:w-[50%] lg:max-w-[484px] md:flex-shrink-0 md:self-stretch">
+                    <div className="flex flex-col justify-between gap-[16px] sm:gap-[18px] md:gap-[20px] lg:gap-[24px] w-full md:w-[50%] lg:max-w-[484px] md:flex-shrink-0 ">
                         {/* Tag */}
                         <div className="text-[#006A4A] font-semibold text-[14px] md:text-[16px] leading-[26px]">
                             {tag}
@@ -63,15 +63,18 @@ const DashboardBenefit = ({
                     </div>
 
                     {/* Right - Dashboard Preview */}
-                    <div className="relative w-full md:min-w-[800px] lg:w-[65%] h-[250px] sm:h-[300px] md:h-[520px] md:flex-shrink-0 md:right-[-1%] lg:right-[-4%] overflow-visible">
-                        <Image
-                            src={dashboardImage}
-                            alt="Dashboard Preview"
-                            width={800}
-                            height={400}
-                            className="h-full w-full object-fill object-left-top max-w-none"
-                            priority
-                        />
+                    <div className="relative w-full md:w-1/2 lg:w-[45%] min-w-[320px] md:flex-shrink-0 ">
+                        <div className=' w-[135%] h-full md:right-[-1%] lg:right-[-4%]'>
+                            <Image
+                                src={dashboardImage}
+                                alt="Dashboard Preview"
+                                width={800}
+                                height={400}
+                                className="h-full w-full object-fill object-left-top max-w-none"
+                                priority
+                            />
+                        </div>
+
                     </div>
 
                 </div>

@@ -34,8 +34,8 @@ const Navbar = ({ showLinks = true }) => {
   return (
     <div className={`z-50 fixed w-full bg-black ${isOpen ? 'bg-opacity-50' : 'bg-opacity-0'} ${isOpen ? 'h-full' : 'h-0'}`}>
       <div className={`w-full bg-white ${isOpen ? 'bg-opacity-100' : 'bg-opacity-0'}`}>
-        <nav className="fixed max-w-[1440px] flex justify-center items-center w-full md:py-[20px] ">
-          <div className='flex justify-between items-center md:mx-auto md:w-[80%] w-full h-[60px] bg-white md:rounded-[12px] pr-[10px] pl-[20px] border-b border-[E9EAEB] backdrop-blur-md'>
+        <nav className="fixed flex items-center w-full md:py-[20px]  ">
+          <div className='flex justify-between max-w-[1440px] md:mx-[100px] 2xl:mx-auto items-center w-full h-[60px] bg-white md:rounded-[12px] pr-[10px] pl-[20px] border-b border-[E9EAEB] backdrop-blur-md'>
             <div className="flex items-center gap-4">
               {showLinks && (
                 <button onClick={toggleNavBar}

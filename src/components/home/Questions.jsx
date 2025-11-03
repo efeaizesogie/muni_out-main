@@ -16,7 +16,7 @@ export default function FAQSection() {
 
   return (
     <div id="faq" className="min-h-screen bg-[#f9f9f9] py-10 md:py-[120px] ">
-      <div className="md:w-[80%] mx-[20px] md:mx-auto">
+      <div className="max-w-[1440px] mx-5 md:mx-[100px] 2xl:mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
 
           {/* Left Column - Title and CTA */}

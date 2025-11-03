@@ -98,7 +98,7 @@ const ProductSuite = () => {
                 priority
             />
 
-            <div className="mx-[20px] md:mx-auto md:w-[80%] pt-20 md:pt-32 lg:pt-48 relative z-10">
+            <div className="max-w-[1440px] mx-5 md:mx-[100px] 2xl:mx-auto pt-20 md:pt-32 lg:pt-48 relative z-10">
                 <div className="text-center flex flex-col items-center relative">
                     <TitleHead title="Unified Access to Muni’s" titleBreak="Full Suite Experience" tag="Product Suite" textWhite />
                 </div>
