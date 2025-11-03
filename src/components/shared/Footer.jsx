@@ -18,7 +18,7 @@ const Footer = () => {
                 priority
             />
 
-            <div className="w-full md:w-[80%] mx-[20px] lg:mx-auto pt-[30px] md:pt-[77px] pb-10  relative z-10 ">
+            <div className=" max-w-[1440px] mx-5 md:mx-[100px] 2xl:mx-auto pt-[30px] md:pt-[77px] pb-10  relative z-10 ">
 
                 <div className="w-full flex flex-col items-center text-center justify-center mb-12">
                     <Image src={footerIcon} alt={"notification issue"} className=" shadow-[0_10.22px_17.51px_rgb(0_0_0_0_/_4)] rounded-lg" />

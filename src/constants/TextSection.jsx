@@ -10,9 +10,9 @@ const TextSection = ({ headText, boxTitle, boxDesc, buttonText1, buttonText2, gr
             </p>}
 
 
-            <div className={`relative w-full md:w-[80%] md:mx-auto `}>
+            <div className={` w-full max-w-[1440px] `}>
                 <div
-                    className="relative md:rounded-3xl p-8 md:p-12 shadow-xl "
+                    className=" md:rounded-3xl p-8 md:p-12 shadow-xl "
                     style={{
                         background:
                             `url(${bgFill.src}) #006A4A -0.225px -42.782px / 138.486% 228.596% no-repeat`,

@@ -22,22 +22,24 @@ const CheckIcon = () => (
 
 const ResidentSection = ({ category, title, description, features, imageSrc, imageAlt }) => {
     return (
-        <section className="flex flex-col bg-white w-full py-4 sm:py-6 md:py-[60px] lg:py-[100px]">
-            <div className="flex flex-col md:flex-row items-start gap-[50px] md:gap-[80px] lg:gap-[115px] ">
-                <div className="w-[50%] min-w-[320px] max-w-[670px] flex-1 ">
+        <section className="flex flex-col bg-white w-full py-4 sm:py-6 md:py-[60px] lg:py-[100px] ">
+            <div className="flex flex-col md:flex-row items-center justify-between gap-[50px] md:gap-[80px] lg:gap-[115px] mx-5 max-w-[1440px] md:mx-[100px] 2xl:mx-auto">
+                <div className="w-full min-w-[320px] md:w-1/2 lg:w-[45%]">
+                    <div className=' w-[90%] md:w-[130%] h-full ml-0 md:ml-[-120px] lg:ml-[-25%] xl:ml-[-38%] '>
+                        <Image
+                            src={imageSrc}
+                            alt={imageAlt}
+                            width={720}
+                            height={400}
+                            className="w-full h-full object-fill"
+                        />
+                    </div>
 
-                    <Image
-                        src={imageSrc}
-                        alt={imageAlt}
-                        width={720}
-                        height={400}
-                        className="w-full h-full object-fill  ml-0 md:ml-[-5%] lg:ml-[-15%] "
-                    />
 
                 </div>
 
                 {/* Content Section */}
-                <div className="flex flex-col items-start gap-[12px] sm:gap-[16px] md:gap-[24px] w-full lg:w-[50%] md:max-w-[518px] flex-1 mx-5 md:mx-0">
+                <div className="flex flex-col items-start gap-[12px] sm:gap-[16px] md:gap-[24px] w-full md:w-1/2 lg:w-[45%]">
                     <span className="font-semibold text-[12px] sm:text-[14px] md:text-[16px] leading-[20px] sm:leading-[24px] md:leading-[26px] text-[#006A4A] self-stretch">
                         {category}
                     </span>

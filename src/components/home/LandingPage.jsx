@@ -19,8 +19,8 @@ const LandingPage = () => {
         className="absolute inset-0 w-full h-full object-cover z-0"
         priority
       />
-      <div className="w-full max-w-none md:w-[80%] md:mx-auto px-[20px] md:px-0 md:pt-[200px] pt-[125px] gap-2 relative z-10">
-        <div className="flex lg:flex-row flex-col w-full">
+      <div className="w-full px-[20px] md:px-0 md:pt-[200px] pt-[125px] gap-2 relative z-10">
+        <div className="flex lg:flex-row flex-col max-w-[1440px] md:mx-[100px] 2xl:mx-auto">
           <div className='lg:min-w-[600px]'>
             <div className='flex flex-col items-start'>
               <p className='flex items-center gap-2 font-semibold text-white text-[14px] bg-[#000000] bg-opacity-40 rounded-full py-[5px] px-[15px] mb-[34px]'>
@@ -54,7 +54,7 @@ const LandingPage = () => {
 
           </div>
         </div>
-        <section className='border-t-[1px] border-white border-opacity-[10%] mt-[4px] pt-[44px] pb-[54px] flex flex-col md:flex-row justify-between items-center w-full px-[20px] md:px-0 gap-[27px]'>
+        <section className='border-t-[1px] border-white border-opacity-[10%] mt-[4px] pt-[44px] pb-[54px] flex flex-col md:flex-row justify-between items-center w-full px-[20px] md:px-0 gap-[27px] max-w-[1440px] md:mx-[100px] 2xl:mx-auto'>
           <div className='flex items-end gap-2 flex-shrink-0'>
             <p className='font-medium text-white text-[12px] md:text-[12px] text-center md:text-left whitespace-nowrap'>
               Proudly showcasted at:

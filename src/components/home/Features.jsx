@@ -8,7 +8,7 @@ import TextSection from "@/src/constants/TextSection"
 
 const Features = () => {
     return (
-        <div className='md:pb-16'>
+        <div className='md:pb-16 max-w-[1440px] md:mx-[100px] 2xl:mx-auto'>
             <div id="features" className='flex flex-col w-full h-full items-center md:pb-[85px] pt-[40px]'>
 
                 <div className="text-center flex flex-col items-center relative my-16">

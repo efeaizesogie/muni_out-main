@@ -11,7 +11,7 @@ import dotbg from "@/public/images/dotbg.png";
 
 const Solution = () => {
     return (
-        <div className='md:pb-16'>
+        <div className='md:pb-16 max-w-[1440px] md:mx-[100px] 2xl:mx-auto'>
             <div className="flex justify-center items-center mx-auto mt-16 md:mt-32 lg:mt-52 px-4 relative">
 
                 <div className="flex justify-center">
