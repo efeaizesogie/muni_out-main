@@ -35,7 +35,7 @@ const ServiceTicketSection = ({ tagline, heading, description, imagePosition, im
                     {/* Tickets Preview Card */}
                     <div className={`w-full mx-auto md:mx-0  lg:flex-shrink-0 ${imagePosition === "right" ? "md:order-2 md:w-1/2 lg:w-[45%]" : "md:order-1 md:w-1/2 lg:w-[45%]"}`}>
                         <div
-                            className="w-full min-h-[300px] md:w-[500] sm:h-[320px] md:h-[380px] lg:h-[432px] rounded-[16px] md:rounded-[20px] p-[20px] sm:p-[30px] md:p-[40px] lg:p-[50px] border border-[#e9eaeb2a] overflow-hidden relative max-w-[400px] sm:max-w-[450px] lg:max-w-[450px] xl:max-w-[500px]"
+                            className="w-full min-h-[300px] md:w-[500] sm:h-[320px] md:h-[380px] lg:h-[432px] rounded-[16px] md:rounded-[20px] p-[20px] sm:p-[30px] md:p-[40px] lg:p-[50px] border border-[#e9eaebc3] overflow-hidden relative max-w-[400px] sm:max-w-[450px] lg:max-w-[450px] xl:max-w-[500px]"
                             style={{
                                 background: 'radial-gradient(96.62% 66.13% at 49.95% 91.44%, #EBEFE4 25%, #Ffffff 100%)'
                             }}
