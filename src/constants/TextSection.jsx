@@ -22,7 +22,7 @@ const TextSection = ({ headText, boxTitle, boxDesc, buttonText1, buttonText2, gr
                     <h2 className="text-white text-2xl lg:text-[34px] lg:leading-[44px] font-semibold text-center mb-[14px] md:mb-6">
                         {boxTitle}
                     </h2>
-                    <p className="text-white text-center font-medium text-sm md:text-base mb-6 md:mb-8 max-w-3xl mx-auto leading-relaxed">
+                    <p className="text-white text-center font-medium text-sm md:text-base mb-6 md:mb-8 max-w-3xl mx-auto leading-[24px]">
                         {boxDesc}
                     </p>
                     <div className="flex gap-3 md:gap-4 justify-center items-center">

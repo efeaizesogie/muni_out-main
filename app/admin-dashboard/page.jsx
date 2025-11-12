@@ -56,7 +56,7 @@ export default function AdminDashboard() {
       <FeatureToggleSection
 
         tagline="Feature Showcase"
-        heading={<>Flexible Feature Selection <br /> for Customized Solutions</>}
+        heading={<>Flexible Feature Selection <br className='hidden md:block' /> for Customized Solutions</>}
         description="Instantly enable the features you need—just toggle and go."
         backgroundColor="#FFFFFF"
         toggleColor="#47816F"
@@ -116,7 +116,7 @@ export default function AdminDashboard() {
         features={admninFeatures}
         hasFeatures />
 
-      <div className='mb-10 md:mb-24 max-w-[1440px] md:mx-[100px] 2xl:mx-auto'>
+      <div className=' md:mb-24 max-w-[1440px] md:mx-[100px] 2xl:mx-auto'>
         <TextSection buttonText1="Get In Touch" buttonText2="FAQ" boxTitle="Have Questions?" bg
           boxDesc="Curious about how Muni can fit your municipality’s unique needs? Reach out to our team for personalized answers or explore our comprehensive FAQ section to find quick solutions. "
         />

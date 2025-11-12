@@ -59,19 +59,19 @@ const ServiceTicketSection = ({ tagline, heading, description, imagePosition, im
 
                         {/* Tagline */}
                         {tagline && <div
-                            className="font-semibold text-[12px] sm:text-[14px] md:text-[16px] leading-[22px] md:leading-[26px]"
+                            className="font-semibold text-[16px] leading-[26px]"
                             style={{ color: "#006A4A" }}
                         >
                             {tagline}
                         </div>}
 
                         {/* Heading */}
-                        <h2 className="font-semibold text-[24px] sm:text-[28px] md:text-[32px] lg:text-[34px] leading-[1.2] sm:leading-[1.3] tracking-[-0.01em] text-black lg:max-w-[450px] xl:max-w-[484px] ">
+                        <h2 className="font-semibold text-[30px]  md:text-[34px] leading-[40px] sm:leading-[1.3] tracking-[-1%] text-black lg:max-w-[450px] xl:max-w-[484px] ">
                             {heading}
                         </h2>
 
                         {/* Description */}
-                        <p className="text-[12px] sm:text-[13px] md:text-[14px] leading-[20px] sm:leading-[22px] md:leading-[24px] font-medium text-black opacity-70 lg:max-w-[450px] xl:max-w-[484px] ">
+                        <p className="text-[14px] leading-[24px] font-medium text-black opacity-70 lg:max-w-[450px] xl:max-w-[484px] ">
                             {description}
                         </p>
 
@@ -83,7 +83,7 @@ const ServiceTicketSection = ({ tagline, heading, description, imagePosition, im
                                         className="flex flex-row items-center gap-[10px] sm:gap-[12px] md:gap-[16px] shrink-0"
                                     >
                                         <CheckIcon className="shrink-0   mt-1" />
-                                        <span className="font-medium text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] leading-[18px] sm:leading-[20px] md:leading-[22px] lg:leading-[26px] text-black">
+                                        <span className="font-medium text-[12px] md:text-[13px] lg:text-[14px] leading-[18px] sm:leading-[20px] md:leading-[22px] lg:leading-[26px] text-black">
                                             {feature}
                                         </span>
                                     </div>

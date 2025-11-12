@@ -22,19 +22,19 @@ const FeatureToggleSection = ({ backgroundColor, accentColor, toggleColor, tagli
                 <div className="flex flex-col items-center gap-[20px] md:gap-[24px] max-w-[1240px] mx-auto">
                     {/* Tagline */}
                     <div
-                        className="font-semibold text-[14px] md:text-[16px] leading-[26px] text-center"
+                        className="font-semibold text-[16px] leading-[26px] text-center"
                         style={{ color: accentColor }}
                     >
                         {tagline}
                     </div>
 
                     {/* Heading */}
-                    <h2 className="font-semibold text-[32px] sm:text-[40px] md:text-[48px] lg:text-[54px] leading-[1.2] text-center tracking-[-0.01em] text-black max-w-[1240px]">
+                    <h2 className="font-semibold text-[34px] sm:text-[40px] md:text-[48px] lg:text-[54px] leading-[1.2] text-center tracking-[-0.01em] text-black max-w-[1240px]">
                         {heading}
                     </h2>
 
                     {/* Description */}
-                    <p className="font-semibold text-[14px] md:text-[16px] leading-[26px] text-center text-black max-w-[690px]">
+                    <p className="font-semibold text-[16px] leading-[26px] text-center text-black max-w-[690px]">
                         {description}
                     </p>
 
