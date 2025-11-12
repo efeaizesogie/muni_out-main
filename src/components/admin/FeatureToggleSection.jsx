@@ -12,7 +12,7 @@ const FeatureToggleSection = ({ backgroundColor, accentColor, toggleColor, tagli
             className="relative pt-[80px] md:pt-[100px] overflow-hidden "
             style={{ backgroundColor }}
         >
-            <div className="relative w-full h-full">
+            <div className="relative w-full h-full hidden md:block">
                 <Image src={dotbg} alt={"gradient background"} className='absolute object-fill bottom-[-180px] z-1000 left-0 right-0 w-full h-[500px]' />
 
             </div>

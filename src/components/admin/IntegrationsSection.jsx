@@ -4,7 +4,7 @@ import IntegrationItem from './IntegrationItem';
 const IntegrationsSection = ({ tagline, backgroundColor = "#EBEFE4", heading, description, buttonText, buttonLink, integrations }) => {
     return (
         <section
-            className="py-[60px] md:py-[80px] lg:py-[100px] "
+            className="py-[80px] lg:py-[100px] "
             style={{ backgroundColor }}
         >
             <div className="w-full px-[20px] md:px-0 ">
@@ -39,7 +39,7 @@ const IntegrationsSection = ({ tagline, backgroundColor = "#EBEFE4", heading, de
 
                     {/* Right - Integration List */}
                     <div className="flex flex-col w-full md:w-1/2 lg:w-[45%]">
-                        <div className="border-t border-[rgba(135,147,143,0.4)] ">
+                        <div className=" border-y border-[rgba(135,147,143,0.4)] ">
                             {integrations.map((integration, index) => (
                                 <IntegrationItem
                                     key={index}
