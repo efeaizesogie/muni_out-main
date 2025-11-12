@@ -10,7 +10,7 @@ import TitleHead from "@/src/constants/TitleHead"
 
 const Footer = () => {
     return (
-        <div className='flex flex-col items-center relative overflow-hidden hero-bg'>
+        <div className='flex flex-col relative overflow-hidden hero-bg'>
             <Image
                 src={footerbg}
                 alt="Muni Premium Background"
