@@ -24,10 +24,10 @@ const CheckIcon = () => (
 );
 
 // Service Ticket Section Component
-const ServiceTicketSection = ({ tagline, heading, description, imagePosition, img, backgroundColor, imgCut, hasFeatures, features, imgCutRight, hasStar, imgCutLeft, imgWidth, imgHeight, imgBottom }) => {
+const ServiceTicketSection = ({ tagline, heading, description, imagePosition, img, backgroundColor, imgCut, hasFeatures, features, imgCutRight, hasStar, imgCutLeft, imgWidth, imgHeight, imgBottom, marginBottom }) => {
     return (
         <section
-            className="py-[80px] lg:py-[100px]"
+            className={marginBottom ? ` pt-[80px] pb-[45px] lg:pt-[100px] lg:pb-[50px]` : "py-[80px] lg:py-[100px]"}
             style={{ backgroundColor }}
         >
             <div className="w-full px-5 md:px-0">

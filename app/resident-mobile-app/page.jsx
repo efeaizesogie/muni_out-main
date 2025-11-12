@@ -67,7 +67,8 @@ and Quick Updates"
         description="Muni’s mobile app makes it easier than ever for residents to report issues and track service requests in real time—right from their phones. This instant accessibility boosts resident engagement and speeds up city responses by streamlining communication and eliminating delays common with traditional reporting methods. The result is faster resolutions and a more connected community."
         imagePosition="left"
         img={issueRep}
-        backgroundColor={"#FFFFFF"} />
+        backgroundColor={"#FFFFFF"}
+        marginBottom />
 
       <AdminCarousel />
 

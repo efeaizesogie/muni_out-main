@@ -70,7 +70,8 @@ export default function ResidentWebApp() {
         imagePosition="left"
         img={reportQuick}
         imgCutLeft
-        backgroundColor={"#FFFFFF"} />
+        backgroundColor={"#FFFFFF"}
+        marginBottom />
 
       <AdminCarousel />
 

@@ -70,7 +70,8 @@ export default function AdminDashboard() {
         imagePosition="left"
         img={resolveRes}
         backgroundColor={"#FFFFFF"}
-        imgWidth={"md:w-[500px]"} imgHeight={"md:h-[350px]"} />
+        imgWidth={"md:w-[500px]"} imgHeight={"md:h-[350px]"}
+        marginBottom />
 
 
       <AdminCarousel />

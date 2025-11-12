@@ -23,7 +23,7 @@ const CheckIcon = () => (
 const ResidentSection = ({ category, title, description, features, imageSrc, imageAlt }) => {
     return (
         <section className="flex flex-col bg-white w-full py-[80px] md:py-[100px] ">
-            <div className="flex flex-col md:flex-row items-center justify-between gap-[50px] md:gap-[80px] lg:gap-[115px] mx-5 max-w-[1440px] md:mx-[100px] 2xl:mx-auto">
+            <div className="flex flex-col md:flex-row items-center justify-between gap-[60px] md:gap-[80px] lg:gap-[115px] mx-5 max-w-[1440px] md:mx-[100px] 2xl:mx-auto">
                 <div className="w-full min-w-[320px] md:w-1/2 lg:w-[45%] order-2 md:order-1">
                     <div className='w-[110%] md:w-[130%] h-full ml-[-40px] md:ml-[-120px] lg:ml-[-25%] xl:ml-[-38%] '>
                         <Image
