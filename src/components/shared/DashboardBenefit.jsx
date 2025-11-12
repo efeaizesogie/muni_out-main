@@ -16,7 +16,7 @@ const DashboardBenefit = ({
     benefitsFor
 }) => {
     return (
-        <section className="py-[40px] sm:py-[60px] md:py-[80px] lg:py-[100px] bg-[#F9F9F9]">
+        <section className="py-[80px] md:py-[100px] bg-[#F9F9F9]">
             <div className="px-[20px] max-w-[1440px] md:mx-[100px] 2xl:mx-auto md:px-0">
                 {/* Main Content Section */}
                 <div className="flex flex-col md:flex-row items-center justify-between gap-[40px] sm:gap-[50px] md:gap-[60px] lg:gap-[100px] mb-[50px] md:mb-[80px] lg:mb-[120px]">

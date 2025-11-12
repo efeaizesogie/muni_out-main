@@ -10,7 +10,7 @@ const carouselContent = [
 
 const AdminCarousel = () => {
     return (
-        < div className='w-full py-[80px] md:py-[55px] bg-white' >
+        < div className='w-full pb-[80px] md:py-[55px] bg-white' >
             <div className="w-full overflow-hidden">
                 <div className="flex justify-start animate-slide gap-[10px] md:gap-[15px] w-full whitespace-nowrap font-semibold">
                     {carouselContent.map((_, index) => (
