@@ -35,7 +35,7 @@ const BenefitGrid = ({ benefits, benefitsFor }) => {
                     {benefits.map((benefit, index) => (
                         <div
                             key={index}
-                            className="flex flex-col gap-[12px] p-[20px] bg-white border-b border-[#E9EAEB] last:border-b-0"
+                            className="flex flex-col gap-[14px] p-[24px] bg-white border-b border-[#E9EAEB] last:border-b-0"
                         >
                             <div className="w-[22px] h-[22px]">
                                 <Image src={benefit.icon} width={24} height={24} alt={benefit.title} className="w-full h-full" />
