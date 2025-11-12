@@ -27,7 +27,7 @@ const CheckIcon = () => (
 const ServiceTicketSection = ({ tagline, heading, description, imagePosition, img, backgroundColor, imgCut, hasFeatures, features, imgCutRight, hasStar, imgCutLeft, imgWidth, imgHeight, imgBottom }) => {
     return (
         <section
-            className="py-[30px] md:py-[60px] lg:py-[100px]"
+            className="py-[80px] lg:py-[100px]"
             style={{ backgroundColor }}
         >
             <div className="w-full px-5 md:px-0">
@@ -53,7 +53,7 @@ const ServiceTicketSection = ({ tagline, heading, description, imagePosition, im
                     {/* Text Content */}
                     <div className={`flex flex-col gap-[16px] md:gap-[20px] lg:gap-[24px] w-full order-1  ${imagePosition === "right" ? "md:order-1 md:w-1/2 lg:w-[45%]" : "md:order-2 md:w-1/2 lg:w-[45%]"}`}>
 
-                        {hasStar && <p className='flex items-center w-fit gap-2 font-semibold text-[#1B312A] text-[12px] sm:text-[14px] bg-[#f9f9f9] border border-[#E9EAEB] bg-opacity-40 rounded-full py-[4px] sm:py-[5px] px-[12px] sm:px-[15px]'>
+                        {hasStar && <p className='flex items-center w-fit gap-2 font-semibold text-[#1B312A] text-[14px] bg-[#f9f9f9] border border-[#E9EAEB] bg-opacity-40 rounded-full py-[4px] sm:py-[5px] px-[12px] sm:px-[15px]'>
                             <Image src={star} width={16} height={16} alt="Star" /> AI-Powered
                         </p>}
 
@@ -76,14 +76,14 @@ const ServiceTicketSection = ({ tagline, heading, description, imagePosition, im
                         </p>
 
                         {hasFeatures && features && (
-                            <div className="grid grid-cols-2 gap-[6px] sm:gap-[8px] md:gap-[10px] self-stretch   ">
+                            <div className="grid grid-cols-2 gap-[10px] self-stretch   ">
                                 {features.map((feature, index) => (
                                     <div
                                         key={index}
                                         className="flex flex-row items-center gap-[10px] sm:gap-[12px] md:gap-[16px] shrink-0"
                                     >
                                         <CheckIcon className="shrink-0   mt-1" />
-                                        <span className="font-medium text-[12px] md:text-[13px] lg:text-[14px] leading-[18px] sm:leading-[20px] md:leading-[22px] lg:leading-[26px] text-black">
+                                        <span className="font-medium text-[12px] md:text-[14px] leading-[18px] sm:leading-[20px] md:leading-[22px] lg:leading-[26px] text-black">
                                             {feature}
                                         </span>
                                     </div>
