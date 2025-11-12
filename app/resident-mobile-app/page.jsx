@@ -53,7 +53,7 @@ Step of The Way"
       <FeatureToggleSection
 
         tagline="Feature Showcase"
-        heading={<>Explore What Makes <br />
+        heading={<>Explore What Makes <br className='hidden md:block' />
           the Mobile App Essential</>}
         description="See the tools that bring your community closer, faster, and more connected."
         backgroundColor="#FFFFFF"

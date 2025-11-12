@@ -54,7 +54,7 @@ export default function ResidentWebApp() {
       <FeatureToggleSection
 
         tagline="Feature Showcase"
-        heading={<>Powerful Features <br />
+        heading={<>Powerful Features <br className='hidden md:block' />
           Simple Experience</>}
         description="Residents Enjoy instant access to a range of tools designed to make 
           city interactions seamless and stress-free."

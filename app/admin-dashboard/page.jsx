@@ -56,7 +56,7 @@ export default function AdminDashboard() {
       <FeatureToggleSection
 
         tagline="Feature Showcase"
-        heading={<>Flexible Feature Selection <br /> for Customized Solutions</>}
+        heading={<>Flexible Feature Selection <br className='hidden md:block' /> for Customized Solutions</>}
         description="Instantly enable the features you need—just toggle and go."
         backgroundColor="#FFFFFF"
         toggleColor="#47816F"
