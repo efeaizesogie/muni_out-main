@@ -39,19 +39,19 @@ const ResidentSection = ({ category, title, description, features, imageSrc, ima
                 </div>
 
                 {/* Content Section */}
-                <div className="flex flex-col items-start text-center md:text-start gap-[12px] sm:gap-[16px] md:gap-[24px] w-full md:w-1/2 lg:w-[45%] order-1 md:order-2">
-                    <div className="flex flex-col gap-[12px] md:gap-[24px] w-full">
-                        <span className="font-semibold text-[12px] sm:text-[14px] md:text-[16px] leading-[20px] sm:leading-[24px] md:leading-[26px] text-[#006A4A] self-stretch">
+                <div className="flex flex-col items-start text-center md:text-start gap-[24px] w-full md:w-1/2 lg:w-[45%] order-1 md:order-2">
+                    <div className="flex flex-col gap-[24px] w-full">
+                        <span className="font-semibold text-base leading-[26px] text-[#006A4A] self-stretch">
                             {category}
                         </span>
 
-                        <h2 className=" font-semibold text-[24px] sm:text-[28px] md:text-[36px] lg:text-[42px] xl:text-[54px] leading-[1.1] sm:leading-[1.2] tracking-[-0.01em] text-black md:max-w-[485px]">
+                        <h2 className=" font-semibold text-[34px] md:text-[36px] lg:text-[42px] xl:text-[54px] leading-[1.1] sm:leading-[1.2] tracking-[-0.01em] text-black md:max-w-[485px]">
                             {title}
                         </h2>
                     </div>
 
 
-                    <p className="font-semibold text-[12px] sm:text-[13px] md:text-[14px] lg:text-[16px] leading-[18px] sm:leading-[20px] md:leading-[24px] lg:leading-[26px] text-black md:max-w-[485px]">
+                    <p className="font-semibold text-base leading-[26px] text-black md:max-w-[485px]">
                         {description}
                     </p>
 
@@ -63,7 +63,7 @@ const ResidentSection = ({ category, title, description, features, imageSrc, ima
                                 className="flex flex-row items-center justify-start gap-[8px] sm:gap-[10px] md:gap-[12px] lg:gap-[16px]"
                             >
                                 <CheckIcon />
-                                <span className="font-medium text-[11px] justify-start text-start sm:text-[12px] md:text-[13px] lg:text-[14px] leading-[16px] sm:leading-[18px] md:leading-[20px] lg:leading-[22px] xl:leading-[26px] text-black">
+                                <span className="font-medium justify-start text-start text-[14px] leading-[26px] text-black">
                                     {feature}
                                 </span>
                             </div>

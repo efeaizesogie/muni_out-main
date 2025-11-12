@@ -4,7 +4,7 @@ import React from 'react'
 const BenefitGrid = ({ benefits, benefitsFor }) => {
     return (
         <div className="flex flex-col gap-[30px] md:gap-[24px]">
-            <h3 className="font-semibold text-[20px] md:text-[22px] lg:text-[24px] leading-[32px] md:leading-[38px] lg:leading-[44px] tracking-[-0.01em] text-black text-center md:text-start">
+            <h3 className="font-semibold text-[24px] leading-[32px] md:leading-[38px] lg:leading-[44px] tracking-[-0.01em] text-black text-center md:text-start">
                 Benefits for {benefitsFor}
             </h3>
 
@@ -20,10 +20,10 @@ const BenefitGrid = ({ benefits, benefitsFor }) => {
                             <div className="w-[22px] h-[22px] lg:w-[24px] lg:h-[24px]">
                                 <Image src={benefit.icon} width={24} height={24} alt={benefit.title} className="w-full h-full" />
                             </div>
-                            <h4 className="font-semibold text-[14px] lg:text-[16px] leading-[20px] lg:leading-[22px] tracking-[-0.01em] text-black">
+                            <h4 className="font-semibold text-[16px] leading-[22px] tracking-[-0.01em] text-black">
                                 {benefit.title}
                             </h4>
-                            <p className="text-[11px] lg:text-[12px] leading-[18px] lg:leading-[20px] font-medium text-black opacity-70">
+                            <p className="text-[12px] leading-[20px] font-medium text-black opacity-70">
                                 {benefit.description}
                             </p>
                         </div>
@@ -40,7 +40,7 @@ const BenefitGrid = ({ benefits, benefitsFor }) => {
                             <div className="w-[22px] h-[22px]">
                                 <Image src={benefit.icon} width={24} height={24} alt={benefit.title} className="w-full h-full" />
                             </div>
-                            <h4 className="font-semibold text-[14px] leading-[20px] tracking-[-0.01em] text-black">
+                            <h4 className="font-semibold text-[16px] leading-[20px] tracking-[-0.01em] text-black">
                                 {benefit.title}
                             </h4>
                             <p className="text-[12px] leading-[18px] font-medium text-black opacity-70">

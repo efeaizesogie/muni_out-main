@@ -30,9 +30,9 @@ const LandingPage = () => {
               <p className='font-medium text-white py-[24px] text-lg'>The intelligent AI agent built to streamline municipal services, reduce administrative workloads, and deliver accurate information 24/7.</p>
               <div className='w-full flex flex-col md:flex-row gap-4 items-center justify-start'>
                 <a href="https://calendar.app.google/8KeUpeZEfLJQoKFT6" target="_blank" className='group bg-[#47816F] flex items-center justify-center rounded-md lg:w-auto w-full cursor-pointer'>
-                  <p className='text-[12px] md:text-[16px] pr-[5px] flex gap-2 items-center py-[10px] px-[15px] text-white font-semibold'>Request a Demo <Image src={arrow} /></p>
+                  <p className='text-[16px] pr-[5px] flex gap-2 items-center py-[10px] px-[15px] text-white font-semibold'>Request a Demo <Image src={arrow} /></p>
                 </a>
-                <a href="https://calendar.app.google/8KeUpeZEfLJQoKFT6" target="_blank" className=' flex items-center justify-center text-[12px] md:text-[16px] group bg-white py-[10px] px-[15px] rounded-md text-[#414651] font-semibold lg:w-auto w-full cursor-pointer'>
+                <a href="https://calendar.app.google/8KeUpeZEfLJQoKFT6" target="_blank" className=' flex items-center justify-center text-[16px] group bg-white py-[10px] px-[15px] rounded-md text-[#414651] font-semibold lg:w-auto w-full cursor-pointer'>
                   How It Works
                 </a>
               </div>

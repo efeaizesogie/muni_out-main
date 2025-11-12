@@ -25,12 +25,12 @@ const DashboardBenefit = ({
 
                         <div className="flex flex-col gap-[12px] md:gap-[24px]">
                             {/* Tag */}
-                            <div className="text-[#006A4A] font-semibold text-[14px] md:text-[16px] leading-[26px] ">
+                            <div className="text-[#006A4A] font-semibold text-[16px] leading-[26px] ">
                                 {tag}
                             </div>
 
                             {/* Heading */}
-                            <h2 className="font-semibold text-[28px] sm:text-[32px] md:text-[40px] lg:text-[48px] xl:text-[54px] leading-[1.1] sm:leading-[1.15] md:leading-[1.2] tracking-[-0.01em] text-black break-words">
+                            <h2 className="font-semibold text-[34px] md:text-[40px] lg:text-[48px] xl:text-[54px] leading-[1.1] sm:leading-[1.15] md:leading-[1.2] tracking-[-0.01em] text-black break-words">
                                 {heading}
                             </h2>
                         </div>
