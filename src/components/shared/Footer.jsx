@@ -18,7 +18,7 @@ const Footer = () => {
                 priority
             />
 
-            <div className=" max-w-[1440px] mx-5 md:mx-[100px] 2xl:mx-auto pt-[30px] md:pt-[77px] pb-10  relative z-10 ">
+            <div className="w-full max-w-[1440px] mx-5 md:mx-[100px] 2xl:mx-auto pt-[30px] md:pt-[77px] pb-10 relative z-10 ">
 
                 <div className="w-full flex flex-col items-center text-center justify-center mb-12">
                     <Image src={footerIcon} alt={"notification issue"} className=" shadow-[0_10.22px_17.51px_rgb(0_0_0_0_/_4)] rounded-lg" />
@@ -52,7 +52,7 @@ const Footer = () => {
                 </div>
 
 
-                <div className="w-full flex flex-col md:flex-row gap-4 flex-wrap justify-between  items-center pt-7 border-t border-[#EBEBEB1A]">
+                <div className="mx-5 md:mx-[100px] 2xl:mx-auto flex flex-col md:flex-row gap-4 flex-wrap justify-between  items-center pt-7 border-t border-[#EBEBEB1A]">
                     <div className="flex gap-8 items-center">
                         <p className="text-[12px] font-medium text-[#ffffff] ">
                             Built by August:  <Link href="https://www.alwaysaugust.co" target="_blank" className="underline cursor-pointer font-semibold hover:text-[#87938F] transition-colors">alwaysaugust.co</Link>

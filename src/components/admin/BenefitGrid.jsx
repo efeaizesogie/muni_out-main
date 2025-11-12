@@ -3,8 +3,8 @@ import React from 'react'
 
 const BenefitGrid = ({ benefits, benefitsFor }) => {
     return (
-        <div className="flex flex-col gap-[20px] md:gap-[24px]">
-            <h3 className="font-semibold text-[20px] md:text-[22px] lg:text-[24px] leading-[32px] md:leading-[38px] lg:leading-[44px] tracking-[-0.01em] text-black">
+        <div className="flex flex-col gap-[30px] md:gap-[24px]">
+            <h3 className="font-semibold text-[20px] md:text-[22px] lg:text-[24px] leading-[32px] md:leading-[38px] lg:leading-[44px] tracking-[-0.01em] text-black text-center md:text-start">
                 Benefits for {benefitsFor}
             </h3>
 
