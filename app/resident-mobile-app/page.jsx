@@ -90,7 +90,7 @@ Real-Time Schedule Alerts"
         backgroundColor={"#FFFFFF"} />
 
       <ServiceTicketSection
-        tagline="Knowledge Base Management"
+        tagline="News & Events"
         heading={<>Stay Informed and <br className='hidden md:flex' />
           Connected to Your
           Community</>}

@@ -56,11 +56,11 @@ const ResidentSection = ({ category, title, description, features, imageSrc, ima
                     </p>
 
                     {/* Features List */}
-                    <div className="flex flex-col items-start justify-start gap-[6px] sm:gap-[8px] md:gap-[10px] self-stretch mt-[10px] md:mt-0">
+                    <div className="flex flex-col items-start justify-start gap-[16px] md:gap-[24px] self-stretch mt-[10px] md:mt-0">
                         {features.map((feature, index) => (
                             <div
                                 key={index}
-                                className="flex flex-row items-center justify-start gap-[8px] sm:gap-[10px] md:gap-[12px] lg:gap-[16px]"
+                                className="flex flex-row items-start justify-start gap-4 md:gap-[24px]"
                             >
                                 <CheckIcon />
                                 <span className="font-medium justify-start text-start text-[14px] leading-[26px] text-black">
