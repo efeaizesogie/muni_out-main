@@ -10,7 +10,7 @@ const IntegrationsSection = ({ tagline, backgroundColor = "#EBEFE4", heading, de
             <div className="w-full px-[20px] md:px-0 ">
                 <div className="flex flex-col md:flex-row items-start justify-between gap-[50px] max-w-[1440px] md:mx-[100px] 2xl:mx-auto">
                     {/* Left Content */}
-                    <div className="flex flex-col gap-[20px] md:gap-[24px] w-full md:w-1/2 lg:w-[45%] ">
+                    <div className="flex flex-col items-center md:items-start text-center md:text-start gap-[20px] md:gap-[24px] w-full md:w-1/2 lg:w-[45%] ">
                         {/* Tag */}
                         <div className="text-[#006A4A] font-semibold text-[14px] md:text-[16px] leading-[26px]">
                             {tagline}

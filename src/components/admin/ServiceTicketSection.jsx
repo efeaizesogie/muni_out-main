@@ -33,9 +33,9 @@ const ServiceTicketSection = ({ tagline, heading, description, imagePosition, im
             <div className="w-full px-5 md:px-0">
                 <div className="flex flex-col md:flex-row items-start md:items-center md:justify-between gap-[30px] max-w-[1440px] md:mx-[100px] 2xl:mx-auto">
                     {/* Tickets Preview Card */}
-                    <div className={`w-full mx-auto md:mx-0  lg:flex-shrink-0 ${imagePosition === "right" ? "md:order-2 md:w-1/2 lg:w-[45%]" : "md:order-1 md:w-1/2 lg:w-[45%]"}`}>
+                    <div className={`w-full mx-auto md:mx-0  lg:flex-shrink-0 order-2 ${imagePosition === "right" ? "md:order-2 md:w-1/2 lg:w-[45%]" : "md:order-1 md:w-1/2 lg:w-[45%]"}`}>
                         <div
-                            className="w-full min-h-[300px] md:w-[500] sm:h-[320px] md:h-[380px] lg:h-[432px] rounded-[16px] md:rounded-[20px] p-[20px] sm:p-[30px] md:p-[40px] lg:p-[50px] border border-[#e9eaebc3] overflow-hidden relative max-w-[400px] sm:max-w-[450px] lg:max-w-[450px] xl:max-w-[500px]"
+                            className="w-full mx-auto md:mx-0 min-h-[300px] md:w-[500] sm:h-[320px] md:h-[380px] lg:h-[432px] rounded-[16px] md:rounded-[20px] p-[20px] sm:p-[30px] md:p-[40px] lg:p-[50px] border border-[#e9eaebc3] overflow-hidden relative max-w-[400px] sm:max-w-[450px] lg:max-w-[450px] xl:max-w-[500px]"
                             style={{
                                 background: 'radial-gradient(96.62% 66.13% at 49.95% 91.44%, #EBEFE4 25%, #Ffffff 100%)'
                             }}
@@ -51,7 +51,7 @@ const ServiceTicketSection = ({ tagline, heading, description, imagePosition, im
                     </div>
 
                     {/* Text Content */}
-                    <div className={`flex flex-col gap-[16px] md:gap-[20px] lg:gap-[24px] w-full  ${imagePosition === "right" ? "md:order-1 md:w-1/2 lg:w-[45%]" : "md:order-2 md:w-1/2 lg:w-[45%]"}`}>
+                    <div className={`flex flex-col gap-[16px] md:gap-[20px] lg:gap-[24px] w-full order-1  ${imagePosition === "right" ? "md:order-1 md:w-1/2 lg:w-[45%]" : "md:order-2 md:w-1/2 lg:w-[45%]"}`}>
 
                         {hasStar && <p className='flex items-center w-fit gap-2 font-semibold text-[#1B312A] text-[12px] sm:text-[14px] bg-[#f9f9f9] border border-[#E9EAEB] bg-opacity-40 rounded-full py-[4px] sm:py-[5px] px-[12px] sm:px-[15px]'>
                             <Image src={star} width={16} height={16} alt="Star" /> AI-Powered
@@ -76,7 +76,7 @@ const ServiceTicketSection = ({ tagline, heading, description, imagePosition, im
                         </p>
 
                         {hasFeatures && features && (
-                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-[6px] sm:gap-[8px] md:gap-[10px] self-stretch   ">
+                            <div className="grid grid-cols-2 gap-[6px] sm:gap-[8px] md:gap-[10px] self-stretch   ">
                                 {features.map((feature, index) => (
                                     <div
                                         key={index}

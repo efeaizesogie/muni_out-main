@@ -20,10 +20,10 @@ const Header = ({ heading, para }) => {
             {/* <div className="absolute inset-0 bg-[#14241F] bg-opacity-0 md:bg-opacity-20 z-1"></div> */}
 
 
-            <div className='flex flex-col md:items-center md:text-center z-10  pt-[100px] md:pt-[150px] w-full lg:w-[80%] mx-[20px] lg:mx-auto h-full relative'>
-                <h1 className='font-semibold text-white md:text-[70px] text-[42px] mx-5 leading-tight '>{heading}</h1>
-                <p className='font-medium text-white py-[12px] md:py-[24px] text-lg mx-5'>{para}</p>
-                <div className='mb-16 md:mb-[85px] mx-5'>
+            <div className='flex flex-col md:items-center md:text-center z-10  pt-[130px] md:pt-[150px] w-full lg:w-[80%] mx-[20px] lg:mx-auto h-full relative'>
+                <h1 className='font-semibold text-white md:text-7xl text-5xl mx-5 leading-[45px] '>{heading}</h1>
+                <p className='font-medium text-white py-[24px] text-lg mx-5'>{para}</p>
+                <div className='mb-20 md:mb-[85px] mx-5'>
                     <Button />
                 </div>
             </div>
