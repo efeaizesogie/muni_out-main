@@ -67,7 +67,7 @@ body {
     transform: translate(-80px, 270px); /* second stop (4s) */
   }
   100% {
-    transform: translate(50px, 400px); /* final stop (6s) */
+    transform: translate(-10px, 370px); /* final stop (6s) */
   }
 }
 

@@ -24,10 +24,10 @@ const TextSection = ({
 
             <div className="relative w-full max-w-[1440px] mx-auto">
                 {/* Main content box */}
-                <div className="relative md:rounded-3xl p-8 md:p-12 shadow-xl overflow-hidden bg-[#006A4A]">
+                <div className="relative md:rounded-3xl p-8 md:p-12 shadow-xl overflow-visible bg-[#006A4A]">
                     {/* Overlay image layer */}
                     <div
-                        className="absolute inset-0 bg-cover bg-bottom md:bg-center mix-blend-overlay opacity-90"
+                        className="absolute inset-0 bg-cover bg-bottom md:bg-center md:rounded-3xl mix-blend-overlay opacity-90"
                         style={{
                             backgroundImage: `url(${bgFill.src})`,
                             backgroundSize: "cover",
@@ -36,7 +36,7 @@ const TextSection = ({
                     />
 
                     {/* Bottom dark fade */}
-                    <div className="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-black/60 to-transparent" />
+                    <div className="absolute md:rounded-3xl bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-black/60 to-transparent" />
 
                     {/* Content */}
                     <div className="relative z-10 text-white text-center">
@@ -60,9 +60,11 @@ const TextSection = ({
                             )}
                         </div>
 
-                        {/* Gradient line below box */}
-                        {gradient && <LineGradient />}
+
                     </div>
+
+                    {/* Gradient line below box */}
+                    {gradient && <LineGradient />}
                 </div>
             </div>
         </div>
