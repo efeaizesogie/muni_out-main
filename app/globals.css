@@ -54,6 +54,21 @@ body {
   }
 }
 
+@keyframes move-to-image-desktop {
+  0% {
+    transform: translate(0, 0);
+  }
+  33% {
+    transform: translate(-350px, 250px); /* first stop (2s) */
+  }
+  66% {
+    transform: translate(-80px, 310px); /* second stop (4s) */
+  }
+  100% {
+    transform: translate(130px, 400px); /* final stop (6s) */
+  }
+}
+
 
 
 @keyframes move-to-image {
@@ -61,13 +76,13 @@ body {
     transform: translate(0, 0);
   }
   33% {
-    transform: translate(-200px, 150px); /* first stop (2s) */
+    transform: translate(-380px, 250px); /* first stop (2s) */
   }
   66% {
-    transform: translate(-80px, 270px); /* second stop (4s) */
+    transform: translate(-140px, 300px); /* second stop (4s) */
   }
   100% {
-    transform: translate(-10px, 370px); /* final stop (6s) */
+    transform: translate(0px, 370px); /* final stop (6s) */
   }
 }
 
@@ -117,6 +132,14 @@ body {
 .animate-fadeInDelayed {
   animation: fadeInDelayed 1.5s ease-out forwards;
 }
+
+
+@media (min-width: 1500px) {
+  .animate-move-to-image {
+    animation: move-to-image-desktop 6s ease-in-out forwards;
+  }
+}
+
 
 @media (max-width: 1024px) {
   .animate-move-to-image {

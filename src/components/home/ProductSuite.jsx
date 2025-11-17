@@ -40,15 +40,22 @@ const MobileSuiteCard = ({ icon, title, description, index, isExpanded, onClick 
 const ProductSuite = () => {
     const [animationStarted, setAnimationStarted] = useState(false);
     const [imageStage, setImageStage] = useState(0); // 0 → first, 1 → second, 2 → third
-    const [isMobile, setIsMobile] = useState(false);
+    const [screenSize, setScreenSize] = useState({ isMobile: false, isTab: false });
     const [expandedCard, setExpandedCard] = useState(0);
     const sectionRef = useRef(null);
 
     useEffect(() => {
-        const checkMobile = () => setIsMobile(window.innerWidth < 760);
-        checkMobile();
-        window.addEventListener('resize', checkMobile);
-        return () => window.removeEventListener('resize', checkMobile);
+        const updateScreenSize = () => {
+            const width = window.innerWidth;
+            setScreenSize({
+                isMobile: width < 768,
+                isTab: width >= 768 && width < 1500
+            });
+        };
+
+        updateScreenSize();
+        window.addEventListener('resize', updateScreenSize);
+        return () => window.removeEventListener('resize', updateScreenSize);
     }, []);
 
     useEffect(() => {
@@ -156,21 +163,27 @@ const ProductSuite = () => {
                     <div className="w-full lg:w-1/2 flex justify-end relative">
                         <motion.div
                             key={animationStarted ? 'animated' : 'reset'}
-                            className="relative w-full max-w-2xl overflow-hidden border-1 border-white rounded-xl"
-                            initial={{ x: isMobile ? 150 : 300, opacity: 0 }}
-                            animate={animationStarted ? { x: isMobile ? 100 : 250, opacity: 1 } : { x: isMobile ? 150 : 300, opacity: 0 }}
+                            className="relative w-[120%] overflow-hidden border-1 border-white rounded-xl"
+                            initial={{ x: screenSize.isMobile ? 150 : 250, opacity: 0 }}
+                            animate={animationStarted ? {
+                                x: screenSize.isMobile ? 100 : screenSize.isTab ? 100 : 240,
+                                opacity: 1
+                            } : {
+                                x: screenSize.isMobile ? 150 : screenSize.isTab ? 100 : 240,
+                                opacity: 0
+                            }}
                             transition={{ duration: 1.5, ease: "easeOut" }}
-                        >
+                        ><Image
+                                src={safari}
+                                alt="Safari Toolbar"
+                                className=" w-full h-auto z-10 rounded-t-xl"
+                            />
                             <Image
                                 src={getImage()}
                                 alt="Product Dashboard"
-                                className="w-full h-auto mt-[14px] md:mt-[20px] rounded-b-xl transition-all duration-300 ease-in-out"
+                                className="w-full h-auto rounded-b-xl transition-all duration-300 ease-in-out"
                             />
-                            <Image
-                                src={safari}
-                                alt="Safari Toolbar"
-                                className="absolute top-0 left-0 w-full h-auto z-10 rounded-t-xl"
-                            />
+
                         </motion.div>
                     </div>
                 </div>
