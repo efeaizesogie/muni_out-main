@@ -59,10 +59,10 @@ body {
     transform: translate(0, 0);
   }
   33% {
-    transform: translate(-200px, 150px); /* first stop (2s) */
+    transform: translate(-350px, 250px); /* first stop (2s) */
   }
   66% {
-    transform: translate(-80px, 270px); /* second stop (4s) */
+    transform: translate(-80px, 310px); /* second stop (4s) */
   }
   100% {
     transform: translate(130px, 400px); /* final stop (6s) */
@@ -76,13 +76,13 @@ body {
     transform: translate(0, 0);
   }
   33% {
-    transform: translate(-200px, 150px); /* first stop (2s) */
+    transform: translate(-380px, 250px); /* first stop (2s) */
   }
   66% {
-    transform: translate(-80px, 270px); /* second stop (4s) */
+    transform: translate(-140px, 300px); /* second stop (4s) */
   }
   100% {
-    transform: translate(22px, 370px); /* final stop (6s) */
+    transform: translate(0px, 370px); /* final stop (6s) */
   }
 }
 

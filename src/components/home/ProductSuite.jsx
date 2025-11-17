@@ -166,10 +166,10 @@ const ProductSuite = () => {
                             className="relative w-[120%] overflow-hidden border-1 border-white rounded-xl"
                             initial={{ x: screenSize.isMobile ? 150 : 250, opacity: 0 }}
                             animate={animationStarted ? {
-                                x: screenSize.isMobile ? 100 : screenSize.isTab ? 120 : 240,
+                                x: screenSize.isMobile ? 100 : screenSize.isTab ? 100 : 240,
                                 opacity: 1
                             } : {
-                                x: screenSize.isMobile ? 150 : screenSize.isTab ? 120 : 240,
+                                x: screenSize.isMobile ? 150 : screenSize.isTab ? 100 : 240,
                                 opacity: 0
                             }}
                             transition={{ duration: 1.5, ease: "easeOut" }}
